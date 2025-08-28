@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KlikIDM_DS
 
 struct PromoGiftModel {
     var chip: TabDefaultModel

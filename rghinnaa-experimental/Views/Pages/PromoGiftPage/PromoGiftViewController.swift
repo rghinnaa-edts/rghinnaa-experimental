@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KlikIDM_DS
 
 class PromoGiftViewController: UIViewController {
     
@@ -204,7 +205,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "1",
-                    title: "Paragon Fair"),
+                    title: "Fair Hadiah Sandy Punten Jangan di pake"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-paragon-fair"),
                     title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
@@ -213,7 +214,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "2",
-                    title: "Paragon Fair 2"),
+                    title: "Fair Pagi migelas (9-12) PANJANG SEKALI SEKALISEKALISEKALISEKALISEKALISEKALI"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-paragon-fair"),
                     title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
@@ -222,7 +223,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "3",
-                    title: "Gajian Indomaret"),
+                    title: "FAIR HADIAHHH"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-paragon-fair"),
                     title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
@@ -231,21 +232,21 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "4",
-                    title: "Live Shopping Semriwings"),
+                    title: "Gajian Indomearet (limited)"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-paragon-fair"),
                     title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
                     isEnable: true,
                     products: [])),
-            PromoGiftModel(
-                chip: TabDefaultModel(
-                    id: "5",
-                    title: "Teh Pucuk Fair"),
-                content: PromoContentModel(
-                    banner: UIImage(named: "img-paragon-fair"),
-                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
-                    isEnable: true,
-                    products: []))
+//            PromoGiftModel(
+//                chip: TabDefaultModel(
+//                    id: "5",
+//                    title: "Teh Pucuk Fair"),
+//                content: PromoContentModel(
+//                    banner: UIImage(named: "img-paragon-fair"),
+//                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+//                    isEnable: true,
+//                    products: []))
         ]
         
         items2 = [
@@ -261,6 +262,60 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "2",
+                    title: "Alat Makan Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "3",
+                    title: "Toples Kaca Idaman Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "4",
+                    title: "Alat Makan Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "5",
+                    title: "Toples Kaca Idaman Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "6",
+                    title: "Alat Makan Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "7",
+                    title: "Toples Kaca Idaman Fair"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-toples-kaca"),
+                    title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "8",
                     title: "Alat Makan Fair"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),

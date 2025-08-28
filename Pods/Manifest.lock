@@ -1,0 +1,23 @@
+PODS:
+  - KlikIDM_DS (0.1.11)
+  - lottie-ios (4.4.1)
+
+DEPENDENCIES:
+  - KlikIDM_DS (from `/Users/rizkaghinna/Documents/Work/Main Projects/KlikIDM_DS`)
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+
+EXTERNAL SOURCES:
+  KlikIDM_DS:
+    :path: "/Users/rizkaghinna/Documents/Work/Main Projects/KlikIDM_DS"
+
+SPEC CHECKSUMS:
+  KlikIDM_DS: ac9f0ef79de0f4c17d3d5cf9427686033169edf6
+  lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
+
+PODFILE CHECKSUM: d771a545c08170bf4a11545068b0ee7094248251
+
+COCOAPODS: 1.16.2

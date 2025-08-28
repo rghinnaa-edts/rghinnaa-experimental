@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import KlikIDM_DS
+import Lottie
 
 class CartViewController: UIViewController {
     
@@ -19,9 +21,12 @@ class CartViewController: UIViewController {
     
     @IBOutlet var loadingPromoTop: Skeleton!
     @IBOutlet var loadingPromo: Skeleton!
+    @IBOutlet var ltConfetti: LottieAnimationView!
+    @IBOutlet var ivConfetti: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupUI()
     }
     
@@ -32,6 +37,7 @@ class CartViewController: UIViewController {
     }
     
     private func setupUI() {
+        
         scrollView.delegate = self
         
         setupLoadingView()
@@ -40,6 +46,13 @@ class CartViewController: UIViewController {
         setupPromoGiftContainers()
         
         btnBack.setTitle("", for: .normal)
+        
+        let blueGradient = [
+            UIColor.white ?? .systemGray,
+            UIColor.blue20 ?? .systemBlue
+        ]
+        
+        containerCoupon.setGradientBackground(blueGradient, cornerRadius: 12, corners: [.topLeft, .topRight], borderWidth: 1, borderColor: UIColor.blue50)
     }
     
     private func setupPromoGiftContainers() {
@@ -59,10 +72,35 @@ class CartViewController: UIViewController {
         }
     }
     
+    private func setupConfetti() {
+        ivConfetti.isHidden = false
+        ivConfetti.alpha = 0
+        
+        ltConfetti.animation = LottieAnimation.named("confetti")
+        ltConfetti.contentMode = .scaleAspectFit
+        ltConfetti.loopMode = .repeat(2)
+        
+        ltConfetti.play()
+        
+        if let animation = ltConfetti.animation {
+            let totalDuration = animation.duration * 2
+            let showImageAt = totalDuration * 0.55
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + showImageAt) { [weak self] in
+                UIView.animate(withDuration: 0.5, animations: {
+                    self?.ivConfetti.alpha = 1.0
+                        })
+            }
+        }
+    }
+    
     @IBAction func goBack(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func startConfetti(_ sender: Any) {
+        setupConfetti()
+    }
 }
 
 extension CartViewController: UIScrollViewDelegate {
