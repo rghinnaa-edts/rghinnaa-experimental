@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coachmark View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Coachmark" id="Y6W-OH-hqX" customClass="CoachmarkViewController" customModule="Poinku_DS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w8v-xx-kLT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jb-85-6xG">
+                                <rect key="frame" x="84" y="91" width="225" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZs-JQ-N28">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Grey-20"/>
+                                <constraints>
+                                    <constraint firstItem="uZs-JQ-N28" firstAttribute="leading" secondItem="1jb-85-6xG" secondAttribute="leading" id="EG0-Zp-mql"/>
+                                    <constraint firstAttribute="bottom" secondItem="uZs-JQ-N28" secondAttribute="bottom" id="UGy-bq-QgA"/>
+                                    <constraint firstAttribute="trailing" secondItem="uZs-JQ-N28" secondAttribute="trailing" id="o7e-2r-Jb0"/>
+                                    <constraint firstItem="uZs-JQ-N28" firstAttribute="top" secondItem="1jb-85-6xG" secondAttribute="top" id="ozZ-VT-0ti"/>
+                                    <constraint firstAttribute="height" constant="100" id="qM7-m8-zud"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE7-eB-n14">
+                                <rect key="frame" x="64" y="215" width="265" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pj-Dh-IRf">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Grey-20"/>
+                                <constraints>
+                                    <constraint firstItem="3pj-Dh-IRf" firstAttribute="top" secondItem="VE7-eB-n14" secondAttribute="top" id="7yl-wr-BdZ"/>
+                                    <constraint firstItem="3pj-Dh-IRf" firstAttribute="leading" secondItem="VE7-eB-n14" secondAttribute="leading" id="b00-gr-tK4"/>
+                                    <constraint firstAttribute="bottom" secondItem="3pj-Dh-IRf" secondAttribute="bottom" id="hV4-oL-mOk"/>
+                                    <constraint firstAttribute="trailing" secondItem="3pj-Dh-IRf" secondAttribute="trailing" id="txB-qG-nXW"/>
+                                    <constraint firstAttribute="height" constant="80" id="yXz-LW-EvP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ali-bu-kdx">
+                                <rect key="frame" x="32" y="319" width="329" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sem-1z-Ehj">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="150"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Grey-20"/>
+                                <constraints>
+                                    <constraint firstItem="Sem-1z-Ehj" firstAttribute="top" secondItem="ali-bu-kdx" secondAttribute="top" id="KYT-DW-lML"/>
+                                    <constraint firstAttribute="height" constant="150" id="gv0-GI-Sc1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sem-1z-Ehj" secondAttribute="bottom" id="jmY-HE-MdO"/>
+                                    <constraint firstItem="Sem-1z-Ehj" firstAttribute="leading" secondItem="ali-bu-kdx" secondAttribute="leading" id="n4B-dU-StJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sem-1z-Ehj" secondAttribute="trailing" id="zLV-FR-Aq9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PiI-fR-s3D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PiI-fR-s3D" firstAttribute="trailing" secondItem="VE7-eB-n14" secondAttribute="trailing" constant="64" id="9vV-CS-385"/>
+                            <constraint firstItem="ali-bu-kdx" firstAttribute="top" secondItem="VE7-eB-n14" secondAttribute="bottom" constant="24" id="JG7-jx-Llb"/>
+                            <constraint firstItem="PiI-fR-s3D" firstAttribute="trailing" secondItem="ali-bu-kdx" secondAttribute="trailing" constant="32" id="Lr4-3t-hvY"/>
+                            <constraint firstItem="1jb-85-6xG" firstAttribute="leading" secondItem="PiI-fR-s3D" secondAttribute="leading" constant="84" id="Y8I-bF-qOn"/>
+                            <constraint firstItem="1jb-85-6xG" firstAttribute="top" secondItem="PiI-fR-s3D" secondAttribute="top" constant="32" id="j23-J7-NJf"/>
+                            <constraint firstItem="ali-bu-kdx" firstAttribute="leading" secondItem="PiI-fR-s3D" secondAttribute="leading" constant="32" id="kN8-Th-RRF"/>
+                            <constraint firstItem="VE7-eB-n14" firstAttribute="top" secondItem="1jb-85-6xG" secondAttribute="bottom" constant="24" id="s5E-2n-L55"/>
+                            <constraint firstItem="PiI-fR-s3D" firstAttribute="trailing" secondItem="1jb-85-6xG" secondAttribute="trailing" constant="84" id="sdi-qc-HbZ"/>
+                            <constraint firstItem="VE7-eB-n14" firstAttribute="leading" secondItem="PiI-fR-s3D" secondAttribute="leading" constant="64" id="u3D-bj-sUF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testCard" destination="1jb-85-6xG" id="TbW-ya-G5J"/>
+                        <outlet property="testCard2" destination="VE7-eB-n14" id="Ogd-Nf-udj"/>
+                        <outlet property="testCard3" destination="ali-bu-kdx" id="y57-P8-RM6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Grey-20">
+            <color red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

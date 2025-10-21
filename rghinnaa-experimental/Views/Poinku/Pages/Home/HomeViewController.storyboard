@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomePage" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Poinku_DS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-home" translatesAutoresizingMaskIntoConstraints="NO" id="9zT-ne-b1a">
+                                <rect key="frame" x="0.0" y="96" width="414" height="732"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJM-vA-GVp">
+                                <rect key="frame" x="175" y="775" width="63" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3X-m9-erR">
+                                <rect key="frame" x="17" y="300" width="243" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5em-K3-ekx">
+                                <rect key="frame" x="89" y="804" width="74" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-WI-r7G">
+                                <rect key="frame" x="250" y="804" width="74" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-3J-vxR">
+                                <rect key="frame" x="13" y="112" width="381" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LO0-wm-dmY">
+                                <rect key="frame" x="16" y="58" width="198" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9zT-ne-b1a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FQN-nU-Ccb"/>
+                            <constraint firstItem="9zT-ne-b1a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NnW-Gc-JQ3"/>
+                            <constraint firstItem="9zT-ne-b1a" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="ppK-gl-EGE"/>
+                            <constraint firstItem="9zT-ne-b1a" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="wla-LI-0gC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vStep1" destination="vJM-vA-GVp" id="2hy-Ja-qBg"/>
+                        <outlet property="vStep2" destination="r3X-m9-erR" id="mZx-LG-SEP"/>
+                        <outlet property="vStep3" destination="5em-K3-ekx" id="WNa-0X-d58"/>
+                        <outlet property="vStep4" destination="Ylw-WI-r7G" id="biH-G6-GNC"/>
+                        <outlet property="vStep5" destination="nyR-3J-vxR" id="au1-To-OyW"/>
+                        <outlet property="vStep6" destination="LO0-wm-dmY" id="5bc-pg-J5I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-home" width="828" height="1662"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

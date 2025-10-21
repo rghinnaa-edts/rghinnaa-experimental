@@ -1744,7 +1744,7 @@
     <resources>
         <image name="confetti" width="138.66667175292969" height="34.666667938232422"/>
         <image name="ic-arrow-left" width="32" height="32"/>
-        <image name="ic-arrow-right" width="48" height="48"/>
+        <image name="ic-arrow-right" width="96" height="96"/>
         <image name="ic-btn-arrow-right" width="40" height="40"/>
         <image name="ic-close" width="32" height="32"/>
         <image name="ic-information" width="48" height="48"/>

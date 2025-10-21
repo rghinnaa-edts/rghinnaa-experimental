@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MGMCardPage" id="Y6W-OH-hqX" customClass="MGMViewController" customModule="Poinku_DS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="8aK-ij-PJQ">
+                                <rect key="frame" x="24" y="124" width="345" height="629.33333333333337"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIB-w5-JdD">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="109.33333333333333"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mgm" translatesAutoresizingMaskIntoConstraints="NO" id="1ZO-dX-RiJ">
+                                                <rect key="frame" x="8" y="12" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="cH0-Bn-tmW"/>
+                                                    <constraint firstAttribute="width" constant="40" id="roa-uJ-yLL"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajak Teman, Dapat Untung Bareng!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH7-Bf-mpi">
+                                                <rect key="frame" x="56" y="12" width="257" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="Blue-30"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="PMF-A1-IAS">
+                                                <rect key="frame" x="321" y="12.333333333333343" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="Gcw-HY-Ljj"/>
+                                                    <constraint firstAttribute="height" constant="16" id="Ygt-aL-hVk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagikan kode referral kamu untuk mendapatkan hadiah." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQR-e8-Jel">
+                                                <rect key="frame" x="52" y="32.999999999999993" width="285" height="64.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" name="Grey-60"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PMF-A1-IAS" secondAttribute="trailing" constant="8" id="7YU-FU-Lsu"/>
+                                            <constraint firstAttribute="bottom" secondItem="BQR-e8-Jel" secondAttribute="bottom" constant="12" id="FDK-pP-W98"/>
+                                            <constraint firstItem="1ZO-dX-RiJ" firstAttribute="top" secondItem="RIB-w5-JdD" secondAttribute="top" constant="12" id="GnS-DX-vek"/>
+                                            <constraint firstItem="1ZO-dX-RiJ" firstAttribute="leading" secondItem="RIB-w5-JdD" secondAttribute="leading" constant="8" id="Hi7-CQ-AGe"/>
+                                            <constraint firstItem="PMF-A1-IAS" firstAttribute="centerY" secondItem="iH7-Bf-mpi" secondAttribute="centerY" id="ICA-2h-NAu"/>
+                                            <constraint firstItem="BQR-e8-Jel" firstAttribute="top" secondItem="iH7-Bf-mpi" secondAttribute="bottom" constant="4" id="QNQ-Mi-SEe"/>
+                                            <constraint firstItem="PMF-A1-IAS" firstAttribute="leading" secondItem="iH7-Bf-mpi" secondAttribute="trailing" constant="8" id="TpX-Dy-TuH"/>
+                                            <constraint firstItem="BQR-e8-Jel" firstAttribute="leading" secondItem="1ZO-dX-RiJ" secondAttribute="trailing" constant="4" id="Uqe-37-tDq"/>
+                                            <constraint firstItem="iH7-Bf-mpi" firstAttribute="top" secondItem="RIB-w5-JdD" secondAttribute="top" constant="12" id="VVo-hu-HtM"/>
+                                            <constraint firstAttribute="trailing" secondItem="BQR-e8-Jel" secondAttribute="trailing" constant="8" id="cPn-dX-9vs"/>
+                                            <constraint firstItem="iH7-Bf-mpi" firstAttribute="leading" secondItem="1ZO-dX-RiJ" secondAttribute="trailing" constant="8" id="uNQ-X3-4aU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj0-p5-DY9">
+                                        <rect key="frame" x="0.0" y="173.33333333333331" width="345" height="109.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mgm" translatesAutoresizingMaskIntoConstraints="NO" id="y5q-q9-2ci">
+                                                <rect key="frame" x="8" y="12" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="CRU-jE-zk0"/>
+                                                    <constraint firstAttribute="height" constant="40" id="KMq-0x-OV9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajak Teman, Dapat Untung Bareng!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T1-Na-cVN">
+                                                <rect key="frame" x="56" y="12" width="257" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="Blue-30"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="JP3-n4-wRm">
+                                                <rect key="frame" x="321" y="12.333333333333371" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="9c5-D0-HdC"/>
+                                                    <constraint firstAttribute="width" constant="16" id="IbZ-kg-uGl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagikan kode referral kamu untuk mendapatkan hadiah." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhl-uu-7sz">
+                                                <rect key="frame" x="52" y="32.999999999999993" width="285" height="64.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" name="Grey-60"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="y5q-q9-2ci" firstAttribute="top" secondItem="Fj0-p5-DY9" secondAttribute="top" constant="12" id="0X0-lf-2XU"/>
+                                            <constraint firstItem="8T1-Na-cVN" firstAttribute="leading" secondItem="y5q-q9-2ci" secondAttribute="trailing" constant="8" id="7IH-ET-CFf"/>
+                                            <constraint firstAttribute="bottom" secondItem="Rhl-uu-7sz" secondAttribute="bottom" constant="12" id="9cf-z8-IBT"/>
+                                            <constraint firstItem="8T1-Na-cVN" firstAttribute="top" secondItem="Fj0-p5-DY9" secondAttribute="top" constant="12" id="BKg-OP-J7U"/>
+                                            <constraint firstItem="Rhl-uu-7sz" firstAttribute="top" secondItem="8T1-Na-cVN" secondAttribute="bottom" constant="4" id="SGz-q1-HyD"/>
+                                            <constraint firstAttribute="trailing" secondItem="JP3-n4-wRm" secondAttribute="trailing" constant="8" id="a4B-Qa-bhY"/>
+                                            <constraint firstItem="JP3-n4-wRm" firstAttribute="centerY" secondItem="8T1-Na-cVN" secondAttribute="centerY" id="f4Z-Sn-uwu"/>
+                                            <constraint firstItem="Rhl-uu-7sz" firstAttribute="leading" secondItem="y5q-q9-2ci" secondAttribute="trailing" constant="4" id="gqv-CO-Ejb"/>
+                                            <constraint firstItem="y5q-q9-2ci" firstAttribute="leading" secondItem="Fj0-p5-DY9" secondAttribute="leading" constant="8" id="rn7-DO-fiN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rhl-uu-7sz" secondAttribute="trailing" constant="8" id="xTo-em-2Bb"/>
+                                            <constraint firstItem="JP3-n4-wRm" firstAttribute="leading" secondItem="8T1-Na-cVN" secondAttribute="trailing" constant="8" id="z48-MD-DRe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0h-8q-spp">
+                                        <rect key="frame" x="0.0" y="346.66666666666669" width="345" height="109.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mgm" translatesAutoresizingMaskIntoConstraints="NO" id="Qd3-uf-dbQ">
+                                                <rect key="frame" x="8" y="12" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="7hn-cD-rX9"/>
+                                                    <constraint firstAttribute="height" constant="40" id="lPK-hT-DT0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajak Teman, Dapat Untung Bareng!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeZ-pI-wlk">
+                                                <rect key="frame" x="56" y="12" width="257" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="Blue-30"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="bdu-Rc-HkP">
+                                                <rect key="frame" x="321" y="12.333333333333314" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="2vI-eq-XlA"/>
+                                                    <constraint firstAttribute="width" constant="16" id="HPA-DW-Rgi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagikan kode referral kamu untuk mendapatkan hadiah." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuM-Ze-oiQ">
+                                                <rect key="frame" x="52" y="32.999999999999993" width="285" height="64.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" name="Grey-60"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YuM-Ze-oiQ" secondAttribute="trailing" constant="8" id="0tJ-Tc-fbx"/>
+                                            <constraint firstItem="IeZ-pI-wlk" firstAttribute="leading" secondItem="Qd3-uf-dbQ" secondAttribute="trailing" constant="8" id="1mG-M6-rWz"/>
+                                            <constraint firstItem="YuM-Ze-oiQ" firstAttribute="top" secondItem="IeZ-pI-wlk" secondAttribute="bottom" constant="4" id="LWE-LO-zSZ"/>
+                                            <constraint firstItem="Qd3-uf-dbQ" firstAttribute="top" secondItem="Y0h-8q-spp" secondAttribute="top" constant="12" id="OvM-1T-cob"/>
+                                            <constraint firstItem="IeZ-pI-wlk" firstAttribute="top" secondItem="Y0h-8q-spp" secondAttribute="top" constant="12" id="SNR-s9-Eow"/>
+                                            <constraint firstItem="Qd3-uf-dbQ" firstAttribute="leading" secondItem="Y0h-8q-spp" secondAttribute="leading" constant="8" id="chh-sn-VhM"/>
+                                            <constraint firstItem="bdu-Rc-HkP" firstAttribute="centerY" secondItem="IeZ-pI-wlk" secondAttribute="centerY" id="eKv-Sy-uzb"/>
+                                            <constraint firstAttribute="bottom" secondItem="YuM-Ze-oiQ" secondAttribute="bottom" constant="12" id="eqg-ka-mM9"/>
+                                            <constraint firstItem="bdu-Rc-HkP" firstAttribute="leading" secondItem="IeZ-pI-wlk" secondAttribute="trailing" constant="8" id="fQe-Zn-3Kw"/>
+                                            <constraint firstItem="YuM-Ze-oiQ" firstAttribute="leading" secondItem="Qd3-uf-dbQ" secondAttribute="trailing" constant="4" id="hmb-B7-IX3"/>
+                                            <constraint firstAttribute="trailing" secondItem="bdu-Rc-HkP" secondAttribute="trailing" constant="8" id="jbH-CT-qce"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ka-dL-npA">
+                                        <rect key="frame" x="0.0" y="520" width="345" height="109.33333333333337"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mgm" translatesAutoresizingMaskIntoConstraints="NO" id="LKU-de-faY">
+                                                <rect key="frame" x="8" y="12" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="5Sk-Xq-sIo"/>
+                                                    <constraint firstAttribute="width" constant="40" id="iNd-bk-nAn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajak Teman, Dapat Untung Bareng!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rK-UE-Ojy">
+                                                <rect key="frame" x="56" y="12" width="257" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <color key="textColor" name="Blue-30"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-HJ-hf9">
+                                                <rect key="frame" x="321" y="12.333333333333371" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="E95-ZO-aDf"/>
+                                                    <constraint firstAttribute="width" constant="16" id="JIV-KE-7AF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagikan kode referral kamu untuk mendapatkan hadiah." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz6-Uy-7Fh">
+                                                <rect key="frame" x="52" y="32.999999999999993" width="285" height="64.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" name="Grey-60"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="pwP-HJ-hf9" firstAttribute="centerY" secondItem="6rK-UE-Ojy" secondAttribute="centerY" id="3pZ-Cc-9fM"/>
+                                            <constraint firstItem="6rK-UE-Ojy" firstAttribute="top" secondItem="8ka-dL-npA" secondAttribute="top" constant="12" id="6Gh-z3-dHk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tz6-Uy-7Fh" secondAttribute="trailing" constant="8" id="7R3-tx-NLH"/>
+                                            <constraint firstAttribute="trailing" secondItem="pwP-HJ-hf9" secondAttribute="trailing" constant="8" id="99u-9V-1td"/>
+                                            <constraint firstItem="Tz6-Uy-7Fh" firstAttribute="top" secondItem="6rK-UE-Ojy" secondAttribute="bottom" constant="4" id="KkG-fy-rhg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tz6-Uy-7Fh" secondAttribute="bottom" constant="12" id="SLh-6y-8gz"/>
+                                            <constraint firstItem="Tz6-Uy-7Fh" firstAttribute="leading" secondItem="LKU-de-faY" secondAttribute="trailing" constant="4" id="SXx-mg-t8q"/>
+                                            <constraint firstItem="LKU-de-faY" firstAttribute="leading" secondItem="8ka-dL-npA" secondAttribute="leading" constant="8" id="akD-VV-DRf"/>
+                                            <constraint firstItem="6rK-UE-Ojy" firstAttribute="leading" secondItem="LKU-de-faY" secondAttribute="trailing" constant="8" id="hhw-p9-1uz"/>
+                                            <constraint firstItem="pwP-HJ-hf9" firstAttribute="leading" secondItem="6rK-UE-Ojy" secondAttribute="trailing" constant="8" id="qut-Bv-xUu"/>
+                                            <constraint firstItem="LKU-de-faY" firstAttribute="top" secondItem="8ka-dL-npA" secondAttribute="top" constant="12" id="voY-te-wCk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8aK-ij-PJQ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="04n-6S-7KW"/>
+                            <constraint firstItem="8aK-ij-PJQ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="3aE-xW-yBK"/>
+                            <constraint firstItem="8aK-ij-PJQ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="24" id="F76-km-gIY"/>
+                            <constraint firstAttribute="trailing" secondItem="8aK-ij-PJQ" secondAttribute="trailing" constant="24" id="QhV-M9-wZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="5EZ-qb-Rvc" id="yjZ-hE-JRy"/>
+                        <outlet property="v1" destination="RIB-w5-JdD" id="v70-no-DrO"/>
+                        <outlet property="v2" destination="Fj0-p5-DY9" id="G9e-oi-7vG"/>
+                        <outlet property="v3" destination="Y0h-8q-spp" id="AUF-Hp-MUi"/>
+                        <outlet property="v4" destination="8ka-dL-npA" id="uBd-jd-Zp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-arrow-right" width="96" height="96"/>
+        <image name="mgm" width="160" height="160"/>
+        <namedColor name="Blue-30">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Grey-60">
+            <color red="0.4392156862745098" green="0.44705882352941179" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
