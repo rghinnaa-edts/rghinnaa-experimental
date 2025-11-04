@@ -1,0 +1,6 @@
+framework module Poinku_DS {
+  umbrella header "Poinku_DS-umbrella.h"
+
+  export *
+  module * { export * }
+}

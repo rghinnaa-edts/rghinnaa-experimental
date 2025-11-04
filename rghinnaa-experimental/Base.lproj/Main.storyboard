@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,38 +33,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-Rs-4Pz">
-                                <rect key="frame" x="122" y="162" width="149" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Promo Gift Page"/>
-                                <connections>
-                                    <action selector="GoToPromo:" destination="Lwr-0s-GBa" eventType="touchUpInside" id="Gl5-Bx-qfA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUj-Yl-6rF">
-                                <rect key="frame" x="147" y="257" width="100" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cart Page"/>
-                                <connections>
-                                    <action selector="GoToCart:" destination="Lwr-0s-GBa" eventType="touchUpInside" id="SEe-Ji-KM8"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9E-cp-RWx">
+                                <rect key="frame" x="24" y="186" width="201" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edts_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QdC-Cq-ElV">
+                                <rect key="frame" x="241" y="162" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Gae-6T-3nb"/>
+                                    <constraint firstAttribute="height" constant="128" id="KJX-Ko-smu"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-pu-siA">
+                                <rect key="frame" x="0.0" y="306" width="393" height="478"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-t8-gnP">
+                                        <rect key="frame" x="24" y="24" width="102" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obb-JU-J41">
+                                        <rect key="frame" x="24" y="61" width="345" height="74"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="klik_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2Np-fK-HR4">
+                                                <rect key="frame" x="12" y="12" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="aYN-al-whL"/>
+                                                    <constraint firstAttribute="width" constant="50" id="q4q-j6-52Q"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Klik Indomaret Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td9-A4-hhU">
+                                                <rect key="frame" x="78" y="26.666666666666686" width="153" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="td9-A4-hhU" firstAttribute="centerY" secondItem="2Np-fK-HR4" secondAttribute="centerY" id="Lz0-M8-bLl"/>
+                                            <constraint firstItem="2Np-fK-HR4" firstAttribute="leading" secondItem="obb-JU-J41" secondAttribute="leading" constant="12" id="dAx-VT-qw3"/>
+                                            <constraint firstItem="td9-A4-hhU" firstAttribute="leading" secondItem="2Np-fK-HR4" secondAttribute="trailing" constant="16" id="lrk-gy-euk"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Np-fK-HR4" secondAttribute="bottom" constant="12" id="mzp-NP-wZb"/>
+                                            <constraint firstItem="2Np-fK-HR4" firstAttribute="top" secondItem="obb-JU-J41" secondAttribute="top" constant="12" id="yhg-Xm-gX8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0R-3x-SIy">
+                                        <rect key="frame" x="24" y="147" width="345" height="74"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poinku_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ydp-Yg-snR">
+                                                <rect key="frame" x="12" y="12" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9uq-Wu-bQl"/>
+                                                    <constraint firstAttribute="width" constant="50" id="A52-ep-mXO"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poinku Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8j-UR-jjP">
+                                                <rect key="frame" x="78" y="26.666666666666686" width="96" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstItem="t8j-UR-jjP" firstAttribute="leading" secondItem="Ydp-Yg-snR" secondAttribute="trailing" constant="16" id="AHZ-yE-kUo"/>
+                                            <constraint firstItem="t8j-UR-jjP" firstAttribute="centerY" secondItem="Ydp-Yg-snR" secondAttribute="centerY" id="L8l-wy-pGF"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ydp-Yg-snR" secondAttribute="bottom" constant="12" id="OHw-KY-06L"/>
+                                            <constraint firstItem="Ydp-Yg-snR" firstAttribute="top" secondItem="K0R-3x-SIy" secondAttribute="top" constant="12" id="Zhe-TH-dT0"/>
+                                            <constraint firstItem="Ydp-Yg-snR" firstAttribute="leading" secondItem="K0R-3x-SIy" secondAttribute="leading" constant="12" id="lrU-lg-oDX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="obb-JU-J41" secondAttribute="trailing" constant="24" id="9xt-B4-dxb"/>
+                                    <constraint firstItem="obb-JU-J41" firstAttribute="leading" secondItem="kaN-pu-siA" secondAttribute="leading" constant="24" id="CBP-hW-wE1"/>
+                                    <constraint firstItem="K0R-3x-SIy" firstAttribute="top" secondItem="obb-JU-J41" secondAttribute="bottom" constant="12" id="MbR-yM-dpv"/>
+                                    <constraint firstItem="obb-JU-J41" firstAttribute="top" secondItem="f2h-t8-gnP" secondAttribute="bottom" constant="16" id="PZd-U0-B9d"/>
+                                    <constraint firstItem="f2h-t8-gnP" firstAttribute="leading" secondItem="kaN-pu-siA" secondAttribute="leading" constant="24" id="Qja-Io-TvW"/>
+                                    <constraint firstItem="f2h-t8-gnP" firstAttribute="top" secondItem="kaN-pu-siA" secondAttribute="top" constant="24" id="RmK-LD-2GY"/>
+                                    <constraint firstItem="K0R-3x-SIy" firstAttribute="leading" secondItem="kaN-pu-siA" secondAttribute="leading" constant="24" id="Z4c-5r-7nm"/>
+                                    <constraint firstAttribute="trailing" secondItem="K0R-3x-SIy" secondAttribute="trailing" constant="24" id="wp9-11-j4K"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDTS Mobile Components Design System" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw8-vO-e63">
+                                <rect key="frame" x="24" y="211" width="201" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fpt-Py-mLV"/>
-                        <color key="backgroundColor" name="White"/>
+                        <color key="backgroundColor" name="blueEdts"/>
+                        <constraints>
+                            <constraint firstItem="fpt-Py-mLV" firstAttribute="trailing" secondItem="QdC-Cq-ElV" secondAttribute="trailing" constant="24" id="14X-HN-arr"/>
+                            <constraint firstItem="kaN-pu-siA" firstAttribute="top" secondItem="QdC-Cq-ElV" secondAttribute="bottom" constant="16" id="4Ku-C4-epF"/>
+                            <constraint firstItem="QdC-Cq-ElV" firstAttribute="top" secondItem="fpt-Py-mLV" secondAttribute="top" id="D8n-8h-Pqk"/>
+                            <constraint firstItem="m9E-cp-RWx" firstAttribute="leading" secondItem="fpt-Py-mLV" secondAttribute="leading" constant="24" id="Ice-kx-OGw"/>
+                            <constraint firstItem="kaN-pu-siA" firstAttribute="leading" secondItem="fpt-Py-mLV" secondAttribute="leading" id="S2L-vq-wUg"/>
+                            <constraint firstItem="kw8-vO-e63" firstAttribute="top" secondItem="m9E-cp-RWx" secondAttribute="bottom" constant="8" id="WI7-lF-hzk"/>
+                            <constraint firstItem="QdC-Cq-ElV" firstAttribute="leading" secondItem="kw8-vO-e63" secondAttribute="trailing" constant="16" id="cla-Y8-x7b"/>
+                            <constraint firstItem="fpt-Py-mLV" firstAttribute="bottom" secondItem="kaN-pu-siA" secondAttribute="bottom" id="kS1-LA-4sC"/>
+                            <constraint firstItem="QdC-Cq-ElV" firstAttribute="leading" secondItem="m9E-cp-RWx" secondAttribute="trailing" constant="16" id="myc-kV-Baq"/>
+                            <constraint firstItem="m9E-cp-RWx" firstAttribute="top" secondItem="fpt-Py-mLV" secondAttribute="top" constant="24" id="rjc-ay-ykm"/>
+                            <constraint firstItem="kw8-vO-e63" firstAttribute="leading" secondItem="fpt-Py-mLV" secondAttribute="leading" constant="24" id="tLV-Zz-vMY"/>
+                            <constraint firstItem="fpt-Py-mLV" firstAttribute="trailing" secondItem="kaN-pu-siA" secondAttribute="trailing" id="vNI-gE-F9T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZF9-ij-aXh"/>
+                    <connections>
+                        <outlet property="vKlikIDM" destination="obb-JU-J41" id="8fT-Kj-1v1"/>
+                        <outlet property="vPoinku" destination="K0R-3x-SIy" id="i8C-u5-a1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4G-gN-Qqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="-13"/>
+            <point key="canvasLocation" x="297" y="-13"/>
         </scene>
     </scenes>
     <resources>
+        <image name="edts_logo" width="125" height="125"/>
+        <image name="klik_logo" width="144" height="144"/>
+        <image name="poinku_logo" width="112" height="112"/>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="blueEdts">
+            <color red="0.066666666666666666" green="0.32941176470588235" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

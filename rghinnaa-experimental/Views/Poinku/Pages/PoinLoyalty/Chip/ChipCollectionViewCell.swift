@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Poinku_DS
 
 class ChipCollectionViewCell: UICollectionViewCell {
     

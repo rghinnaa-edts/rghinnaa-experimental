@@ -9,6 +9,26 @@ import UIKit
 
 extension UIColor {
     
+    static var edtsRed: UIColor? {
+        return UIColor(named: "redEdts")
+    }
+    
+    static var edtsBlue: UIColor? {
+        return UIColor(named: "blueEdts")
+    }
+    
+    static var edtsBlueLight: UIColor? {
+        return UIColor(named: "blueLightEdts")
+    }
+    
+    static var edtsGreen: UIColor? {
+        return UIColor(named: "greenEdts")
+    }
+    
+    static var edtsGreenLight: UIColor? {
+        return UIColor(named: "greenLightEdts")
+    }
+    
     // Neutral
     
     static var white: UIColor? {
@@ -297,4 +317,5 @@ extension UIColor {
             }
         }
     }
+    
 }

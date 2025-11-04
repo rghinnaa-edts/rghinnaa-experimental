@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Poinku_DS
 
 class RibbonViewController: UIViewController {
     
@@ -25,9 +26,9 @@ class RibbonViewController: UIViewController {
     func ribbonView1() {
         let ribbonView = RibbonView()
         ribbonView.ribbonText = "x2"
-        ribbonView.triangleColor = UIColor.blue50
-        ribbonView.containerColor = UIColor.blue30
-        ribbonView.textColor = .white
+        ribbonView.triangleColor = UIColor.blue50 ?? .systemBlue
+        ribbonView.containerColor = UIColor.blue30 ?? .systemBlue
+        ribbonView.textColor = UIColor.white ?? .systemYellow
         ribbonView.gravity = .start
 
         ribbonView.anchorToView(
@@ -39,10 +40,10 @@ class RibbonViewController: UIViewController {
     func ribbonView2() {
         let ribbonView2 = RibbonView()
         ribbonView2.ribbonText = "Baru!"
-        ribbonView2.triangleColor = UIColor.orange50
-        ribbonView2.containerStartColor = UIColor.yellow30
-        ribbonView2.containerEndColor = UIColor.orange30
-        ribbonView2.textColor = .white
+        ribbonView2.triangleColor = UIColor.orange50 ?? .orange
+        ribbonView2.containerStartColor = UIColor.yellow30 ?? .yellow
+        ribbonView2.containerEndColor = UIColor.orange30 ?? .orange
+        ribbonView2.textColor = UIColor.white ?? .systemYellow
         ribbonView2.gravity = .end
 
         ribbonView2.anchorToView(
@@ -55,10 +56,10 @@ class RibbonViewController: UIViewController {
     func ribbonView3() {
         let ribbonView3 = RibbonView()
         ribbonView3.ribbonText = "Hot Product!"
-        ribbonView3.triangleColor = UIColor.red50
-        ribbonView3.containerStartColor = UIColor.red20
-        ribbonView3.containerEndColor = UIColor.red50
-        ribbonView3.textColor = .white
+        ribbonView3.triangleColor = UIColor.red50 ?? .red
+        ribbonView3.containerStartColor = UIColor.red20 ?? .red
+        ribbonView3.containerEndColor = UIColor.red50 ?? .red
+        ribbonView3.textColor = UIColor.white ?? .systemYellow
         ribbonView3.gravity = .start
 
         ribbonView3.anchorToView(

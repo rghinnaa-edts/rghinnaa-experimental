@@ -74,6 +74,10 @@ class PromoGiftViewController: UIViewController {
     private func setupTabTop() {
         vTabTop.setData(tabItems)
         vTabTop.delegate = self
+        vTabTop.tabBackgroundColor = UIColor.red30
+        vTabTop.tabBackgroundActiveColor = UIColor.purple
+        vTabTop.tabTextColor = UIColor.grey20
+        vTabTop.tabTextActiveColor = UIColor.white
     }
     
     private func setupTab() {
@@ -238,6 +242,258 @@ class PromoGiftViewController: UIViewController {
                     title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
                     isEnable: true,
                     products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "5",
+                    title: "Sunsilk"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "6",
+                    title: "Kusuka"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "7",
+                    title: "Caplang"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "8",
+                    title: "Es Teh"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "9",
+                    title: "Lifebuoy"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "10",
+                    title: "Pikachu"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "11",
+                    title: "Indomie"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "12",
+                    title: "Sakura"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "13",
+                    title: "Yummychoice"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "14",
+                    title: "Point Coffee"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "15",
+                    title: "Indomaret Homebrand"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "16",
+                    title: "Mister Donat"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "17",
+                    title: "Aqua"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "18",
+                    title: "Happydent"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "19",
+                    title: "Sari Roti"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "20",
+                    title: "Buah-Buahan"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "21",
+                    title: "Nezuko"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "22",
+                    title: "Tanjiro"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "23",
+                    title: "Giyuu"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "24",
+                    title: "Shinobu"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "25",
+                    title: "Zenitsu"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "26",
+                    title: "Inosuke"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "27",
+                    title: "Muzan"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "28",
+                    title: "Douma"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "29",
+                    title: "One Piece"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "30",
+                    title: "Naruto"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "31",
+                    title: "Pokemon"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
+            PromoGiftModel(
+                chip: TabDefaultModel(
+                    id: "32",
+                    title: "Huawei"),
+                content: PromoContentModel(
+                    banner: UIImage(named: "img-paragon-fair"),
+                    title: "Belanja All Item PARAGON FAIR Senilai Rp50.000 Dapat Hadiah",
+                    isEnable: true,
+                    products: [])),
 //            PromoGiftModel(
 //                chip: TabDefaultModel(
 //                    id: "5",
@@ -280,7 +536,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "4",
-                    title: "Alat Makan Fair"),
+                    title: "Alat Makan Fair 2"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),
                     title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
@@ -289,7 +545,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "5",
-                    title: "Toples Kaca Idaman Fair"),
+                    title: "Toples Kaca Idaman Fair 2"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),
                     title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
@@ -298,7 +554,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "6",
-                    title: "Alat Makan Fair"),
+                    title: "Alat Makan Fair 3"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),
                     title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
@@ -307,7 +563,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "7",
-                    title: "Toples Kaca Idaman Fair"),
+                    title: "Toples Kaca Idaman Fair 3"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),
                     title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
@@ -316,7 +572,7 @@ class PromoGiftViewController: UIViewController {
             PromoGiftModel(
                 chip: TabDefaultModel(
                     id: "8",
-                    title: "Alat Makan Fair"),
+                    title: "Alat Makan Fair 4"),
                 content: PromoContentModel(
                     banner: UIImage(named: "img-toples-kaca"),
                     title: "Belanja All Item Klik Indomaret Senilai Rp50.000 Dapat Tebus Murah Rp5.000",
@@ -378,7 +634,7 @@ extension PromoGiftViewController: TabQuadRoundDelegate {
         
         let firstItemPath = IndexPath(item: 0, section: 0)
         if !getCurrentContentItems().isEmpty {
-            collectionContent.scrollToItem(at: firstItemPath, at: .centeredHorizontally, animated: false)
+            collectionContent.scrollToItem(at: firstItemPath, at: .centeredHorizontally, animated: true)
         }
     }
 }
