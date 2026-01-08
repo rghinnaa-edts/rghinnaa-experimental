@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "arrow-left-3.png",
+      "filename" : "ic_bag.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "arrow-left 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "arrow-left-2 1.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

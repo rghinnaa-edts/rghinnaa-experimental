@@ -8,37 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Draw View Controller-->
+        <!--Badge View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="DrawViewPage" id="Y6W-OH-hqX" customClass="DrawViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BadgePage" id="Y6W-OH-hqX" customClass="BadgeViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqI-pA-vAW" customClass="DrawView" customModule="rghinnaa_experimental" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="118" width="393" height="500"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRb-TY-p9U" customClass="Badge" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="142" width="361" height="20"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="nla-C4-chs"/>
+                                    <constraint firstAttribute="height" constant="20" id="qwi-ex-yzF"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uqI-pA-vAW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="U6i-AP-rPY"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uqI-pA-vAW" secondAttribute="trailing" id="bDg-ZX-jZV"/>
-                            <constraint firstItem="uqI-pA-vAW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rx6-OG-DkZ"/>
+                            <constraint firstItem="SRb-TY-p9U" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="6xt-U8-IDj"/>
+                            <constraint firstItem="SRb-TY-p9U" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="aWR-YD-Smo"/>
+                            <constraint firstItem="SRb-TY-p9U" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="kjt-Rs-Czu"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="5EZ-qb-Rvc" id="Lxt-UO-F66"/>
+                        <outlet property="badgeTest" destination="SRb-TY-p9U" id="Fuo-QT-Us1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="-2"/>
+            <point key="canvasLocation" x="12" y="-2"/>
         </scene>
     </scenes>
     <resources>

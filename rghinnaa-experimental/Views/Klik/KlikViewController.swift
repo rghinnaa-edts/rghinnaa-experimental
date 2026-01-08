@@ -12,13 +12,23 @@ class KlikViewController: UITableViewController {
     private var sections = ["Components", "Pages"]
     
     private var componentList: [String] = [
-        "Empty"
+        "Badge"
     ]
     
     private var pageList: [String] = [
         "Cart Page",
-        "Promo Gift Page"
+        "Coupon Offered Page",
+        "Product Detail Page",
+        "Promo Gift Page",
+        "Search Page"
     ]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.setToolbarHidden(false, animated: animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,15 +83,27 @@ class KlikViewController: UITableViewController {
     private func navigateToPage(for item: String) {
         
         switch item {
-        case "Empty":
-            let vc = UIStoryboard(name: "CardViewController", bundle: nil).instantiateViewController(withIdentifier: "Card")
+        case "Badge":
+            let vc = UIStoryboard(name: "BadgeViewController", bundle: nil).instantiateViewController(withIdentifier: "BadgePage")
             navigationController?.pushViewController(vc, animated: true)
         case "Cart Page":
             let vc = UIStoryboard(name: "CartViewController", bundle: nil).instantiateViewController(withIdentifier: "CartPage")
             navigationController?.pushViewController(vc, animated: true)
         break
+        case "Coupon Offered Page":
+            let vc = UIStoryboard(name: "CouponOfferedViewController", bundle: nil).instantiateViewController(withIdentifier: "CouponOfferedPage")
+            navigationController?.pushViewController(vc, animated: true)
+        break
+        case "Product Detail Page":
+            let vc = UIStoryboard(name: "PDPViewController", bundle: nil).instantiateViewController(withIdentifier: "PDPPage")
+            navigationController?.pushViewController(vc, animated: true)
+        break
         case "Promo Gift Page":
             let vc = UIStoryboard(name: "PromoGiftViewController", bundle: nil).instantiateViewController(withIdentifier: "PromoGiftPage")
+            navigationController?.pushViewController(vc, animated: true)
+        break
+        case "Search Page":
+            let vc = UIStoryboard(name: "SearchViewController", bundle: nil).instantiateViewController(withIdentifier: "SearchPage")
             navigationController?.pushViewController(vc, animated: true)
         break
         default:

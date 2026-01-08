@@ -22,7 +22,7 @@ class PromoGiftViewController: UIViewController {
     @IBOutlet var ivCart: UIImageView!
     @IBOutlet var lblRequired: UILabel!
     
-    var selectedTabIndex = 0
+    var selectedTabTopIndex = 0
     var tabItems: [TabQuadRoundModel] = []
     var items1: [PromoGiftModel] = []
     var items2: [PromoGiftModel] = []
@@ -72,12 +72,18 @@ class PromoGiftViewController: UIViewController {
     }
     
     private func setupTabTop() {
-        vTabTop.setData(tabItems)
         vTabTop.delegate = self
-        vTabTop.tabBackgroundColor = UIColor.red30
-        vTabTop.tabBackgroundActiveColor = UIColor.purple
-        vTabTop.tabTextColor = UIColor.grey20
-        vTabTop.tabTextActiveColor = UIColor.white
+        
+        vTabTop.data = tabItems
+        
+//        vTabTop.tabBackgroundColor = UIColor.red30
+//        vTabTop.tabBackgroundActiveColor = UIColor.purple
+//        vTabTop.tabTextColor = UIColor.grey20
+//        vTabTop.tabTextActiveColor = UIColor.white
+//        vTabTop.tabBadgeColor = UIColor.yellow
+//        vTabTop.tabBadgeActiveColor = UIColor.green
+//        vTabTop.tabBadgeTextColor = UIColor.blue
+//        vTabTop.tabBadgeTextActiveColor = UIColor.orange
     }
     
     private func setupTab() {
@@ -85,18 +91,24 @@ class PromoGiftViewController: UIViewController {
         vTab.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
         vTab.layer.shadowRadius = 3
         
+        vTab.registerCellType(TabDefaultCell.self, withIdentifier: "TabDefaultCell")
         vTab.delegate = self
         
-        vTab.registerCellType(TabDefaultCell.self, withIdentifier: "TabDefaultCell")
-        vTab.setData(getCurrentContentItems().map { $0.chip })
+        vTab.data = getCurrentContentItems().map { $0.chip }
+        vTab.cellConfiguration = { cell, data, isSelected, index in
+            guard let customCell = cell as? TabDefaultCell else { return }
+                
+            customCell.tabTextColor = UIColor.blue50
+            customCell.tabTextActiveColor = UIColor.red
+        }
         
         vTab.enableDynamicWidth()
-        vTab.selectDefaultChip()
+        vTab.selectDefaultTab()
     }
     
     private func updateTabSelection() {
         vTab.data = getCurrentContentItems().map { $0.chip }
-        vTab.selectDefaultChip()
+        vTab.selectDefaultTab()
     }
     
     private func setupATC() {
@@ -130,7 +142,7 @@ class PromoGiftViewController: UIViewController {
     }
     
     private func getCurrentContentItems() -> [PromoGiftModel] {
-        return selectedTabIndex == 0 ? items1 : items2
+        return selectedTabTopIndex == 0 ? items1 : items2
     }
     
     private func showLoadingState() {
@@ -202,7 +214,7 @@ class PromoGiftViewController: UIViewController {
             TabQuadRoundModel(id: "3", title: "Hadiah Produk", badge: 3),
             TabQuadRoundModel(id: "4", title: "Get Kupon", badge: 1),
             TabQuadRoundModel(id: "5", title: "Tebus Murah", badge: 3),
-            TabQuadRoundModel(id: "6", title: "Cuci Gudang", badge: 1)
+//            TabQuadRoundModel(id: "6", title: "Cuci Gudang", badge: 1)
         ]
         
         items1 = [
@@ -593,7 +605,7 @@ class PromoGiftViewController: UIViewController {
 extension PromoGiftViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if selectedTabIndex == 0 {
+        if selectedTabTopIndex == 0 {
             return items1.count
         } else {
             return items2.count
@@ -617,17 +629,9 @@ extension PromoGiftViewController: UICollectionViewDelegate, UICollectionViewDat
     
 }
 
-extension PromoGiftViewController: TabDefaultDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String) {
-        
-        let indexPath = IndexPath(item: index, section: 0)
-        collectionContent.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-    }
-}
-
 extension PromoGiftViewController: TabQuadRoundDelegate {
     func didSelectTabQuadRound(at index: Int, withId id: String) {
-        selectedTabIndex = index
+        selectedTabTopIndex = index
         
         updateTabSelection()
         collectionContent.reloadData()
@@ -636,5 +640,13 @@ extension PromoGiftViewController: TabQuadRoundDelegate {
         if !getCurrentContentItems().isEmpty {
             collectionContent.scrollToItem(at: firstItemPath, at: .centeredHorizontally, animated: true)
         }
+    }
+}
+
+extension PromoGiftViewController: TabDefaultDelegate {
+    func didSelectTabDefault(at index: Int, withId id: String) {
+        
+        let indexPath = IndexPath(item: index, section: 0)
+        collectionContent.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 }

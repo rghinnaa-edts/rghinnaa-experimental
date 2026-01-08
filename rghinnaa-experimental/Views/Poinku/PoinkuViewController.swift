@@ -29,6 +29,13 @@ class PoinkuViewController: UITableViewController {
         "Register Page",
         "Stamp Page",
     ]
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        self.navigationController?.setToolbarHidden(false, animated: animated)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
