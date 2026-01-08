@@ -53,6 +53,12 @@ class ViewController: UIViewController {
         
 //        let vc = UIStoryboard(name: "AnimationWorkshopViewController", bundle: nil).instantiateViewController(withIdentifier: "AnimationWorkshopPage")
 //        navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = UIStoryboard(name: "Card2ViewController", bundle: nil).instantiateViewController(withIdentifier: "Card2ViewPage")
+//                navigationController?.pushViewController(vc, animated: true)
+        
+//        let vc = UIStoryboard(name: "DrawViewController", bundle: nil).instantiateViewController(withIdentifier: "DrawViewPage")
+//                navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func GoToPromo(_ sender: Any) {

@@ -23,6 +23,20 @@ class CartViewController: UIViewController {
     @IBOutlet var loadingPromo: Skeleton!
     @IBOutlet var ltConfetti: LottieAnimationView!
     @IBOutlet var ivConfetti: UIImageView!
+    @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var lblRealPrice: UILabel!
+    @IBOutlet weak var btnStepper: ButtonStepper!
+    @IBOutlet weak var lblTotalPrice: UILabel!
+    @IBOutlet weak var lblTotalAllPrice: UILabel!
+    
+    var productPrice = 2000
+    var productKartonPrice = 1800
+    var productRealPrice = 4000
+    var productQty = 0
+    
+    private var quantityInPieces = 0
+    private var totalPrice = 0
+    private var price = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +51,13 @@ class CartViewController: UIViewController {
     }
     
     private func setupUI() {
+        setupButtonStepper()
+        
+        updatePrice()
+        lblRealPrice.attributedText = productRealPrice.formatRupiah().strikethrough()
+        lblPrice.text = price.formatRupiah()
+        lblTotalPrice.text = totalPrice.formatRupiah()
+        lblTotalAllPrice.text = totalPrice.formatRupiah()
         
         scrollView.delegate = self
         
@@ -55,6 +76,37 @@ class CartViewController: UIViewController {
         containerCoupon.setGradientBackground(blueGradient, cornerRadius: 12, corners: [.topLeft, .topRight], borderWidth: 1, borderColor: UIColor.blue50)
     }
     
+    private func setupButtonStepper() {
+        btnStepper.delegate = self
+        
+        btnStepper.textQuantity = productQty
+        btnStepper.textQuantityMultiple = 1
+        btnStepper.textQuantityColor = UIColor.grey70
+        btnStepper.bgColor = UIColor.white
+        btnStepper.btnMinusColor = UIColor.grey60
+        btnStepper.btnMinusBackgroundColor = UIColor.white
+        btnStepper.btnPlusColor = UIColor.white
+        btnStepper.btnPlusBackgroundColor = UIColor.blueDefault
+        btnStepper.borderWidth = 1
+        btnStepper.borderColor = UIColor.grey30
+    }
+    
+    private func countTotalPrice(qty: Int) -> Int {
+        let total = qty * productPrice
+        return total
+    }
+    
+    private func countTotalKartonPrice(qty: Int) -> Int {
+        let total = qty * productKartonPrice
+        return total
+    }
+    
+    private func updatePrice() {
+        quantityInPieces = productQty % 24
+        totalPrice = countTotalPrice(qty: quantityInPieces) + countTotalKartonPrice(qty: (productQty-quantityInPieces))
+        price = totalPrice / productQty
+    }
+    
     private func setupPromoGiftContainers() {
         containerStickPromoGift.layer.shadowOpacity = 0.15
         containerStickPromoGift.layer.shadowOffset = CGSize(width: 0, height: 5)
@@ -66,7 +118,6 @@ class CartViewController: UIViewController {
         loadingPromo.isHidden = false
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in guard let self = self else { return }
-            
             loadingPromoTop.isHidden = true
             loadingPromo.isHidden = true
         }
@@ -141,6 +192,34 @@ extension CartViewController: UIScrollViewDelegate {
         
         UIView.animate(withDuration: 0.3) {
             self.containerCoupon.transform = resetTransform
+        }
+    }
+}
+
+extension CartViewController: ButtonStepperDelegate {
+    func didSelectButtonCollapsible(show isShow: Bool) {}
+    
+    func didSelectButtonMinus(qty quantity: Int) {
+        productQty = quantity
+        updatePrice()
+        
+        lblTotalPrice.text = totalPrice.formatRupiah()
+        lblTotalAllPrice.text = totalPrice.formatRupiah()
+        
+        if productQty <= 24 {
+            lblPrice.text = price.formatRupiah()
+        }
+    }
+    
+    func didSelectButtonPlus(qty quantity: Int) {
+        productQty = quantity
+        updatePrice()
+        
+        lblTotalPrice.text = totalPrice.formatRupiah()
+        lblTotalAllPrice.text = totalPrice.formatRupiah()
+        
+        if productQty >= 24 {
+            lblPrice.text = price.formatRupiah()
         }
     }
 }

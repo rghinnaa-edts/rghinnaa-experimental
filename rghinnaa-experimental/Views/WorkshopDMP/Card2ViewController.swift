@@ -7,11 +7,15 @@
 
 import UIKit
 
-class CardViewController: UIViewController {
+class Card2ViewController: UIViewController {
+    
+    @IBOutlet weak var cardView: CardView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        cardView.name = "Rizka Ghinna Auliya"
+        cardView.position = "UX Engineer"
         
     }
 }

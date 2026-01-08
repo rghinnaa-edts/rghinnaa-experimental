@@ -228,6 +228,14 @@ extension UIColor {
         return UIColor(named: "Disable")
     }
     
+    static var brandXtra: UIColor? {
+        return UIColor(named: "Xtra")
+    }
+
+    static var brandXpress: UIColor? {
+        return UIColor(named: "Xpress")
+    }
+
     struct Support {
         static let errorStrong = UIColor(named: "Error-Strong")
         static let errorWeak = UIColor(named: "Error-Weak")
@@ -235,11 +243,6 @@ extension UIColor {
         static let successWeak = UIColor(named: "Success-Weak")
         static let warningStrong = UIColor(named: "Warning-Strong")
         static let warningWeak = UIColor(named: "Warning-Weak")
-    }
-    
-    struct Brand {
-        static let xtra = UIColor(named: "Xtra")
-        static let xpress = UIColor(named: "Xpress")
     }
     
     struct Gradient {
