@@ -1,28 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Coupon Offered2 View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="CouponOffered2Page" id="Y6W-OH-hqX" customClass="CouponOffered2ViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-coupon-offered" translatesAutoresizingMaskIntoConstraints="NO" id="16r-7o-4Zb">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="16r-7o-4Zb" secondAttribute="height" multiplier="1:1" id="Dri-BZ-YXF"/>
+                                    <constraint firstAttribute="width" secondItem="16r-7o-4Zb" secondAttribute="height" multiplier="1:1" id="rpm-VA-XFA"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-oU-LPh">
+                                <rect key="frame" x="0.0" y="118" width="393" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-W4-73B">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-3O-knn" customClass="CardMyCoupon" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="16" y="60" width="361" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="8Pf-z1-TIn"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="cardLeadingIcon" value="ic-my-coupon"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="cardTitleColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="cardTitle" value="Kupon Saya"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="cardDesc" value="Kumpulan kupon yang kamu punya"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="cardDescColor">
+                                                        <color key="value" name="30Grey"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShowBadge" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="cardBadgeBG">
+                                                        <color key="value" name="30Red"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="cardBadgeBorderColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="cardBadgeText" value="10+"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cardBadgeBorderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cardCornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLiquidGlass" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-7r-YVC">
+                                                <rect key="frame" x="0.0" y="144" width="393" height="0.0"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="xkV-HB-5Yf"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q6i-pk-uug">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IvX-xF-qAW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="cu8-nh-s1B">
+                                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdq-UI-8X9" userLabel="ViewToolbar">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-R2-ZvK">
+                                                        <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="32" id="Wfz-2N-H0h"/>
+                                                            <constraint firstAttribute="height" constant="32" id="ilC-rr-nzy"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="White"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="ic-arrow-left"/>
+                                                        <connections>
+                                                            <action selector="buttonBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xki-G3-ENf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promo Ongkir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-jh-yAu">
+                                                        <rect key="frame" x="52" y="18" width="329" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="textColor" name="White"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="xE7-jh-yAu" firstAttribute="leading" secondItem="gbf-R2-ZvK" secondAttribute="trailing" constant="8" id="8lw-fW-8dd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xE7-jh-yAu" secondAttribute="trailing" constant="12" id="FSP-ho-QyV"/>
+                                                    <constraint firstAttribute="height" constant="40" id="LVr-g3-1oX"/>
+                                                    <constraint firstItem="xE7-jh-yAu" firstAttribute="centerY" secondItem="gbf-R2-ZvK" secondAttribute="centerY" id="QLM-XD-eJG"/>
+                                                    <constraint firstItem="gbf-R2-ZvK" firstAttribute="top" secondItem="qdq-UI-8X9" secondAttribute="top" constant="12" id="WeS-dB-6Kp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gbf-R2-ZvK" secondAttribute="bottom" id="c6i-uI-Gzu"/>
+                                                    <constraint firstItem="gbf-R2-ZvK" firstAttribute="leading" secondItem="qdq-UI-8X9" secondAttribute="leading" constant="12" id="gL9-NG-d1e"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="dEJ-ns-q66"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="qdq-UI-8X9" firstAttribute="top" secondItem="dEJ-ns-q66" secondAttribute="top" id="5gn-9p-hX1"/>
+                                            <constraint firstItem="k2d-3O-knn" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" constant="16" id="8ZG-VQ-wdi"/>
+                                            <constraint firstItem="qdq-UI-8X9" firstAttribute="trailing" secondItem="dEJ-ns-q66" secondAttribute="trailing" id="Dnm-Wc-NdH"/>
+                                            <constraint firstItem="qdq-UI-8X9" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" id="f5J-aJ-8Kv"/>
+                                            <constraint firstItem="dEJ-ns-q66" firstAttribute="trailing" secondItem="k2d-3O-knn" secondAttribute="trailing" constant="16" id="gcb-Bu-Lb0"/>
+                                            <constraint firstItem="k2d-3O-knn" firstAttribute="top" secondItem="qdq-UI-8X9" secondAttribute="bottom" constant="20" id="oey-rB-Tcw"/>
+                                            <constraint firstItem="7s8-7r-YVC" firstAttribute="top" secondItem="k2d-3O-knn" secondAttribute="bottom" constant="24" id="qhi-lb-BEd"/>
+                                            <constraint firstItem="7s8-7r-YVC" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" id="vJV-eK-yxx"/>
+                                            <constraint firstItem="dEJ-ns-q66" firstAttribute="trailing" secondItem="7s8-7r-YVC" secondAttribute="trailing" id="x2u-MW-Sed"/>
+                                            <constraint firstAttribute="bottom" secondItem="7s8-7r-YVC" secondAttribute="bottom" id="z4o-do-UPs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="A2s-W4-73B" secondAttribute="bottom" id="HPN-Xk-AO7"/>
+                                    <constraint firstItem="A2s-W4-73B" firstAttribute="top" secondItem="vlW-oU-LPh" secondAttribute="top" id="Igi-ab-kJB"/>
+                                    <constraint firstItem="A2s-W4-73B" firstAttribute="trailing" secondItem="vlW-oU-LPh" secondAttribute="trailing" id="dzV-fm-dwx"/>
+                                    <constraint firstItem="A2s-W4-73B" firstAttribute="leading" secondItem="vlW-oU-LPh" secondAttribute="leading" id="uA1-Y9-Vs5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="70Blue"/>
+                        <constraints>
+                            <constraint firstItem="16r-7o-4Zb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0gA-EA-gQH"/>
+                            <constraint firstItem="A2s-W4-73B" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" id="9Gu-CT-zCW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vlW-oU-LPh" secondAttribute="trailing" id="MCo-lr-WDo"/>
+                            <constraint firstItem="A2s-W4-73B" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="Sa3-kd-lNV"/>
+                            <constraint firstItem="16r-7o-4Zb" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="YVr-zb-alS"/>
+                            <constraint firstItem="vlW-oU-LPh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lLy-cD-uUN"/>
+                            <constraint firstAttribute="bottom" secondItem="vlW-oU-LPh" secondAttribute="bottom" id="mR8-2f-gI0"/>
+                            <constraint firstItem="16r-7o-4Zb" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ndQ-cS-fVU"/>
+                            <constraint firstItem="vlW-oU-LPh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="x6a-cj-dXX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBackToolbar" destination="gbf-R2-ZvK" id="kOf-z9-Yxd"/>
+                        <outlet property="collectionView" destination="7s8-7r-YVC" id="fj8-sH-exg"/>
+                        <outlet property="collectionViewHeightConstraint" destination="xkV-HB-5Yf" id="agR-V9-D0E"/>
+                        <outlet property="containerView" destination="5EZ-qb-Rvc" id="vMM-hU-O49"/>
+                        <outlet property="ivCouponOfferedBackground" destination="16r-7o-4Zb" id="TZS-gl-Qfu"/>
+                        <outlet property="lblToolbar" destination="xE7-jh-yAu" id="3Jt-5x-Fcc"/>
+                        <outlet property="scrollView" destination="vlW-oU-LPh" id="be5-Hd-KuY"/>
+                        <outlet property="vMyCouponCard" destination="k2d-3O-knn" id="75B-np-prK"/>
+                        <outlet property="vToolbar" destination="qdq-UI-8X9" id="qLB-Tj-Vn4"/>
+                        <outlet property="viewHeightConstraint" destination="9Gu-CT-zCW" id="cnp-5i-TcU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bg-coupon-offered" width="720" height="720"/>
+        <image name="ic-arrow-left" width="32" height="32"/>
+        <image name="ic-my-coupon" width="40" height="40"/>
+        <namedColor name="30Grey">
+            <color red="0.86274509803921573" green="0.87058823529411766" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="30Red">
+            <color red="0.93333333333333335" green="0.16862745098039217" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="70Blue">
+            <color red="0.015686274509803921" green="0.29411764705882354" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

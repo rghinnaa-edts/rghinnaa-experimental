@@ -218,7 +218,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
 }
 
 extension SearchViewController: TabDefaultDelegate, CardProductCellDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String) {
+    func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         
     }
     

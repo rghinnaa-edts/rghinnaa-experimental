@@ -59,16 +59,17 @@ class CouponOfferedViewController: UIViewController {
         
         vTabTop.data = couponTypeData
         vTabTop.cellConfiguration = { cell, data, isSelected, index in
-            guard let customCell = cell as? TabDefaultCell else { return }
+            guard let cell = cell as? TabDefaultCell else { return }
                 
-            customCell.tabTextColor = UIColor.grey40
-            customCell.tabTextActiveColor = UIColor.blue50
-            customCell.tabBackgroundColor = .clear
-            customCell.tabPaddingTop = 12.0
-            customCell.tabPaddingBottom = 8.0
+            cell.tabTextColor = UIColor.grey40
+            cell.tabTextActiveColor = UIColor.blue50
+            cell.tabBackgroundColor = .clear
+            cell.tabPaddingTop = 12.0
+            cell.tabPaddingBottom = 8.0
         }
         
         vTabTop.bgColor = .clear
+        vTabTop.isScrollable = false
         vTabTop.enableDynamicWidth()
         vTabTop.selectDefaultTab()
     }
@@ -92,9 +93,11 @@ class CouponOfferedViewController: UIViewController {
             cell.tabPaddingBottom = 6
             cell.tabPaddingLeading = 8
             cell.tabPaddingTrailing = 8
+//            cell.titleFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
         }
         
         vTabFilter.bgColor = .clear
+        vTabFilter.isScrollable = false
         vTabFilter.enableDynamicWidth()
         vTabFilter.selectDefaultTab()
     }
@@ -120,13 +123,11 @@ class CouponOfferedViewController: UIViewController {
     }
     
     private func updateCollectionViewHeight() {
-        // Let UIKit calculate the content size, then use it
         couponCollectionView.layoutIfNeeded()
         couponCollectionViewHeightConstraint?.constant = couponCollectionView.contentSize.height
     }
     
     private func calculateCollectionViewContentHeight() -> CGFloat {
-        // Simplified - just return the content size
         return couponCollectionView.contentSize.height
     }
     
@@ -134,13 +135,7 @@ class CouponOfferedViewController: UIViewController {
         couponTypeData = [
             TabDefaultModel(
             id: "1",
-            title: "Diskon Ongkir"),
-            TabDefaultModel(
-            id: "2",
-            title: "Potongan Total"),
-            TabDefaultModel(
-            id: "3",
-            title: "Diskon Alat Bayar")
+            title: "Diskon Ongkir")
         ]
     }
     
@@ -159,68 +154,88 @@ class CouponOfferedViewController: UIViewController {
     }
     
     private func setupCouponData() {
-        couponData = [
-           CardCouponOfferedModel(
-            id: "1",
-            image: UIImage(named: "discount-shipment"),
-            title: "Diskon Ongkir Rp10.000 Pakai",
-            isFairGeneral: true,
-            fairGeneralType: FairGeneralType.general.rawValue,
-            mininumTransaction: 30000,
-            service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
-            couponCode: "BARUINSTAN10RB***",
-            isEnabled: true
-            ),
-           CardCouponOfferedModel(
-            id: "2",
-            image: UIImage(named: "discount-shipment"),
-            title: "Diskon Ongkir Rp10.000 Pakai",
-            isFairGeneral: true,
-            fairGeneralType: FairGeneralType.exclusive.rawValue,
-            mininumTransaction: 30000,
-            service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
-            couponCode: "BARUINSTAN10RB***",
-            isEnabled: true
-            ),
-           CardCouponOfferedModel(
-            id: "3",
-            image: UIImage(named: "discount-shipment"),
-            title: "Diskon Ongkir Rp10.000 Pakai",
-            isFairGeneral: true,
-            fairGeneralType: FairGeneralType.general.rawValue,
-            mininumTransaction: 30000,
-            service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
-            couponCode: "BARUINSTAN10RB***",
-            isEnabled: true
-            ),
-           CardCouponOfferedModel(
-            id: "4",
-            image: UIImage(named: "discount-shipment"),
-            title: "Diskon Ongkir Rp10.000 Pakai",
-            isFairGeneral: true,
-            fairGeneralType: FairGeneralType.general.rawValue,
-            mininumTransaction: 30000,
-            service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
-            couponCode: "BARUINSTAN10RB***",
-            isEnabled: true
-            ),
-           CardCouponOfferedModel(
-            id: "5",
-            image: UIImage(named: "discount-shipment"),
-            title: "Diskon Ongkir Rp10.000 Pakai",
-            isFairGeneral: true,
-            fairGeneralType: FairGeneralType.general.rawValue,
-            mininumTransaction: 30000,
-            service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
-            couponCode: "BARUINSTAN10RB***",
-            isEnabled: true
-            ),
-        ]
+//        couponData = [
+//           CardCouponOfferedModel(
+//            id: "1",
+//            image: UIImage(named: "discount-shipment"),
+//            title: "Diskon Ongkir 5% Hingga Pakai Pengiriman Tertentu",
+//            isFairGeneral: false,
+//            fairGeneralType: FairGeneralType.general.rawValue,
+//            mininumTransaction: 30000,
+//            service: "Xpress, Xtra",
+//            periode: "7 Hari Lagi",
+//            couponCode: "BARUINSTAN10RB***",
+//            disableInfo: "",
+//            isEnabled: true,
+//            isNewUser: true,
+//            isExchanged: false,
+//            isCanExchange: true
+//            ),
+//           CardCouponOfferedModel(
+//            id: "2",
+//            image: UIImage(named: "discount-shipment"),
+//            title: "Diskon Ongkir Rp10.000 Pakai",
+//            isFairGeneral: true,
+//            fairGeneralType: FairGeneralType.exclusive.rawValue,
+//            mininumTransaction: 30000,
+//            service: "Xpress, Xtra",
+//            periode: "7 Hari Lagi",
+//            couponCode: "BARUINSTAN10RB***",
+//            disableInfo: "",
+//            isEnabled: true,
+//            isNewUser: false,
+//            isExchanged: false,
+//            isCanExchange: false
+//            ),
+//           CardCouponOfferedModel(
+//            id: "3",
+//            image: UIImage(named: "discount-shipment"),
+//            title: "Diskon Ongkir Rp10.000 Pakai",
+//            isFairGeneral: true,
+//            fairGeneralType: FairGeneralType.general.rawValue,
+//            mininumTransaction: 30000,
+//            service: "Xpress, Xtra",
+//            periode: "7 Hari Lagi",
+//            couponCode: "BARUINSTAN10RB***",
+//            disableInfo: "",
+//            isEnabled: true,
+//            isNewUser: false,
+//            isExchanged: false,
+//            isCanExchange: true
+//            ),
+//           CardCouponOfferedModel(
+//            id: "4",
+//            image: UIImage(named: "discount-shipment"),
+//            title: "Diskon Ongkir Rp10.000 Pakai",
+//            isFairGeneral: false,
+//            fairGeneralType: FairGeneralType.general.rawValue,
+//            mininumTransaction: 30000,
+//            service: "Xpress, Xtra",
+//            periode: "7 Hari Lagi",
+//            couponCode: "BARUINSTAN10RB***",
+//            disableInfo: "",
+//            isEnabled: true,
+//            isNewUser: false,
+//            isExchanged: false,
+//            isCanExchange: true
+//            ),
+//           CardCouponOfferedModel(
+//            id: "5",
+//            image: UIImage(named: "discount-shipment"),
+//            title: "Diskon Ongkir Rp10.000 Pakai",
+//            isFairGeneral: true,
+//            fairGeneralType: FairGeneralType.general.rawValue,
+//            mininumTransaction: 30000,
+//            service: "Xpress, Xtra",
+//            periode: "7 Hari Lagi",
+//            couponCode: "BARUINSTAN10RB***",
+//            disableInfo: "",
+//            isEnabled: true,
+//            isNewUser: false,
+//            isExchanged: false,
+//            isCanExchange: true
+//            ),
+//        ]
     }
     
     @IBAction func buttonBack(_ sender: Any) {
@@ -293,7 +308,7 @@ extension CouponOfferedViewController: UIScrollViewDelegate {
 }
 
 extension CouponOfferedViewController: TabDefaultDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String) {
+    func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         
     }
 }
