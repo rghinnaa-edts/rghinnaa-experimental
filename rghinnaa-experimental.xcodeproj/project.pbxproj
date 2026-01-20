@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92457B79DCB548F1CB1B6FDE /* Pods_rghinnaa_experimental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA18358295E949D709AAE3A /* Pods_rghinnaa_experimental.framework */; };
+		77C9F78711332F3B7B8DC875 /* Pods_rghinnaa_experimental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3574F2A74482352D48906BC8 /* Pods_rghinnaa_experimental.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4DA18358295E949D709AAE3A /* Pods_rghinnaa_experimental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rghinnaa_experimental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3574F2A74482352D48906BC8 /* Pods_rghinnaa_experimental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rghinnaa_experimental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B9B52E448B4A007A4AE3 /* rghinnaa-experimental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rghinnaa-experimental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B9CB2E448B4C007A4AE3 /* rghinnaa-experimentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rghinnaa-experimentalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A2B9D52E448B4C007A4AE3 /* rghinnaa-experimentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rghinnaa-experimentalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E020C3A5FE6396073753692 /* Pods-rghinnaa-experimental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rghinnaa-experimental.debug.xcconfig"; path = "Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental.debug.xcconfig"; sourceTree = "<group>"; };
-		82905FAC98C6CAB419CD9418 /* Pods-rghinnaa-experimental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rghinnaa-experimental.release.xcconfig"; path = "Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental.release.xcconfig"; sourceTree = "<group>"; };
+		CF867A1B29275BAC84C3C1F9 /* Pods-rghinnaa-experimental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rghinnaa-experimental.debug.xcconfig"; path = "Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental.debug.xcconfig"; sourceTree = "<group>"; };
+		EB21EAA01ABF4127E7AE4426 /* Pods-rghinnaa-experimental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rghinnaa-experimental.release.xcconfig"; path = "Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -57,15 +57,11 @@
 		};
 		50A2B9CE2E448B4C007A4AE3 /* rghinnaa-experimentalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "rghinnaa-experimentalTests";
 			sourceTree = "<group>";
 		};
 		50A2B9D82E448B4C007A4AE3 /* rghinnaa-experimentalUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "rghinnaa-experimentalUITests";
 			sourceTree = "<group>";
 		};
@@ -76,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92457B79DCB548F1CB1B6FDE /* Pods_rghinnaa_experimental.framework in Frameworks */,
+				77C9F78711332F3B7B8DC875 /* Pods_rghinnaa_experimental.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,19 +93,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2ADFD31B661A88B54B4D5F9F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DA18358295E949D709AAE3A /* Pods_rghinnaa_experimental.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2D478B67B4E12EC52F22E238 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6E020C3A5FE6396073753692 /* Pods-rghinnaa-experimental.debug.xcconfig */,
-				82905FAC98C6CAB419CD9418 /* Pods-rghinnaa-experimental.release.xcconfig */,
+				CF867A1B29275BAC84C3C1F9 /* Pods-rghinnaa-experimental.debug.xcconfig */,
+				EB21EAA01ABF4127E7AE4426 /* Pods-rghinnaa-experimental.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -122,7 +110,7 @@
 				50A2B9D82E448B4C007A4AE3 /* rghinnaa-experimentalUITests */,
 				50A2B9B62E448B4A007A4AE3 /* Products */,
 				2D478B67B4E12EC52F22E238 /* Pods */,
-				2ADFD31B661A88B54B4D5F9F /* Frameworks */,
+				BC08A672A0D816C1F909BAFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +124,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BC08A672A0D816C1F909BAFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3574F2A74482352D48906BC8 /* Pods_rghinnaa_experimental.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,11 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50A2B9DE2E448B4C007A4AE3 /* Build configuration list for PBXNativeTarget "rghinnaa-experimental" */;
 			buildPhases = (
-				C7D345AB04C75C0BBDADA33F /* [CP] Check Pods Manifest.lock */,
+				A3751408A3DD94B0BB50A7F5 /* [CP] Check Pods Manifest.lock */,
 				50A2B9B12E448B4A007A4AE3 /* Sources */,
 				50A2B9B22E448B4A007A4AE3 /* Frameworks */,
 				50A2B9B32E448B4A007A4AE3 /* Resources */,
-				50D59EAB6C6CB02B8337DFE8 /* [CP] Embed Pods Frameworks */,
+				93DA08C7A84C968F0C6585A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,7 +268,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50D59EAB6C6CB02B8337DFE8 /* [CP] Embed Pods Frameworks */ = {
+		93DA08C7A84C968F0C6585A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,16 +276,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rghinnaa-experimental/Pods-rghinnaa-experimental-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7D345AB04C75C0BBDADA33F /* [CP] Check Pods Manifest.lock */ = {
+		A3751408A3DD94B0BB50A7F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,7 +353,7 @@
 /* Begin XCBuildConfiguration section */
 		50A2B9DF2E448B4C007A4AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E020C3A5FE6396073753692 /* Pods-rghinnaa-experimental.debug.xcconfig */;
+			baseConfigurationReference = CF867A1B29275BAC84C3C1F9 /* Pods-rghinnaa-experimental.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,7 +384,7 @@
 		};
 		50A2B9E02E448B4C007A4AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82905FAC98C6CAB419CD9418 /* Pods-rghinnaa-experimental.release.xcconfig */;
+			baseConfigurationReference = EB21EAA01ABF4127E7AE4426 /* Pods-rghinnaa-experimental.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

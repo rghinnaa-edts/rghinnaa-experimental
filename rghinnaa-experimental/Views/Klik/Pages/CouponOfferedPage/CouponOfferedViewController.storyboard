@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -222,6 +222,7 @@
                         <outlet property="couponCollectionView" destination="fUm-iG-SmD" id="wPh-QG-S1I"/>
                         <outlet property="couponCollectionViewHeightConstraint" destination="wrb-ES-zGA" id="lkM-vo-FIo"/>
                         <outlet property="lblToolbar" destination="692-77-c9G" id="LNU-0u-266"/>
+                        <outlet property="myCouponCard" destination="ZtU-8D-xY6" id="Axs-1y-0Iq"/>
                         <outlet property="scrollView" destination="ToX-85-Nbz" id="3DP-9m-126"/>
                         <outlet property="vContainerContent" destination="BCJ-Ar-4a9" id="z9d-zg-DSa"/>
                         <outlet property="vTabFilter" destination="Yu8-g9-rEq" id="UdZ-2l-b9a"/>

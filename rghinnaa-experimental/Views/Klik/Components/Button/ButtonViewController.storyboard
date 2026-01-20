@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ButtonPage" id="Y6W-OH-hqX" customClass="ButtonViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaD-M4-5oR" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="119.99999999999999" width="361" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientStart">
+                                        <color key="value" name="Skyblue-Leading"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientEnd">
+                                        <color key="value" name="Skyblue-Trailing"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnGradientOrientation" value="horizontal"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Test"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="semibold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="buttonState" value="rest"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="custom"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBorderColor">
+                                        <color key="value" name="20Orange"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnShadowOpacity">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="btnShadowOffset">
+                                        <size key="value" width="20" height="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnShadowRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnShadowColor">
+                                        <color key="value" name="30Red"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-sO-znm" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                <rect key="frame" x="159" y="433.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientStart">
+                                        <color key="value" name="Skyblue-Leading"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientEnd">
+                                        <color key="value" name="Skyblue-Trailing"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnGradientOrientation" value="horizontal"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Test"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="semibold"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="custom"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnSpacing">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="custom"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voC-i6-e7J" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                <rect key="frame" x="20" y="174.33333333333334" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="custom"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="primary"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="heavy"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="voC-i6-e7J" firstAttribute="top" secondItem="jaD-M4-5oR" secondAttribute="bottom" constant="20" id="8LM-iG-Ihk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="voC-i6-e7J" secondAttribute="trailing" constant="20" id="C3W-ue-TsS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jaD-M4-5oR" secondAttribute="trailing" constant="16" id="L8x-pt-c6l"/>
+                            <constraint firstItem="F33-sO-znm" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Tz7-iz-b9I"/>
+                            <constraint firstItem="voC-i6-e7J" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="h4L-xz-XOr"/>
+                            <constraint firstItem="jaD-M4-5oR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="lcH-N2-lzX"/>
+                            <constraint firstItem="F33-sO-znm" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="qLq-39-xzu"/>
+                            <constraint firstItem="jaD-M4-5oR" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="120" id="qfy-ic-0Pe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="20Orange">
+            <color red="0.94117647058823528" green="0.68627450980392157" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="30Red">
+            <color red="0.93333333333333335" green="0.16862745098039217" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Skyblue-Leading">
+            <color red="0.34509803921568627" green="0.66666666666666663" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Skyblue-Trailing">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
