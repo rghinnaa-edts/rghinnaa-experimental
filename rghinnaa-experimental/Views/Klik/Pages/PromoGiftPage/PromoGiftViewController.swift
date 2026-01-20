@@ -644,8 +644,7 @@ extension PromoGiftViewController: TabQuadRoundDelegate {
 }
 
 extension PromoGiftViewController: TabDefaultDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String) {
-        
+    func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         let indexPath = IndexPath(item: index, section: 0)
         collectionContent.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }

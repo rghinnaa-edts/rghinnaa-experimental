@@ -64,18 +64,22 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MvX-Ol-Kk9" userLabel="HeaderView">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="104"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtU-8D-xY6" customClass="CardMyCoupon" customModule="KlikIDM_DS">
-                                                        <rect key="frame" x="16" y="24" width="361" height="60"/>
+                                                        <rect key="frame" x="16" y="20" width="361" height="60"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="60" id="Vel-Le-34i"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="cardLeadingIcon" value="ic-my-coupon"/>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isLiquidGlass" value="YES"/>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="cardTrailingIconBG">
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="cardLeftIcon" value="ic-my-coupon"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="cardRightIcon" value="ic-chevron-right"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="cardTitle" value="Kupon Saya"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShowBadge" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="cardDesc" value="Kumpulan kupon yang kamu punya"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="cardBadgeText" value="10+"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="cardRightIconTint">
                                                                 <color key="value" name="White"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
@@ -83,14 +87,14 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="ZtU-8D-xY6" firstAttribute="top" secondItem="MvX-Ol-Kk9" secondAttribute="top" constant="24" id="Gae-nf-lAV"/>
+                                                    <constraint firstItem="ZtU-8D-xY6" firstAttribute="top" secondItem="MvX-Ol-Kk9" secondAttribute="top" constant="20" id="Gae-nf-lAV"/>
                                                     <constraint firstAttribute="trailing" secondItem="ZtU-8D-xY6" secondAttribute="trailing" constant="16" id="aE4-va-Qmq"/>
                                                     <constraint firstAttribute="bottom" secondItem="ZtU-8D-xY6" secondAttribute="bottom" constant="24" id="dwQ-mz-8d6"/>
                                                     <constraint firstItem="ZtU-8D-xY6" firstAttribute="leading" secondItem="MvX-Ol-Kk9" secondAttribute="leading" constant="16" id="qfO-Wv-EY0"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCJ-Ar-4a9">
-                                                <rect key="frame" x="0.0" y="108" width="393" height="1392"/>
+                                                <rect key="frame" x="0.0" y="104" width="393" height="1396"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUn-iK-vwy" customClass="TabDefault" customModule="KlikIDM_DS">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
@@ -107,7 +111,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emj-6n-MB6" userLabel="View3">
-                                                        <rect key="frame" x="0.0" y="40" width="393" height="1352"/>
+                                                        <rect key="frame" x="0.0" y="40" width="393" height="1356"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-g9-rEq" customClass="TabDefault" customModule="KlikIDM_DS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
@@ -234,6 +238,7 @@
     <resources>
         <image name="bg-coupon-offered" width="720" height="720"/>
         <image name="ic-arrow-left" width="32" height="32"/>
+        <image name="ic-chevron-right" width="90" height="90"/>
         <image name="ic-my-coupon" width="40" height="40"/>
         <namedColor name="10Grey">
             <color red="0.97254901960784312" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
