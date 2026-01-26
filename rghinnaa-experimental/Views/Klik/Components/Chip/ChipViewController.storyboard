@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="chipLeadingIcon" value="ic-clock"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Match Parent"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Chip"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipTitleFontSize">
                                         <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
@@ -47,13 +47,101 @@
                                         <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipShadowOpacity">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="chipShadowOffset">
-                                        <size key="value" width="7" height="7"/>
+                                        <size key="value" width="0.0" height="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipShadowRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconBG">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTitleColor">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconTint">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconBG">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBGColor">
+                                        <color key="value" name="20Grey"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconTint">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconBG">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTitleColor">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconTint">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconBG">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBGColor">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHa-7a-IQb" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="250" width="361" height="126"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="chipLeadingIcon" value="ic-clock"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Chip"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipTitleFontSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitleFontWeight" value="semibold"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="chipTrailingIcon" value="ic-close"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTop">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingBottom">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingLeading">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTrailing">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipSpacing">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipBorderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="chipShadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowRadius">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
                                         <color key="value" name="50Blue"/>
@@ -100,151 +188,159 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveShadowColor">
-                                        <color key="value" name="StrongSuccess"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
+                                        <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slh-ib-du0" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="424" width="361" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTop">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingBottom">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingLeading">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTrailing">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipSpacing">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconBG">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconBG">
+                                        <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconTint">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-BG-Dw9" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
-                                <rect key="frame" x="67" y="436" width="240" height="128"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1op-4i-RmG" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="626" width="361" height="126"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="chipLeadingIcon" value="ic-favorite"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Wrap Content"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Chip"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipTitleFontSize">
-                                        <real key="value" value="28"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitleFontWeight" value="black"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="chipTrailingIcon" value="ic-marker-pin"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitleFontWeight" value="semibold"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTop">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingBottom">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingLeading">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTrailing">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipSpacing">
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipBorderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipShadowOpacity">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="chipShadowOffset">
-                                        <size key="value" width="10" height="10"/>
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowRadius">
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
-                                        <color key="value" name="50Grey"/>
+                                        <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconBG">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTitleColor">
-                                        <color key="value" name="50Grey"/>
+                                        <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconTint">
-                                        <color key="value" name="50Grey"/>
+                                        <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconBG">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBGColor">
-                                        <color key="value" name="White"/>
+                                        <color key="value" name="20Grey"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBorderColor">
-                                        <color key="value" name="30Grey"/>
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveShadowColor">
-                                        <color key="value" name="Black"/>
+                                        <color key="value" name="50Red"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconTint">
                                         <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconBG">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" name="White"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTitleColor">
-                                        <color key="value" name="50Blue"/>
+                                        <color key="value" name="White"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconTint">
                                         <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconBG">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" name="White"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBGColor">
-                                        <color key="value" name="80Grey"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
                                         <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveShadowColor">
-                                        <color key="value" name="50Red"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1c-bS-wBI" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
-                                <rect key="frame" x="16" y="268" width="361" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slh-ib-du0" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
-                                <rect key="frame" x="16" y="613" width="361" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTop">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingBottom">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingLeading">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTrailing">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipSpacing">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="VHa-7a-IQb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="0F4-NY-KBb"/>
+                            <constraint firstItem="VHa-7a-IQb" firstAttribute="top" secondItem="DMH-AA-KWV" secondAttribute="bottom" constant="24" id="5bi-oG-6xn"/>
                             <constraint firstItem="DMH-AA-KWV" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="150" id="781-6P-jAB"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G1c-bS-wBI" secondAttribute="trailing" constant="16" id="GRE-C9-ivr"/>
-                            <constraint firstItem="ZxF-BG-Dw9" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="LZF-MW-P4h"/>
-                            <constraint firstItem="G1c-bS-wBI" firstAttribute="top" secondItem="DMH-AA-KWV" secondAttribute="bottom" constant="24" id="RRS-ec-Zk4"/>
-                            <constraint firstItem="ZxF-BG-Dw9" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="RWL-t6-tvJ"/>
-                            <constraint firstItem="slh-ib-du0" firstAttribute="top" secondItem="ZxF-BG-Dw9" secondAttribute="bottom" constant="24" id="Vuz-Cl-v0Y"/>
-                            <constraint firstItem="slh-ib-du0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="X2k-A6-nns"/>
+                            <constraint firstItem="slh-ib-du0" firstAttribute="top" secondItem="VHa-7a-IQb" secondAttribute="bottom" constant="48" id="Ay3-6e-YnJ"/>
+                            <constraint firstItem="1op-4i-RmG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Hkf-TR-vKH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VHa-7a-IQb" secondAttribute="trailing" constant="16" id="aJZ-8Y-jrD"/>
                             <constraint firstItem="DMH-AA-KWV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="akk-it-EI5"/>
-                            <constraint firstItem="G1c-bS-wBI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="glQ-rp-DoD"/>
+                            <constraint firstItem="slh-ib-du0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="hl4-Qn-79g"/>
+                            <constraint firstItem="1op-4i-RmG" firstAttribute="top" secondItem="slh-ib-du0" secondAttribute="bottom" constant="24" id="jnn-Uv-DHT"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DMH-AA-KWV" secondAttribute="trailing" constant="16" id="tFQ-A8-lRE"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="slh-ib-du0" secondAttribute="trailing" constant="16" id="vc3-79-F5r"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chip1" destination="DMH-AA-KWV" id="Gt5-Df-WeC"/>
-                        <outlet property="chip2" destination="ZxF-BG-Dw9" id="JGN-4E-KWI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -255,37 +351,20 @@
     <resources>
         <image name="ic-clock" width="24" height="24"/>
         <image name="ic-close" width="32" height="32"/>
-        <image name="ic-favorite" width="48" height="48"/>
-        <image name="ic-marker-pin" width="48" height="48"/>
         <namedColor name="20Grey">
             <color red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="30Grey">
-            <color red="0.86274509803921573" green="0.87058823529411766" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="50Blue">
             <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="50Grey">
-            <color red="0.4392156862745098" green="0.44705882352941179" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="50Red">
             <color red="0.73333333333333328" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="80Grey">
-            <color red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Black">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="StrongSuccess">
-            <color red="0.5607843137254902" green="0.7803921568627451" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

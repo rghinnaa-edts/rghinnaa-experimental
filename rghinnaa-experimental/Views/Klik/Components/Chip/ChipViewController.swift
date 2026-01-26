@@ -10,11 +10,9 @@ import KlikIDM_DS
 
 class ChipViewController: UIViewController, ChipDelegate {
     @IBOutlet weak var chip1: KlikIDM_DSChip!
-    @IBOutlet weak var chip2: KlikIDM_DSChip!
     
     override func viewDidLoad() {
         chip1.delegate = self
-        chip2.delegate = self
     }
     
     func didSelectChip(_ chip: KlikIDM_DS.KlikIDM_DSChip) {
