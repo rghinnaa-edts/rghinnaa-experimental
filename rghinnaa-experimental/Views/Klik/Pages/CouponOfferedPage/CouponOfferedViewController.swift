@@ -8,7 +8,7 @@
 import UIKit
 import KlikIDM_DS
 
-class CouponOffered2ViewController: UIViewController {
+class CouponOfferedViewController: UIViewController {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var ivCouponOfferedBackground: UIImageView!
@@ -61,6 +61,7 @@ class CouponOffered2ViewController: UIViewController {
     
     private func setupUI() {
         scrollView.delegate = self
+        vMyCouponCard.delegate = self
         
         setupCollectionView()
         setupViewBackground()
@@ -120,10 +121,16 @@ class CouponOffered2ViewController: UIViewController {
     
     private func updateCollectionViewHeight() {
         collectionView.layoutIfNeeded()
-            
-        let height = collectionView.collectionViewLayout.collectionViewContentSize.height
-        collectionViewHeightConstraint.constant = height
-        view.layoutIfNeeded()
+                
+        let contentHeight = collectionView.collectionViewLayout.collectionViewContentSize.height
+        let availableHeight = scrollView.frame.height - (myCouponCardHeight + toolbarHeight - 2)
+        let finalHeight = max(contentHeight, availableHeight)
+        
+        collectionViewHeightConstraint.constant = finalHeight
+        
+        UIView.animate(withDuration: 0) {
+            self.view.layoutIfNeeded()
+        }
     }
         
     private func calculateCollectionViewContentHeight() -> CGFloat {
@@ -161,6 +168,8 @@ class CouponOffered2ViewController: UIViewController {
     
     private func startRefreshAnimation() {
         isRefreshAnimating = true
+        isLoadingData = true
+        collectionView.reloadData()
         
         let rotation = CABasicAnimation(keyPath: "transform.rotation.z")
         rotation.fromValue = 0
@@ -176,6 +185,18 @@ class CouponOffered2ViewController: UIViewController {
         refreshIconImageView.layer.removeAllAnimations()
         
         UIView.animate(withDuration: 0.2) {
+            self.isLoadingData = false
+            if let headerView = self.collectionView.supplementaryView(
+                forElementKind: UICollectionView.elementKindSectionHeader,
+                at: IndexPath(item: 0, section: 0)
+            ) as? CouponOfferedHeaderView {
+                headerView.vTabFilter.resetToFirstTab()
+            }
+            
+            self.filterCouponData(by: "all")
+            self.collectionView.reloadData()
+            self.updateCollectionViewHeight()
+            
             self.refreshIconImageView.transform = .identity
         }
     }
@@ -383,7 +404,7 @@ class CouponOffered2ViewController: UIViewController {
             id: "7",
             image: UIImage(named: "discount-shipment"),
             title: "Diskon Ongkir Rp10.000 Pakai",
-            filterType: "xpress",
+            filterType: "xtra",
             isFairGeneral: false,
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
@@ -402,7 +423,7 @@ class CouponOffered2ViewController: UIViewController {
             id: "8",
             image: UIImage(named: "discount-shipment"),
             title: "Diskon Ongkir Rp10.000 Pakai",
-            filterType: "xtra",
+            filterType: "xpress",
             isFairGeneral: false,
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
@@ -410,7 +431,7 @@ class CouponOffered2ViewController: UIViewController {
             periode: "7 Hari Lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Yuk, selesaikan transaksi sebelumnya untuk bisa gunakan promo ini.",
-            isEnabled: true,
+            isEnabled: false,
             isNewUser: false,
             isExchanged: false,
             isCanExchange: true
@@ -442,7 +463,7 @@ class CouponOffered2ViewController: UIViewController {
     }
 }
 
-extension CouponOffered2ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension CouponOfferedViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return isLoadingData ? 8 : filteredCouponData.count
     }
@@ -506,7 +527,7 @@ extension CouponOffered2ViewController: UICollectionViewDataSource, UICollection
     }
 }
 
-extension CouponOffered2ViewController: UIScrollViewDelegate {
+extension CouponOfferedViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         updateRefresh()
         updateToolbarColor(scrollView)
@@ -658,7 +679,7 @@ extension CouponOffered2ViewController: UIScrollViewDelegate {
     }
 }
 
-extension CouponOffered2ViewController: CardCouponOfferedCellDelegate {
+extension CouponOfferedViewController: CardCouponOfferedCellDelegate {
     func didSelectButtonDetail(at index: Int) {
     }
     
@@ -699,7 +720,7 @@ extension CouponOffered2ViewController: CardCouponOfferedCellDelegate {
     }
 }
 
-extension CouponOffered2ViewController: TabDefaultDelegate {
+extension CouponOfferedViewController: TabDefaultDelegate {
     func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         guard let headerView = collectionView.supplementaryView(
             forElementKind: UICollectionView.elementKindSectionHeader,
@@ -723,4 +744,12 @@ extension CouponOffered2ViewController: TabDefaultDelegate {
             }
         }
     }
+}
+
+extension CouponOfferedViewController: CardMyCouponDelegate {
+    func didSelectCard(_ card: KlikIDM_DS.CardMyCoupon) {
+        let vc = UIStoryboard(name: "MyCouponViewController", bundle: nil).instantiateViewController(withIdentifier: "MyCouponPage")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

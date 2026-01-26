@@ -14,7 +14,7 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="CouponOffered2Page" id="Y6W-OH-hqX" customClass="CouponOffered2ViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5EZ-qb-Rvc">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -25,11 +25,11 @@
                                     <constraint firstAttribute="width" secondItem="16r-7o-4Zb" secondAttribute="height" multiplier="1:1" id="rpm-VA-XFA"/>
                                 </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-oU-LPh">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlW-oU-LPh">
                                 <rect key="frame" x="0.0" y="118" width="393" height="734"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-W4-73B">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2s-W4-73B">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="144"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-3O-knn" customClass="CardMyCoupon" customModule="KlikIDM_DS">
                                                 <rect key="frame" x="16" y="60" width="361" height="60"/>
@@ -61,6 +61,13 @@
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isLiquidGlass" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjc-uc-iSk">
+                                                <rect key="frame" x="0.0" y="144" width="393" height="0.0"/>
+                                                <color key="backgroundColor" name="10Grey"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-7r-YVC">
@@ -116,7 +123,6 @@
                                                     <constraint firstAttribute="height" constant="40" id="LVr-g3-1oX"/>
                                                     <constraint firstItem="xE7-jh-yAu" firstAttribute="centerY" secondItem="gbf-R2-ZvK" secondAttribute="centerY" id="QLM-XD-eJG"/>
                                                     <constraint firstItem="gbf-R2-ZvK" firstAttribute="top" secondItem="qdq-UI-8X9" secondAttribute="top" constant="12" id="WeS-dB-6Kp"/>
-                                                    <constraint firstAttribute="bottom" secondItem="gbf-R2-ZvK" secondAttribute="bottom" id="c6i-uI-Gzu"/>
                                                     <constraint firstItem="gbf-R2-ZvK" firstAttribute="leading" secondItem="qdq-UI-8X9" secondAttribute="leading" constant="12" id="gL9-NG-d1e"/>
                                                 </constraints>
                                             </view>
@@ -127,13 +133,17 @@
                                             <constraint firstItem="qdq-UI-8X9" firstAttribute="top" secondItem="dEJ-ns-q66" secondAttribute="top" id="5gn-9p-hX1"/>
                                             <constraint firstItem="k2d-3O-knn" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" constant="16" id="8ZG-VQ-wdi"/>
                                             <constraint firstItem="qdq-UI-8X9" firstAttribute="trailing" secondItem="dEJ-ns-q66" secondAttribute="trailing" id="Dnm-Wc-NdH"/>
+                                            <constraint firstItem="wjc-uc-iSk" firstAttribute="top" secondItem="k2d-3O-knn" secondAttribute="bottom" constant="24" id="JT2-ov-VG4"/>
+                                            <constraint firstItem="wjc-uc-iSk" firstAttribute="leading" secondItem="A2s-W4-73B" secondAttribute="leading" id="K0N-L5-CqD"/>
                                             <constraint firstItem="qdq-UI-8X9" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" id="f5J-aJ-8Kv"/>
                                             <constraint firstItem="dEJ-ns-q66" firstAttribute="trailing" secondItem="k2d-3O-knn" secondAttribute="trailing" constant="16" id="gcb-Bu-Lb0"/>
+                                            <constraint firstAttribute="trailing" secondItem="wjc-uc-iSk" secondAttribute="trailing" id="oUo-3Q-tcu"/>
                                             <constraint firstItem="k2d-3O-knn" firstAttribute="top" secondItem="qdq-UI-8X9" secondAttribute="bottom" constant="20" id="oey-rB-Tcw"/>
                                             <constraint firstItem="7s8-7r-YVC" firstAttribute="top" secondItem="k2d-3O-knn" secondAttribute="bottom" constant="24" id="qhi-lb-BEd"/>
                                             <constraint firstItem="7s8-7r-YVC" firstAttribute="leading" secondItem="dEJ-ns-q66" secondAttribute="leading" id="vJV-eK-yxx"/>
                                             <constraint firstItem="dEJ-ns-q66" firstAttribute="trailing" secondItem="7s8-7r-YVC" secondAttribute="trailing" id="x2u-MW-Sed"/>
                                             <constraint firstAttribute="bottom" secondItem="7s8-7r-YVC" secondAttribute="bottom" id="z4o-do-UPs"/>
+                                            <constraint firstAttribute="bottom" secondItem="wjc-uc-iSk" secondAttribute="bottom" id="zXe-Ch-Vha"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -149,7 +159,6 @@
                         <color key="backgroundColor" name="70Blue"/>
                         <constraints>
                             <constraint firstItem="16r-7o-4Zb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0gA-EA-gQH"/>
-                            <constraint firstItem="A2s-W4-73B" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" id="9Gu-CT-zCW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vlW-oU-LPh" secondAttribute="trailing" id="MCo-lr-WDo"/>
                             <constraint firstItem="A2s-W4-73B" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="Sa3-kd-lNV"/>
                             <constraint firstItem="16r-7o-4Zb" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="YVr-zb-alS"/>
@@ -167,9 +176,9 @@
                         <outlet property="ivCouponOfferedBackground" destination="16r-7o-4Zb" id="TZS-gl-Qfu"/>
                         <outlet property="lblToolbar" destination="xE7-jh-yAu" id="3Jt-5x-Fcc"/>
                         <outlet property="scrollView" destination="vlW-oU-LPh" id="be5-Hd-KuY"/>
+                        <outlet property="vBackgroundCoupon" destination="wjc-uc-iSk" id="h0Z-Md-kaT"/>
                         <outlet property="vMyCouponCard" destination="k2d-3O-knn" id="75B-np-prK"/>
                         <outlet property="vToolbar" destination="qdq-UI-8X9" id="qLB-Tj-Vn4"/>
-                        <outlet property="viewHeightConstraint" destination="9Gu-CT-zCW" id="cnp-5i-TcU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -181,6 +190,9 @@
         <image name="bg-coupon-offered" width="720" height="720"/>
         <image name="ic-arrow-left" width="32" height="32"/>
         <image name="ic-my-coupon" width="40" height="40"/>
+        <namedColor name="10Grey">
+            <color red="0.97254901960784312" green="0.98431372549019602" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="30Grey">
             <color red="0.86274509803921573" green="0.87058823529411766" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

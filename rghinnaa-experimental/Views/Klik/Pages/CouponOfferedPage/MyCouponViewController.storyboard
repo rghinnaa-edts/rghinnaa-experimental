@@ -1,28 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Coupon View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <viewController storyboardIdentifier="MyCouponPage" id="Y6W-OH-hqX" customClass="MyCouponViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2v-ga-MIg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qto-s2-ja8">
+                                <rect key="frame" x="0.0" y="166" width="393" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yQ5-BP-wL1">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0ih-zl-0ni">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WWx-RF-ZLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZT-HY-UUL" userLabel="ViewToolbar">
+                                <rect key="frame" x="0.0" y="118" width="393" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7u-ba-JUC">
+                                        <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="gae-QJ-CET"/>
+                                            <constraint firstAttribute="height" constant="32" id="vTx-Ju-U3g"/>
+                                        </constraints>
+                                        <color key="tintColor" name="50Grey"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic-arrow-left"/>
+                                        <connections>
+                                            <action selector="btnBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="voa-Wl-0DT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kupon Saya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvv-4o-nre">
+                                        <rect key="frame" x="52" y="18" width="89" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" name="70Grey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-Rt-SrO" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="306" y="10.666666666666657" width="75" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Tukar Kupon"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                                <color key="value" name="50Blue"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="btnBGColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstItem="C9i-Rt-SrO" firstAttribute="centerY" secondItem="nvv-4o-nre" secondAttribute="centerY" id="0ye-pR-hvU"/>
+                                    <constraint firstAttribute="bottom" secondItem="j7u-ba-JUC" secondAttribute="bottom" constant="4" id="C8R-Ec-kPx"/>
+                                    <constraint firstItem="j7u-ba-JUC" firstAttribute="top" secondItem="BZT-HY-UUL" secondAttribute="top" constant="12" id="R8z-zQ-JZS"/>
+                                    <constraint firstItem="nvv-4o-nre" firstAttribute="centerY" secondItem="j7u-ba-JUC" secondAttribute="centerY" id="pQ6-ps-6ew"/>
+                                    <constraint firstItem="nvv-4o-nre" firstAttribute="leading" secondItem="j7u-ba-JUC" secondAttribute="trailing" constant="8" id="r8B-fo-zfL"/>
+                                    <constraint firstItem="j7u-ba-JUC" firstAttribute="leading" secondItem="BZT-HY-UUL" secondAttribute="leading" constant="12" id="s2t-TJ-G4G"/>
+                                    <constraint firstAttribute="trailing" secondItem="C9i-Rt-SrO" secondAttribute="trailing" constant="12" id="wiF-1x-GFY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ehy-Y4-l7Z"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="BZT-HY-UUL" firstAttribute="trailing" secondItem="Ehy-Y4-l7Z" secondAttribute="trailing" id="6z9-gw-htM"/>
+                            <constraint firstItem="BZT-HY-UUL" firstAttribute="top" secondItem="Ehy-Y4-l7Z" secondAttribute="top" id="8UW-6o-5YI"/>
+                            <constraint firstItem="Ehy-Y4-l7Z" firstAttribute="trailing" secondItem="Qto-s2-ja8" secondAttribute="trailing" id="Nyc-ZM-Hdg"/>
+                            <constraint firstItem="Qto-s2-ja8" firstAttribute="top" secondItem="BZT-HY-UUL" secondAttribute="bottom" id="UAk-Sf-o2o"/>
+                            <constraint firstItem="BZT-HY-UUL" firstAttribute="leading" secondItem="Ehy-Y4-l7Z" secondAttribute="leading" id="UMV-IW-kRd"/>
+                            <constraint firstAttribute="bottom" secondItem="Qto-s2-ja8" secondAttribute="bottom" id="Yyz-NQ-90h"/>
+                            <constraint firstItem="Qto-s2-ja8" firstAttribute="leading" secondItem="Ehy-Y4-l7Z" secondAttribute="leading" id="dj3-SG-oxv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Qto-s2-ja8" id="2hW-ga-8Rl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ic-arrow-left" width="32" height="32"/>
+        <namedColor name="50Blue">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="50Grey">
+            <color red="0.61176470588235299" green="0.61568627450980395" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="70Grey">
+            <color red="0.2627450980392157" green="0.27843137254901962" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

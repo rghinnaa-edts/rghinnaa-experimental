@@ -8,7 +8,7 @@
 import UIKit
 import KlikIDM_DS
 
-class CouponOfferedHeaderView: UICollectionReusableView {
+class MyCouponHeaderView: UICollectionReusableView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var vTab: UIView!
@@ -138,16 +138,32 @@ class CouponOfferedHeaderView: UICollectionReusableView {
             cell.titleFontWeight = "semibold"
         }
         
-        vTabFilter.bgColor = .clear
+        vTabFilter.bgColor = UIColor.white
         vTabFilter.isScrollable = false
         vTabFilter.enableDynamicWidth()
+        vTabFilter.setItemPadding(
+            leadingPadding : 16,
+            trailingPadding :16,
+            itemSpacing : 8
+        )
         vTabFilter.selectDefaultTab()
+        
+        vTabFilter.layer.shadowColor = UIColor.black?.cgColor
+        vTabFilter.layer.shadowOpacity = 0.1
+        vTabFilter.layer.shadowOffset = CGSize(width: 0, height: 2)
+        vTabFilter.layer.shadowRadius = 3
     }
     
     private func setupTabTopData() {
         couponTypeData = [
             TabDefaultModel(
             id: "1",
+            title: "Potongan Total"),
+            TabDefaultModel(
+            id: "2",
+            title: "Diskon Alat Bayar"),
+            TabDefaultModel(
+            id: "3",
             title: "Diskon Ongkir")
         ]
     }
@@ -167,7 +183,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
     }
 }
 
-extension CouponOfferedHeaderView : TabDefaultDelegate {
+extension MyCouponHeaderView : TabDefaultDelegate {
     func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         
     }

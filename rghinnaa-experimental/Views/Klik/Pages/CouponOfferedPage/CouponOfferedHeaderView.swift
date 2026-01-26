@@ -36,6 +36,22 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         setupNib()
     }
     
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hitView = super.hitTest(point, with: event)
+        
+        let tabPoint = convert(point, to: vTab)
+        if vTab.bounds.contains(tabPoint) {
+            return vTab.hitTest(tabPoint, with: event)
+        }
+        
+        let tabFilterPoint = convert(point, to: vTabFilter)
+        if vTabFilter.bounds.contains(tabFilterPoint) {
+            return vTabFilter.hitTest(tabFilterPoint, with: event)
+        }
+        
+        return hitView
+    }
+    
     public func calculateHeight() -> CGFloat {
         let height = tabHeightConstraint.constant + tabFilterHeightConstraint.constant
         return height
@@ -102,6 +118,9 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         vTabFilter.registerCellType(TabChipCell.self, withIdentifier: tabFilterCell)
         vTabFilter.delegate = self
         
+        vTabFilter.isUserInteractionEnabled = true
+        vTabFilter.layer.masksToBounds = false
+        
         vTabFilter.data = couponFilterData
         vTabFilter.cellConfiguration = { cell, data, isSelected, index in
             guard let cell = cell as? TabChipCell else { return }
@@ -122,6 +141,11 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         vTabFilter.bgColor = .clear
         vTabFilter.isScrollable = false
         vTabFilter.enableDynamicWidth()
+        vTabFilter.setItemPadding(
+            leadingPadding : 16,
+            trailingPadding :16,
+            itemSpacing : 8
+        )
         vTabFilter.selectDefaultTab()
     }
     

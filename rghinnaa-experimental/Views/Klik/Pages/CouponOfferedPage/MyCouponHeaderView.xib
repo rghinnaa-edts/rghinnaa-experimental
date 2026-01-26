@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponOfferedHeaderView" customModule="rghinnaa_experimental" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCouponHeaderView" customModule="rghinnaa_experimental" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="zrM-lh-X0d" id="jXK-kc-gca"/>
                 <outlet property="tabFilterHeightConstraint" destination="ZX2-xw-hhG" id="w22-Z4-weo"/>
