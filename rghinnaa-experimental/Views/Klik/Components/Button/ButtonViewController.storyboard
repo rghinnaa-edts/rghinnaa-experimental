@@ -66,6 +66,16 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="primary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconTintLeading">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconTintTrailing">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krj-Il-8Gy" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -111,6 +121,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="primary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-na-9wF" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -156,6 +169,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="primary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-FX-TOb" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -201,6 +217,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="secondary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="focused"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRF-P2-kNG" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -245,6 +264,10 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Secondary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-gm-Z2h" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -290,6 +313,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Secondary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Danger"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLt-vK-B9Z" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -335,6 +361,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Secondary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfY-fc-MYQ" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -379,6 +408,10 @@
                                                         <real key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Tertiary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Small"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IF2-fQ-e2j" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -424,6 +457,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Tertiary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Danger"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Small"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-kN-LR3" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -469,6 +505,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Tertiary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Small"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-f3-FAG" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
@@ -495,7 +534,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="custom"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="small"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
@@ -514,11 +553,31 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
                                                         <real key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="custom"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Primary"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorStart">
+                                                        <color key="value" name="Skyblue-Leading"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColorEnd">
+                                                        <color key="value" name="Skyblue-Trailing"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="bgColorOrientation" value="horizontal"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeading">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTrailing">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="Black"/>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8b-N5-etI" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVW-Yr-hht" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
                                                 <rect key="frame" x="143" y="465.66666666666663" width="75" height="34.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -542,7 +601,7 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="custom"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="small"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
                                                         <real key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
@@ -561,8 +620,8 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
                                                         <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="custom"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="danger"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="text"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
@@ -601,6 +660,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="placeholder" width="118.66666412353516" height="118.66666412353516"/>
         <namedColor name="Skyblue-Leading">
             <color red="0.34509803921568627" green="0.66666666666666663" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

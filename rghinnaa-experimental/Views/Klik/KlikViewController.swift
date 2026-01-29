@@ -15,7 +15,8 @@ class KlikViewController: UITableViewController {
         "Badge",
         "Button",
         "Chip",
-        "Card My Coupon"
+        "Card My Coupon",
+        "Toast"
     ]
     
     private var pageList: [String] = [
@@ -97,6 +98,9 @@ class KlikViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         case "Card My Coupon":
             let vc = UIStoryboard(name: "CardMyCouponViewController", bundle: nil).instantiateViewController(withIdentifier: "CardMyCouponPage")
+            navigationController?.pushViewController(vc, animated: true)
+        case "Toast":
+            let vc = UIStoryboard(name: "ToastViewController", bundle: nil).instantiateViewController(withIdentifier: "ToastPage")
             navigationController?.pushViewController(vc, animated: true)
         case "Cart Page":
             let vc = UIStoryboard(name: "CartViewController", bundle: nil).instantiateViewController(withIdentifier: "CartPage")
