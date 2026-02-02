@@ -76,7 +76,7 @@ class SearchViewController: UIViewController {
             cell.tabBackgroundActiveColor = .white
         }
         
-        vTabDeliveryType.disableDynamicWidth()
+        vTabDeliveryType.setDynamicWidth(enabled: false)
         vTabDeliveryType.setSize(width: UIScreen.main.bounds.width/2, height: 51, horizontalPadding: 0)
         vTabDeliveryType.setItemPadding(topPadding: 0, leadingPadding: 0, bottomPadding: 0, trailingPadding: 0, itemSpacing: 0)
         vTabDeliveryType.selectDefaultTab()

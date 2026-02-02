@@ -190,7 +190,7 @@ class CouponOfferedViewController: UIViewController {
                 forElementKind: UICollectionView.elementKindSectionHeader,
                 at: IndexPath(item: 0, section: 0)
             ) as? CouponOfferedHeaderView {
-                headerView.vTabFilter.resetToFirstTab()
+                headerView.vTabFilter.selectDefaultTab()
             }
             
             self.filterCouponData(by: "all")
@@ -375,7 +375,7 @@ class CouponOfferedViewController: UIViewController {
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
             service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
+            periode: "7 hari lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
             isEnabled: true,
@@ -392,7 +392,7 @@ class CouponOfferedViewController: UIViewController {
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
             service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
+            periode: "7 hari lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Kuota promo sudah habis. Cek promo lainnya yang tersedia yuk!",
             isEnabled: true,
@@ -409,7 +409,7 @@ class CouponOfferedViewController: UIViewController {
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
             service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
+            periode: "7 hari lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
             isEnabled: false,
@@ -428,7 +428,7 @@ class CouponOfferedViewController: UIViewController {
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
             service: "Xpress, Xtra",
-            periode: "7 Hari Lagi",
+            periode: "7 hari lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Yuk, selesaikan transaksi sebelumnya untuk bisa gunakan promo ini.",
             isEnabled: false,
@@ -496,13 +496,14 @@ extension CouponOfferedViewController: UICollectionViewDataSource, UICollectionV
                 ofKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier: "CouponOfferedHeaderView",
                 for: indexPath) as! CouponOfferedHeaderView
+        
+        headerView.vTabTop.delegate = self
         headerView.vTabFilter.delegate = self
 
         return headerView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cell = CardCouponOfferedCell()
         let width = collectionView.bounds.width - 32
         
         return CGSize(width: width, height: 200)

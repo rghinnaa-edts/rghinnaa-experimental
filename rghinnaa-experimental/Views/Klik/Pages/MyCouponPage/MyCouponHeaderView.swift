@@ -57,9 +57,13 @@ class MyCouponHeaderView: UICollectionReusableView {
         return height
     }
     
+    public func getTabFilterTotal() -> Int {
+        return couponFilterData.count
+    }
+    
     private func setupNib() {
         let bundle = Bundle(for: type(of: self))
-        if let nib = bundle.loadNibNamed("CouponOfferedHeaderView", owner: self, options: nil),
+        if let nib = bundle.loadNibNamed("MyCouponHeaderView", owner: self, options: nil),
            let view = nib.first as? UIView {
             
             containerView = view
@@ -72,7 +76,6 @@ class MyCouponHeaderView: UICollectionReusableView {
     }
     
     private func setupUI() {
-        setupTabTopBackgroundUI()
         setupTabTopUI()
         setupTabFilterUI()
     }
@@ -81,12 +84,6 @@ class MyCouponHeaderView: UICollectionReusableView {
         UIView.animate(withDuration: 0.3) {
             self.vTab.layer.shadowOpacity = isSticky ? 0.1 : 0
         }
-    }
-    
-    private func setupTabTopBackgroundUI() {
-        vTab.layer.cornerRadius = 16
-        vTab.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        vTab.layer.masksToBounds = true
     }
     
     private func setupTabTopUI() {

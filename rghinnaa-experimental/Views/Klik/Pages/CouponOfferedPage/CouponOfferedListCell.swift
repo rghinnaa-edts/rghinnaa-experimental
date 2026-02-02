@@ -8,11 +8,20 @@
 import UIKit
 import KlikIDM_DS
 
-class MyCouponListCell: UICollectionViewCell {
+class CouponOfferedListCell: UICollectionViewCell {
     
-    public var onVerticalScroll: ((UIScrollView) -> Void)?
-    public var onHideTabFilter: ((UIScrollView) -> Void)?
-    public var onShowTabFilter: ((UIScrollView) -> Void)?
+//    public var onVerticalScroll: ((UIScrollView) -> Void)?
+//    public var onHideTabFilter: ((UIScrollView) -> Void)?
+//    public var onShowTabFilter: ((UIScrollView) -> Void)?
+    public var onScrollViewDidScroll: ((UIScrollView) -> Void)?
+    public var onScrollViewBeginDragging: ((UIScrollView) -> Void)?
+    public var onScrollViewDidEndDragging:((UIScrollView, Bool) -> Void)?
+    public var onScrollViewDidEndDecelerating:((UIScrollView) -> Void)?
+
+    public var onShowToast: ((String) -> Void)?
+    public var onShowLoadingBlockScreen: ((String) -> Void)?
+    public var onHideLoadingBlockScreen: (() -> Void)?
+    
     public var isSkeleton: Bool = false {
         didSet {
             resetScrollPosition()
@@ -23,6 +32,7 @@ class MyCouponListCell: UICollectionViewCell {
     private var collectionView: UICollectionView!
     private var containerView = UIView()
     private var data: [CardCouponOfferedModel] = []
+    private var filteredCouponData: [CardCouponOfferedModel] = []
     private var isLoadingData = false
     
     override public init(frame: CGRect) {
@@ -69,8 +79,8 @@ class MyCouponListCell: UICollectionViewCell {
     }
     
     private func setupCollectionView() {
-        let headerView = MyCouponHeaderView()
-        let headerHeight = headerView.calculateHeight() + 16
+        let headerView = CouponOfferedHeaderView()
+        let headerHeight = headerView.calculateHeight()
         
         let couponFlowLayout = UICollectionViewFlowLayout()
         couponFlowLayout.scrollDirection = .vertical
@@ -86,7 +96,7 @@ class MyCouponListCell: UICollectionViewCell {
         collectionView.alwaysBounceVertical = true
         collectionView.canCancelContentTouches = true
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 16, right: 0)
-        collectionView.register(CardMyCouponCell.self, forCellWithReuseIdentifier: "CardMyCouponCell")
+        collectionView.register(CardCouponOfferedCell.self, forCellWithReuseIdentifier: "CardCouponOfferedCell")
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -99,36 +109,33 @@ class MyCouponListCell: UICollectionViewCell {
             collectionView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         ])
     }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        onVerticalScroll?(scrollView)
-    }
-    
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        onHideTabFilter?(scrollView)
-    }
-
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate {
-            onShowTabFilter?(scrollView)
-        }
-    }
-
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        onShowTabFilter?(scrollView)
-    }
-    
 }
 
-extension MyCouponListCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension CouponOfferedListCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return isLoadingData ? 8 : data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardMyCouponCell", for: indexPath) as! CardMyCouponCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCouponOfferedCell", for: indexPath) as! CardCouponOfferedCell
         
         cell.isSkeleton = isLoadingData ? true : false
+        
+        if isLoadingData {
+            cell.isSkeleton = true
+        } else {
+            cell.isSkeleton = false
+            cell.loadData(data: data[indexPath.row])
+        }
+        
+        cell.delegate = self
+        cell.cornerRadius = 12
+        cell.shadowColor = .lightGray
+        cell.shadowOpacity = 0.4
+        cell.shadowOffset = CGSize(width: 0, height: 1)
+        cell.shadowRadius = 3
+        cell.bgColor = .white
+        cell.index = indexPath.row
         
         return cell
     }
@@ -136,6 +143,65 @@ extension MyCouponListCell: UICollectionViewDataSource, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.width - 32
         
-        return CGSize(width: width, height: 134)
+        return CGSize(width: width, height: 200)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        onScrollViewDidScroll?(scrollView)
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        onScrollViewBeginDragging?(scrollView)
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        onScrollViewDidEndDragging?(scrollView, decelerate)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        onScrollViewDidEndDecelerating?(scrollView)
+    }
+}
+
+extension CouponOfferedListCell: CardCouponOfferedCellDelegate {
+    func didSelectButtonDetail(at index: Int) {
+    }
+    
+    func didSelectButtonExchange(at index: Int, isCanExchange: Bool, isExchanged: Bool) {
+        if !isCanExchange {
+            if #available(iOS 10.0, *) {
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+            }
+            onShowToast?("Kupon tidak bisa ditukar")
+//            showToast(message: "Kupon tidak bisa ditukar")
+        } else {
+            if !isExchanged {
+//                showLoadingBlockScreen()
+                onShowLoadingBlockScreen?("")
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+                    guard let self = self else { return }
+                    
+//                    self.onHideLoadingBlockScreen {
+//                        if let cell = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0)) as? CardCouponOfferedCell {
+//                            cell.cardCouponOffered.startFloatingAnimation()
+//                        }
+                        
+//                        self.filteredCouponData[index].isExchanged = true
+//                        self.filteredCouponData[index].periode = "7 Hari Lagi"
+                        
+//                        if let indexData = self.couponData.firstIndex(where: { $0.id == self.filteredCouponData[index].id }) {
+//                            self.data[indexData].isExchanged = true
+//                            self.data[indexData].periode = "7 Hari Lagi"
+//                        }
+//                        
+//                        self.collectionView.reloadItems(at: [IndexPath(row: index, section: 0)])
+//                        
+//                        self.setupMyCouponCard()
+//                    }
+                }
+            }
+        }
     }
 }

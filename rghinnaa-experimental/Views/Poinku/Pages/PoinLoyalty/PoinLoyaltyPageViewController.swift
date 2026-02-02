@@ -119,7 +119,7 @@ class PoinLoyaltyPageViewController: UIViewController {
         vTab.registerCellType(TabsDefaultCell.self, withIdentifier: "TabsDefaultCell")
         vTab.setData(tabItems)
         
-        vTab.enableDynamicWidth()
+        vTab.setDynamicWidth(enabled: true)
         vTab.selectDefaultChip()
     }
     

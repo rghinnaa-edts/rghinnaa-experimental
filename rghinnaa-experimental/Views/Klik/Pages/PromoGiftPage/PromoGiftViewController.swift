@@ -102,7 +102,7 @@ class PromoGiftViewController: UIViewController {
             customCell.tabTextActiveColor = UIColor.red
         }
         
-        vTab.enableDynamicWidth()
+        vTab.setDynamicWidth(enabled: true)
         vTab.selectDefaultTab()
     }
     

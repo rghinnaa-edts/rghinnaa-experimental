@@ -108,7 +108,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         
         vTabTop.bgColor = .clear
         vTabTop.isScrollable = false
-        vTabTop.enableDynamicWidth()
+        vTabTop.setDynamicWidth(enabled: true)
         vTabTop.selectDefaultTab()
     }
     
@@ -140,7 +140,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         
         vTabFilter.bgColor = .clear
         vTabFilter.isScrollable = false
-        vTabFilter.enableDynamicWidth()
+        vTabFilter.setDynamicWidth(enabled: true)
         vTabFilter.setItemPadding(
             leadingPadding : 16,
             trailingPadding :16,

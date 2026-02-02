@@ -62,6 +62,8 @@ class TabDeliveryTypeCell: UICollectionViewCell {
         didSet { updateAppearance() }
     }
     
+    public var currentIndex: Int = 0
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
