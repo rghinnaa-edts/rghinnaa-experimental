@@ -93,7 +93,6 @@ class MyCouponHeaderView: UICollectionReusableView {
         setupTabTopData()
         
         vTabTop.registerCellType(TabDefaultCell.self, withIdentifier: tabTopCell)
-        vTabTop.delegate = self
         
         vTabTop.data = couponTypeData
         vTabTop.cellConfiguration = { cell, data, isSelected, index in
@@ -108,7 +107,7 @@ class MyCouponHeaderView: UICollectionReusableView {
         
         vTabTop.bgColor = .clear
         vTabTop.isScrollable = false
-        vTabTop.enableDynamicWidth()
+        vTabTop.setDynamicWidth(enabled: true)
         vTabTop.selectDefaultTab()
     }
     
@@ -116,7 +115,6 @@ class MyCouponHeaderView: UICollectionReusableView {
         setupTabFilterData()
         
         vTabFilter.registerCellType(TabChipCell.self, withIdentifier: tabFilterCell)
-        vTabFilter.delegate = self
         
         vTabFilter.isUserInteractionEnabled = true
         vTabFilter.layer.masksToBounds = false
@@ -140,7 +138,7 @@ class MyCouponHeaderView: UICollectionReusableView {
         
         vTabFilter.bgColor = UIColor.white
         vTabFilter.isScrollable = false
-        vTabFilter.enableDynamicWidth()
+        vTabFilter.setDynamicWidth(enabled: true)
         vTabFilter.setItemPadding(
             leadingPadding : 16,
             trailingPadding :16,
@@ -180,11 +178,5 @@ class MyCouponHeaderView: UICollectionReusableView {
             id: "3",
             title: "Xpress")
         ]
-    }
-}
-
-extension MyCouponHeaderView : TabDefaultDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
-        
     }
 }
