@@ -201,18 +201,6 @@ class CouponOfferedViewController: UIViewController {
         }
     }
     
-    private func updateRefreshProgress(_ progress: CGFloat) {
-        guard !isRefreshAnimating else { return }
-        
-        let progress = min(max(progress, 0), 1)
-        let rotation = CGAffineTransform(rotationAngle: .pi * 2 * progress)
-        let scale = 0.2 + (0.8 * progress)
-        let scaleTransform = CGAffineTransform(scaleX: scale, y: scale)
-        
-        refreshIconImageView.transform = rotation.concatenating(scaleTransform)
-        refreshIconImageView.alpha = 0.5 + (0.5 * progress)
-    }
-    
     private func showLoadingBlockScreen() {
         hideLoadingBlockScreen()
         
@@ -312,7 +300,7 @@ class CouponOfferedViewController: UIViewController {
             disableInfo: "",
             isEnabled: true,
             isNewUser: true,
-            isExchanged: true,
+            isExchanged: false,
             isCanExchange: true
             ),
            CardCouponOfferedModel(

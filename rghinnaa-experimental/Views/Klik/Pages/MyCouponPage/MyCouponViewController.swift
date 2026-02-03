@@ -58,6 +58,7 @@ class MyCouponViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         collectionView.backgroundColor = UIColor.grey10
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView.isDirectionalLockEnabled = false
         collectionView.register(MyCouponListCell.self, forCellWithReuseIdentifier: "MyCouponListCell")
         collectionView.register(
             MyCouponHeaderView.self,
