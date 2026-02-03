@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -97,7 +98,6 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
@@ -232,111 +232,63 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1op-4i-RmG" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
-                                <rect key="frame" x="16" y="626" width="361" height="126"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnV-pq-ZGB" customClass="KlikIDM_DSChip" customModule="KlikIDM_DS">
+                                <rect key="frame" x="16" y="560" width="361" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitle" value="Chip"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipTitleFontSize">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="chipTitleFontWeight" value="semibold"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTop">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingBottom">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingLeading">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipPaddingTrailing">
-                                        <real key="value" value="8"/>
+                                        <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipSpacing">
-                                        <real key="value" value="4"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipBorderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowOpacity">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="chipShadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="chipShadowRadius">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconBG">
                                         <color key="value" name="50Blue"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconBG">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTitleColor">
                                         <color key="value" name="50Blue"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveLeadingIconTint">
+                                        <color key="value" name="White"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconTint">
-                                        <color key="value" name="50Blue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveTrailingIconBG">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBGColor">
-                                        <color key="value" name="20Grey"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveBorderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipInactiveShadowColor">
-                                        <color key="value" name="50Red"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconTint">
-                                        <color key="value" name="50Blue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveLeadingIconBG">
                                         <color key="value" name="White"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTitleColor">
-                                        <color key="value" name="White"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconTint">
-                                        <color key="value" name="50Blue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveTrailingIconBG">
-                                        <color key="value" name="White"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBGColor">
-                                        <color key="value" name="50Blue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="chipActiveBorderColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="chipIconSize">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="iconTrailing" value="placeholder"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isChipActive" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VHa-7a-IQb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="0F4-NY-KBb"/>
                             <constraint firstItem="VHa-7a-IQb" firstAttribute="top" secondItem="DMH-AA-KWV" secondAttribute="bottom" constant="24" id="5bi-oG-6xn"/>
                             <constraint firstItem="DMH-AA-KWV" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="150" id="781-6P-jAB"/>
                             <constraint firstItem="slh-ib-du0" firstAttribute="top" secondItem="VHa-7a-IQb" secondAttribute="bottom" constant="48" id="Ay3-6e-YnJ"/>
-                            <constraint firstItem="1op-4i-RmG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Hkf-TR-vKH"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VHa-7a-IQb" secondAttribute="trailing" constant="16" id="aJZ-8Y-jrD"/>
-                            <constraint firstItem="DMH-AA-KWV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="akk-it-EI5"/>
+                            <constraint firstItem="gnV-pq-ZGB" firstAttribute="top" secondItem="slh-ib-du0" secondAttribute="bottom" constant="24" id="Gt8-rE-BCY"/>
+                            <constraint firstItem="VHa-7a-IQb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="J9l-Sf-gDt"/>
+                            <constraint firstItem="DMH-AA-KWV" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZD0-NX-qX3"/>
+                            <constraint firstItem="gnV-pq-ZGB" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ZXe-8b-QwQ"/>
                             <constraint firstItem="slh-ib-du0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="hl4-Qn-79g"/>
-                            <constraint firstItem="1op-4i-RmG" firstAttribute="top" secondItem="slh-ib-du0" secondAttribute="bottom" constant="24" id="jnn-Uv-DHT"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DMH-AA-KWV" secondAttribute="trailing" constant="16" id="tFQ-A8-lRE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -351,6 +303,7 @@
     <resources>
         <image name="ic-clock" width="24" height="24"/>
         <image name="ic-close" width="32" height="32"/>
+        <image name="placeholder" width="118.66666412353516" height="118.66666412353516"/>
         <namedColor name="20Grey">
             <color red="0.93725490196078431" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

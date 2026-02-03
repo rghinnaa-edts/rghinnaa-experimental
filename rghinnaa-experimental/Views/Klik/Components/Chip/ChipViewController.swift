@@ -16,7 +16,17 @@ class ChipViewController: UIViewController, ChipDelegate {
     }
     
     func didSelectChip(_ chip: KlikIDM_DS.KlikIDM_DSChip) {
-        print("Chip selected:", chip)
+        chip.isChipActive.toggle()
+//        
+//        if (chip.isChipActive) {
+//            chip.bgColorActive = .blue50
+//            chip.labelColorActive = .white
+//            chip.iconTintLeadingActive = .blue50
+//            chip.iconBGColorLeadingActive = .white
+//            chip.iconBGColorLeadingActive = UIColor.white
+//            chip.iconBGColorTrailingActive = UIColor.white
+//        }
+        print("Chip selected. New state:", chip.isChipActive ? "active" : "inactive")
     }
     
     func didSelectChipIconLeading(_ chip: KlikIDM_DS.KlikIDM_DSChip) {
