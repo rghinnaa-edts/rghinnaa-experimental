@@ -8,7 +8,7 @@
 import UIKit
 import KlikIDM_DS
 
-class CouponOfferedHeaderView: UICollectionReusableView {
+class MyCouponHeaderView: UICollectionReusableView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var vTab: UIView!
@@ -57,9 +57,13 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         return height
     }
     
+    public func getTabFilterTotal() -> Int {
+        return couponFilterData.count
+    }
+    
     private func setupNib() {
         let bundle = Bundle(for: type(of: self))
-        if let nib = bundle.loadNibNamed("CouponOfferedHeaderView", owner: self, options: nil),
+        if let nib = bundle.loadNibNamed("MyCouponHeaderView", owner: self, options: nil),
            let view = nib.first as? UIView {
             
             containerView = view
@@ -72,7 +76,6 @@ class CouponOfferedHeaderView: UICollectionReusableView {
     }
     
     private func setupUI() {
-        setupTabTopBackgroundUI()
         setupTabTopUI()
         setupTabFilterUI()
     }
@@ -83,17 +86,10 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         }
     }
     
-    private func setupTabTopBackgroundUI() {
-        vTab.layer.cornerRadius = 16
-        vTab.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        vTab.layer.masksToBounds = true
-    }
-    
     private func setupTabTopUI() {
         setupTabTopData()
         
         vTabTop.registerCellType(TabDefaultCell.self, withIdentifier: tabTopCell)
-        vTabTop.delegate = self
         
         vTabTop.data = couponTypeData
         vTabTop.cellConfiguration = { cell, data, isSelected, index in
@@ -116,7 +112,6 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         setupTabFilterData()
         
         vTabFilter.registerCellType(TabChipCell.self, withIdentifier: tabFilterCell)
-        vTabFilter.delegate = self
         
         vTabFilter.isUserInteractionEnabled = true
         vTabFilter.layer.masksToBounds = false
@@ -138,7 +133,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
             cell.titleFontWeight = "semibold"
         }
         
-        vTabFilter.bgColor = .clear
+        vTabFilter.bgColor = UIColor.white
         vTabFilter.isScrollable = false
         vTabFilter.setDynamicWidth(enabled: true)
         vTabFilter.setItemPadding(
@@ -147,12 +142,23 @@ class CouponOfferedHeaderView: UICollectionReusableView {
             itemSpacing : 8
         )
         vTabFilter.selectDefaultTab()
+        
+        vTabFilter.layer.shadowColor = UIColor.black?.cgColor
+        vTabFilter.layer.shadowOpacity = 0.1
+        vTabFilter.layer.shadowOffset = CGSize(width: 0, height: 2)
+        vTabFilter.layer.shadowRadius = 3
     }
     
     private func setupTabTopData() {
         couponTypeData = [
             TabDefaultModel(
             id: "1",
+            title: "Potongan Total"),
+            TabDefaultModel(
+            id: "2",
+            title: "Diskon Alat Bayar"),
+            TabDefaultModel(
+            id: "3",
             title: "Diskon Ongkir")
         ]
     }
@@ -169,11 +175,5 @@ class CouponOfferedHeaderView: UICollectionReusableView {
             id: "3",
             title: "Xpress")
         ]
-    }
-}
-
-extension CouponOfferedHeaderView : TabDefaultDelegate {
-    func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
-        
     }
 }

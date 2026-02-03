@@ -15,12 +15,12 @@ class CouponOffered2ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var vToolbar: UIView!
     @IBOutlet weak var vMyCouponCard: CardMyCoupon!
+    @IBOutlet weak var vBackgroundCoupon: UIView!
     @IBOutlet weak var btnBackToolbar: UIButton!
     @IBOutlet weak var lblToolbar: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
     
     private var couponTypeData: [TabDefaultModel] = []
     private var couponFilterData: [TabDefaultModel] = []
@@ -37,7 +37,7 @@ class CouponOffered2ViewController: UIViewController {
     private let tabSectionHeight: CGFloat = 104
     private var isHeaderSticky = false
     private var isTabFilterHidden = false
-    private var isFirstOpen = true
+    private var isLoadingData = true
     
     private var loadingBlockView: UIView?
     private var loadingIndicator: UIActivityIndicatorView?
@@ -63,19 +63,21 @@ class CouponOffered2ViewController: UIViewController {
         scrollView.delegate = self
         
         setupCollectionView()
-        viewHeightConstraint?.constant = collectionViewHeightConstraint.constant + myCouponCardHeight + toolbarHeight
+        setupViewBackground()
     }
     
     private func setupMyCouponCard() {
-        let totalExchanged = filteredCouponData.filter(\.isExchanged).count
+        let totalExchanged = couponData.filter(\.isExchanged).count
         self.vMyCouponCard.cardBadgeText = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
     }
     
-    private func setupCollectionView() {
-        setupCollectionHeader()
+    private func setupViewBackground() {
+        vBackgroundCoupon.layer.cornerRadius = 16
+        vBackgroundCoupon.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        vBackgroundCoupon.layer.masksToBounds = true
     }
     
-    private func setupCollectionHeader() {
+    private func setupCollectionView() {
         setupCouponData()
         setupMyCouponCard()
         
@@ -104,12 +106,24 @@ class CouponOffered2ViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+            guard let self = self else { return }
+            self.isLoadingData = false
+            self.filterCouponData(by: "all")
+            collectionView.reloadData()
+            
+            setupMyCouponCard()
+        }
+        
         updateCollectionViewHeight()
     }
     
     private func updateCollectionViewHeight() {
         collectionView.layoutIfNeeded()
-        collectionViewHeightConstraint?.constant = calculateCollectionViewContentHeight() - 850
+            
+        let height = collectionView.collectionViewLayout.collectionViewContentSize.height
+        collectionViewHeightConstraint.constant = height
+        view.layoutIfNeeded()
     }
         
     private func calculateCollectionViewContentHeight() -> CGFloat {
@@ -267,7 +281,7 @@ class CouponOffered2ViewController: UIViewController {
             id: "1",
             image: UIImage(named: "discount-shipment"),
             title: "Diskon Ongkir 5% Hingga Pakai Pengiriman Tertentu",
-            filterType: "xtra",
+            filterType: "xpress",
             isFairGeneral: false,
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
@@ -335,7 +349,7 @@ class CouponOffered2ViewController: UIViewController {
             id: "5",
             image: UIImage(named: "discount-shipment"),
             title: "Diskon Ongkir Rp10.000 Pakai",
-            filterType: "xtra",
+            filterType: "xpress",
             isFairGeneral: false,
             fairGeneralType: FairGeneralType.general.rawValue,
             mininumTransaction: 30000,
@@ -343,7 +357,7 @@ class CouponOffered2ViewController: UIViewController {
             periode: "7 Hari Lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
-            isEnabled: false,
+            isEnabled: true,
             isNewUser: false,
             isExchanged: false,
             isCanExchange: true
@@ -376,12 +390,14 @@ class CouponOffered2ViewController: UIViewController {
             service: "Xpress, Xtra",
             periode: "7 Hari Lagi",
             couponCode: "BARUINSTAN10RB***",
-            disableInfo: "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!",
-            isEnabled: true,
+            disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
+            isEnabled: false,
             isNewUser: false,
             isExchanged: false,
             isCanExchange: true
             ),
+           
+//           "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!"
            CardCouponOfferedModel(
             id: "8",
             image: UIImage(named: "discount-shipment"),
@@ -394,14 +410,12 @@ class CouponOffered2ViewController: UIViewController {
             periode: "7 Hari Lagi",
             couponCode: "BARUINSTAN10RB***",
             disableInfo: "Yuk, selesaikan transaksi sebelumnya untuk bisa gunakan promo ini.",
-            isEnabled: false,
+            isEnabled: true,
             isNewUser: false,
             isExchanged: false,
             isCanExchange: true
             )
         ]
-        
-        filterCouponData(by: "all")
     }
     
     private func filterCouponData(by filterType: String) {
@@ -410,9 +424,6 @@ class CouponOffered2ViewController: UIViewController {
         } else {
             filteredCouponData = couponData.filter { $0.filterType == filterType }
         }
-        
-        collectionView.reloadData()
-        updateCollectionViewHeight()
     }
     
     @objc private func handleRefresh() {
@@ -433,21 +444,19 @@ class CouponOffered2ViewController: UIViewController {
 
 extension CouponOffered2ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filteredCouponData.count
+        return isLoadingData ? 8 : filteredCouponData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCouponOfferedCell", for: indexPath) as! CardCouponOfferedCell
         
-        if isFirstOpen {
+        if isLoadingData {
             cell.isSkeleton = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak cell] in
-                cell?.isSkeleton = false
-                self.isFirstOpen = false
-            }
+        } else {
+            cell.isSkeleton = false
+            cell.loadData(data: filteredCouponData[indexPath.row])
         }
         
-        cell.loadData(data: filteredCouponData[indexPath.row])
         cell.delegate = self
         cell.cornerRadius = 12
         cell.shadowColor = .lightGray
@@ -472,6 +481,7 @@ extension CouponOffered2ViewController: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cell = CardCouponOfferedCell()
         let width = collectionView.bounds.width - 32
         
         return CGSize(width: width, height: 200)
@@ -488,7 +498,6 @@ extension CouponOffered2ViewController: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
         if collectionView.backgroundView == nil {
             let backgroundView = UIView(frame: collectionView.bounds)
             backgroundView.backgroundColor = .clear
@@ -674,6 +683,12 @@ extension CouponOffered2ViewController: CardCouponOfferedCellDelegate {
                         
                         self.filteredCouponData[index].isExchanged = true
                         self.filteredCouponData[index].periode = "7 Hari Lagi"
+                        
+                        if let indexData = self.couponData.firstIndex(where: { $0.id == self.filteredCouponData[index].id }) {
+                            self.couponData[indexData].isExchanged = true
+                            self.couponData[indexData].periode = "7 Hari Lagi"
+                        }
+                        
                         self.collectionView.reloadItems(at: [IndexPath(row: index, section: 0)])
                         
                         self.setupMyCouponCard()
@@ -692,8 +707,20 @@ extension CouponOffered2ViewController: TabDefaultDelegate {
         ) as? CouponOfferedHeaderView else { return }
         
         if cellIdentifier == headerView.tabFilterCell {
-            isFirstOpen = true
-            filterCouponData(by: headerView.couponFilterData[index].title.lowercased())
+            scrollView.setContentOffset(.zero, animated: true)
+            
+            isLoadingData = true
+            filteredCouponData.removeAll()
+            collectionView.reloadData()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+                guard let self = self else { return }
+                self.isLoadingData = false
+                self.filterCouponData(by: headerView.couponFilterData[index].title.lowercased())
+                collectionView.reloadData()
+                
+                updateCollectionViewHeight()
+            }
         }
     }
 }
