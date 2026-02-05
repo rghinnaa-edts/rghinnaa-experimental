@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Coupon Offered View Controller-->
+        <!--Coupon Offered3 View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="CouponOfferedPage" id="Y6W-OH-hqX" customClass="CouponOfferedViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CouponOffered3Page" id="Y6W-OH-hqX" customClass="CouponOffered3ViewController" customModule="rghinnaa_experimental" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,16 +180,6 @@
                         <outlet property="vBackgroundCoupon" destination="wjc-uc-iSk" id="h0Z-Md-kaT"/>
                         <outlet property="vMyCouponCard" destination="k2d-3O-knn" id="75B-np-prK"/>
                         <outlet property="vToolbar" destination="qdq-UI-8X9" id="qLB-Tj-Vn4"/>
-                        <outlet property="btnBackToolbar" destination="W4b-89-UD7" id="58G-N9-zmb"/>
-                        <outlet property="couponCollectionView" destination="fUm-iG-SmD" id="wPh-QG-S1I"/>
-                        <outlet property="couponCollectionViewHeightConstraint" destination="wrb-ES-zGA" id="lkM-vo-FIo"/>
-                        <outlet property="lblToolbar" destination="692-77-c9G" id="LNU-0u-266"/>
-                        <outlet property="myCouponCard" destination="ZtU-8D-xY6" id="Axs-1y-0Iq"/>
-                        <outlet property="scrollView" destination="ToX-85-Nbz" id="3DP-9m-126"/>
-                        <outlet property="vContainerContent" destination="BCJ-Ar-4a9" id="z9d-zg-DSa"/>
-                        <outlet property="vTabFilter" destination="Yu8-g9-rEq" id="UdZ-2l-b9a"/>
-                        <outlet property="vTabTop" destination="aUn-iK-vwy" id="Rv3-jn-qbT"/>
-                        <outlet property="vToolbar" destination="NvO-Hd-Cua" id="HBT-Jl-0RY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

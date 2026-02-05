@@ -8,7 +8,7 @@
 import UIKit
 import KlikIDM_DS
 
-class CouponOfferedHeaderView: UICollectionReusableView {
+class CouponOffered3HeaderView: UICollectionReusableView {
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var vTab: UIView!
@@ -17,6 +17,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
     
     private var couponTypeData: [TabDefaultModel] = []
     var couponFilterData: [TabDefaultModel] = []
+    private var tabCurrentIndex = 0
     
     @IBOutlet weak var tabHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tabFilterHeightConstraint: NSLayoutConstraint!
@@ -51,6 +52,19 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         
         return hitView
     }
+    
+//    func loadTabData(_ data: [TabDefaultModel]) {
+//        couponTypeData = data
+//        vTabTop.data = data
+//        vTabTop.selectDefaultTab()
+//    }
+//    
+//    // Update existing method or add if not present
+//    func loadTabFilterData(_ data: [TabDefaultModel]) {
+//        couponFilterData = data
+//        vTabFilter.data = data
+//        vTabFilter.selectDefaultTab()
+//    }
     
     public func calculateHeight() -> CGFloat {
         let height = tabHeightConstraint.constant + tabFilterHeightConstraint.constant
@@ -172,7 +186,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
     }
 }
 
-extension CouponOfferedHeaderView : TabDefaultDelegate {
+extension CouponOffered3HeaderView : TabDefaultDelegate {
     func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         
     }

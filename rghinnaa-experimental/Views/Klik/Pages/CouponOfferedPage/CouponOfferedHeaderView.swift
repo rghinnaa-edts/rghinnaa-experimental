@@ -77,7 +77,7 @@ class CouponOfferedHeaderView: UICollectionReusableView {
         setupTabFilterUI()
     }
     
-    func updateStickyAppearance(isSticky: Bool) {
+    private func updateStickyAppearance(isSticky: Bool) {
         UIView.animate(withDuration: 0.3) {
             self.vTab.layer.shadowOpacity = isSticky ? 0.1 : 0
         }
