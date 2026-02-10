@@ -22,7 +22,7 @@
                                 <rect key="frame" x="16" y="134" width="361" height="634"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TR9-k8-m2S">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="558"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="727.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-sO-znm" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
                                                 <rect key="frame" x="143" y="0.0" width="75" height="34.333333333333336"/>
@@ -632,15 +632,248 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
-                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="value" systemColor="systemRedColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
                                                         <color key="value" name="Black"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6F-s2-Rij" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="507.99999999999994" width="75" height="34.333333333333314"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientStart">
+                                                        <color key="value" name="Skyblue-Leading"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientEnd">
+                                                        <color key="value" name="Skyblue-Trailing"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnGradientOrientation" value="horizontal"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Gradient With Icon"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="semibold"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="small"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnSpacing">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="text"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeading">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTrailing">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" systemColor="systemRedColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                                        <color key="value" name="Black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="black"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-lz-wbG" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="550.33333333333337" width="75" height="34.333333333333371"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientStart">
+                                                        <color key="value" name="Skyblue-Leading"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientEnd">
+                                                        <color key="value" name="Skyblue-Trailing"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnGradientOrientation" value="horizontal"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Gradient With Icon"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="semibold"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="small"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnSpacing">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="text"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeading">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTrailing">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" name="30Yellow"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                                        <color key="value" name="Black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="thin"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bt1-3f-OS5" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="592.66666666666663" width="75" height="34.333333333333371"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasGradientBG" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientStart">
+                                                        <color key="value" name="Skyblue-Leading"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnBGGradientEnd">
+                                                        <color key="value" name="Skyblue-Trailing"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnGradientOrientation" value="horizontal"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitle" value="Gradient With Icon"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnTitleFontSize">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="btnTitleColor">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnTitleFontWeight" value="semibold"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnIconSize">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="small"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTop">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingBottom">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingLeading">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnPaddingTrailing">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnSpacing">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="btnCornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="text"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="rest"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasTrailingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHasLeadingIcon" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeading">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTrailing">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" systemColor="systemRedColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                                        <color key="value" name="Black"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontWeight" value="black"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYK-EJ-hu6" customClass="KlikIDM_DSButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="635" width="75" height="34.333333333333371"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                            </button>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-G7-XP8">
-                                                <rect key="frame" x="60.666666666666686" y="508" width="240" height="50"/>
+                                                <rect key="frame" x="60.666666666666686" y="677.33333333333337" width="240" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
@@ -666,6 +899,9 @@
                             <constraint firstItem="iX3-Nf-JKf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="rZM-tj-BTL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnTest1" destination="MYK-EJ-hu6" id="wtj-j5-egr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -674,6 +910,9 @@
     </scenes>
     <resources>
         <image name="placeholder" width="118.66666412353516" height="118.66666412353516"/>
+        <namedColor name="30Yellow">
+            <color red="0.97647058823529409" green="0.792156862745098" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Black">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -688,6 +927,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

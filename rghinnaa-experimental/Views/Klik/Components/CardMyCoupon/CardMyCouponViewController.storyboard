@@ -81,6 +81,9 @@
                             <constraint firstItem="TjD-7n-R6d" firstAttribute="top" secondItem="e1W-pi-GGJ" secondAttribute="bottom" constant="48" id="zM8-ca-MoF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cmcTest1" destination="TjD-7n-R6d" id="aLR-ja-JZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

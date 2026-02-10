@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3320BBB5861602BEC37D294BD0BDFD3"
-               BuildableName = "Poinku_DS.framework"
+               BuildableName = "KlikIDM_DS.framework"
                BlueprintName = "KlikIDM_DS"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
