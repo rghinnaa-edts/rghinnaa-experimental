@@ -549,7 +549,7 @@ extension CouponOfferedViewController: UIScrollViewDelegate {
         if !refreshControl.isRefreshing && !isRefreshAnimating {
             let offsetY = scrollView.contentOffset.y
             let progress = min(abs(offsetY) / 60.0, 1.0)
-            updateRefreshProgress(progress)
+//            updateRefreshProgress(progress)
         }
     }
     
