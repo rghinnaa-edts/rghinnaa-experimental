@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-=======
 		006E292F9FF4497F7A53FDEA83A17B46 /* PDPViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C63B0A94CCAFA7E5FEF4FE95DBA92D /* PDPViewController.storyboard */; };
->>>>>>> development
 		00CC0891662E15DF8F42FDF6A88F2B34 /* KeypathSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8AA0920BDE4F4830BB8B644FB00878 /* KeypathSearchable.swift */; };
 		0111399B29738664F32FC958F487ED3A /* TabQuadRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD72F05633FFB90B147CBFED18773200 /* TabQuadRoundCell.xib */; };
 		012097AC303D34F9CA8280B014F28E2F /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F62A575D71200BA862E9021D935A9 /* DataExtension.swift */; };
@@ -34,11 +31,8 @@
 		06AEBB107FCDF92F96490ED8A205167C /* StrokeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0921496A914AC80DF5E5FE59C49967EC /* StrokeAnimation.swift */; };
 		06EADA82815527F7FB7DF8CEBE840175 /* TabQuadRound.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF01034CE05B2E7E6D8757BB8745C88 /* TabQuadRound.xib */; };
 		08BC840C1E46554478856B702C770A1D /* BasicAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486EF024AD19178ABB708171A8666644 /* BasicAnimationViewController.swift */; };
-<<<<<<< HEAD
 		08F1FEE3D5CFBEDA846F491C97112495 /* TabQuadRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB1008A1408AB9E6AE5C557D8E21565 /* TabQuadRoundCell.swift */; };
-=======
 		08F0758BF38647F435A31AFDB8BAD824 /* PromoContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60276C8F917B1E687C5BAAD6F9A7594 /* PromoContentCell.xib */; };
->>>>>>> development
 		08F75622A998BDE537BBB39A94676D7A /* AnimationCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D7C6ACE2F2E4620FE21E9CB425B46 /* AnimationCacheProvider.swift */; };
 		0959DF139B2C303523FA9F90017DD14C /* DiffableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41677D4DBE26A65669DED2CA1DFF2FB5 /* DiffableSection.swift */; };
 		0A4D558207C2C5EA1BBFE9A4CD5B03E5 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B66F41628DDFDCADEBB60FDBF3D81 /* FillRenderer.swift */; };
@@ -47,32 +41,23 @@
 		0DD9589F78EB151D8B91E2DBD3FB6DAB /* ValueProviderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8867B1F4BF5C657D368B27E779EFEC2 /* ValueProviderStore.swift */; };
 		10F9D5D8980D685C3D4856A4BC845F00 /* TabChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6BCFC9C8EAFD4EBB9E299DBA527E6 /* TabChipCell.swift */; };
 		11334BEE00F452EA0D9FBCC0C32C4E79 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14927DDB163FE1C03BBEC680597B9474 /* PreCompLayerModel.swift */; };
-<<<<<<< HEAD
 		114C37AE7A7DA92BA007012283DDEB48 /* TabChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6BCFC9C8EAFD4EBB9E299DBA527E6 /* TabChipCell.swift */; };
 		11A3B75A2881C97B4137B4080576B22A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69301F4E598400CA4CB88505EAF858B1 /* UIKit.framework */; };
-=======
->>>>>>> development
 		1257FDCE5A91D0EB10A1A984C06E8806 /* KeyframeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E67651B420B837A9BE5F223AD63C7 /* KeyframeData.swift */; };
 		137B9B52FA45AD0212A915237518FBA6 /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C189E635464211C320BE272F5576 /* Register3ViewController.swift */; };
 		13E749919E54D399250D381F4B3EE859 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F60F42A7500D6D4F1F20A4D2CB02A /* PointValueProvider.swift */; };
 		141F2955FEA2C19F323B68CAAB7200A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174CAB8515D674816D1392268C3762E /* TableViewController.swift */; };
-<<<<<<< HEAD
 		143E502D96CC85C26F6B3550361A356C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9113F510633381C65C2F86DF9BA3 /* Font.swift */; };
 		146561D50DAD9FB0CDD49BF6406B066E /* CardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8006B0EC8EA5CB989159ECDC0862944 /* CardSelectionCell.swift */; };
-=======
 		14A04771DE9F1E685EDA21E8E5CC2C82 /* PromoGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C563CD0D69B4B312508A8296DE0CE35 /* PromoGiftViewController.swift */; };
->>>>>>> development
 		14ACF058343D66D01757BE395D987EB6 /* ProfileSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984FA77494C021DF0670BADEC6138645 /* ProfileSetting.swift */; };
 		16204A22B22504CCE41F23739B3B7D22 /* TabDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F90539BF3248FFB3DADE6C9B8CB479E /* TabDefaultModel.swift */; };
 		165E31DED016B1B494A24659792E2800 /* DoubleArc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CEE86D97AD2EA823C568BA9F364EC4 /* DoubleArc.xib */; };
 		1688335ED79D6EFB6E701FFC82E666CA /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FABE247B3A084B734D1CA45CF8D873 /* ShapeNode.swift */; };
 		16A7E6920C4B1995F27AA0A8EDDB3DA4 /* TabSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59541B2797C2F13E1414C3C98E199462 /* TabSquareRoundCell.xib */; };
-		16B9FD7A808AC1642A6AF67AE1C9ACD5 /* MaskCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBB0D3D6BCA25A00AE8E2D99836E99 /* MaskCompositionLayer.swift */; };
-<<<<<<< HEAD
+		16B9FD7A808AC1642A6AF67AE1C9ACD5 /* MaskCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBB0D3D6BCA25A00AE8E2D99836E99 /* MaskCompositionLayer.swift */;
 		17172DD19B9736087047A6E703111EAE /* TabSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940C3788B2E95CD5DF139DF4B10FF10B /* TabSquareRoundModel.swift */; };
 		18B24F9136B46323A76EF9D4D6721B44 /* CardMyCoupon.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA74678504F3968BFAF18729CFF43C02 /* CardMyCoupon.xib */; };
-=======
->>>>>>> development
 		19221A03DCC5B46B586C9005B464423B /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A53B75E06F36CDA8D4756A48F2585 /* RoundedCorners.swift */; };
 		195B6B24B8849335329434C03DAAD4C5 /* Register3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA67E00E90CEAF88C268BE34BD196C7D /* Register3ViewController.storyboard */; };
 		19F04E69D75715A06A1A099818043A32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED545BA7498176A93CBC3ED53C7404A /* ViewController.swift */; };
@@ -85,11 +70,8 @@
 		1E921DF1B8AD4B7A235BE347439ACDCA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9EC6119196FA3CFC859E62905C499 /* StringExtensions.swift */; };
 		1ED32C7D9118BA288EA9357E27729EA8 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F71412E8A289B7A15EBE79DCCED2C /* Asset.swift */; };
 		1F6B2B920EEAC73E4D1E67957CD790BF /* LottieAnimationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0F08FB2DDCDAAF4FE5DE6A52D55398 /* LottieAnimationSource.swift */; };
-<<<<<<< HEAD
 		1F72A0F484A7DC9842519B9EA628325C /* CardSelectionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6141FE76EDAD128E1C485FB65973EE57 /* CardSelectionList.xib */; };
-=======
 		1F8B98878533217E92222FC70D695F2A /* Badge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121D365836E9C85804A0CF0B6135B769 /* Badge.xib */; };
->>>>>>> development
 		1F95AF6FD4805A530C4CB37A33318F27 /* LayerProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320504DCF9F46867CC6D2CA452F2B2E2 /* LayerProperty.swift */; };
 		203361BAE08215988FCD9B0A0EC62657 /* TabQuadRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122941E2747B783E42D72278D3102852 /* TabQuadRound.swift */; };
 		2049FB256CBD7C2833B9F114B1690EAF /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A2141ACA20CE8DF8CC4DFFDDFBF5 /* DashedLineView.swift */; };
@@ -109,11 +91,8 @@
 		25632436960A90E12F7367624C35B50C /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4321698F6B5171A7CAF83115DD787EE1 /* HomeViewController.storyboard */; };
 		25F64E2B0EAA20A886C4EE86C9E97102 /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0263A2966882245855036BD4C934C12 /* OpacityAnimation.swift */; };
 		2670000ED67E81FE901CF1DAE9314147 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C4A7E7DC35F2D6CA5DC1ABF7DEDF1 /* ValueContainer.swift */; };
-		26D8C868CC5E3E23A64206BCD099210F /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C70F1610EA1E0F5FC05C61F06C013B /* Data+Compression.swift */; };
-<<<<<<< HEAD
+		26D8C868CC5E3E23A64206BCD099210F /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef =
 		271144431A6B15048CAF89F26213C295 /* PromoContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60276C8F917B1E687C5BAAD6F9A7594 /* PromoContentCell.xib */; };
-=======
->>>>>>> development
 		28ED2DD70B3BC93D5EDCF8AE66693D3B /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C13B45B626A1A93D1E7C416FE106A /* MaskContainerLayer.swift */; };
 		292B437E13623D6D3E3AE14F1C9E34A3 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85529218DF95406318247EB66303D974 /* Bundle.swift */; };
 		29E858085A9E55D58B1CF85328F97A9C /* TabsSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AC2866A7E0A0334B005B25A488964 /* TabsSquareRoundModel.swift */; };
@@ -128,11 +107,8 @@
 		2E063906EA8D20BE4F826E9ED555D299 /* DropShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF42E98B140C773DC12A3B182985146 /* DropShadowStyle.swift */; };
 		2E6F7141E95F8F9579DA763C57296C96 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329214785286D1E2E2E600448B8646DF /* Diffable.swift */; };
 		2EBD479964F4FEA3BEE697FEB7BD2E58 /* UIViewConfiguringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B9A72C793268C2725E79C1BA9E096 /* UIViewConfiguringSwiftUIView.swift */; };
-		2EFB0E6938C6781997896BA5A514433F /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F18FC76AB34D6217C5DA08A6B2794 /* RibbonViewController.swift */; };
-<<<<<<< HEAD
+		2EFB0E6938C6781997896BA5A514433F /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F18FC76AB34D6217C5DA08A6B2794 /* RibbonViewController.swift */;
 		2F1B265C961B2824C42C3491887290FF /* TabDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB42DF893EF7DA0F661DD854086E68CF /* TabDefaultCell.swift */; };
-=======
->>>>>>> development
 		2F7D89E3241C0056FDF07C5AFAF48B7F /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F54F58B27F36995D750A97677E2B74 /* PrecompAsset.swift */; };
 		2FAF322E74DD3F54CBEE6E5357CEABBC /* SwiftUIMeasurementContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67760DFE9F2DDCAC16D498A1976C04 /* SwiftUIMeasurementContainer.swift */; };
 		3015D422120E1CEA9957682CD1CC1AC9 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F1F45B9D1DA12E0529E5E24ACCAB5 /* ShapeLayerModel.swift */; };
@@ -159,21 +135,15 @@
 		39D41DD085531A867EFCD054F92ABD41 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA37F474EE3BAC2CF57602818648AA7 /* Shape.swift */; };
 		39D9DEA16953EA4EEEA28104D9BAC2D1 /* EpoxySwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4CD487FA5448734801929A4287DC1 /* EpoxySwiftUIHostingController.swift */; };
 		39DED8EC971D0C6D19313BF9F304A59E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69301F4E598400CA4CB88505EAF858B1 /* UIKit.framework */; };
-		3A199C8ACCD5AA029482F1A9B1984E67 /* ViewProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04300B15D603AFD152ADB59E2D1C5D /* ViewProviding.swift */; };
-<<<<<<< HEAD
+		3A199C8ACCD5AA029482F1A9B1984E67 /* ViewProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04300B15D603AFD152ADB59E2D1C5D /*
 		3A28343009466C651861D6DD9816C329 /* CardSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E912EDFB3348341A27C307A428033F /* CardSelectionList.swift */; };
-=======
 		3A6C2986C5B5BD8192CE4EFDFFB5C5C5 /* CardSelectionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6141FE76EDAD128E1C485FB65973EE57 /* CardSelectionList.xib */; };
->>>>>>> development
 		3AF46FB34073151CC4829CC74D565837 /* DotLottieCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826710680F18F1CB9C53E5196A7972CD /* DotLottieCacheProvider.swift */; };
 		3AFDAD471DDF9B5AED05F2CBCAFBFE82 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F349B4DB3E646794A7F226E9BB91C3 /* LayerDebugging.swift */; };
 		3BC3D541EBFACF2FF7B1E48AF00345E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9B247FE6C013B6FEF6A21CBB3454D /* AppDelegate.swift */; };
 		3BF76500F85217127065EECB2F71F0B8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16093FF43ADF0AE67B30886E1B3D4C /* LottieAnimation.swift */; };
-<<<<<<< HEAD
 		3D817209C1DF5622328F01BACAAC3528 /* ExtensionInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054D4BDF17860924DD0AB03F219F85D /* ExtensionInteger.swift */; };
-=======
 		3D8D8AFC8AA1DAA7332CCE838F42BF9C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239CEA99A4BE53CBDEFD8F3097DCFCB6 /* SearchBar.swift */; };
->>>>>>> development
 		3DD03EC26FB7B02ACC47F51A0FD12411 /* TransformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA2FEDF60BEB0F8D1185DF96F09766 /* TransformLayer.swift */; };
 		3DF723096D90E793289E15723FB0B11D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DD3EA0609EF766AA8A15734525A29 /* ProfileViewController.swift */; };
 		3E95AFF90D5F60E38B76957B527138D1 /* BasicAnimationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BECE474ED72ED912F9C854AC63191DC /* BasicAnimationViewController.storyboard */; };
@@ -203,10 +173,7 @@
 		489844734000402FCAB2D8C1DC2E5D6C /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE44390B9AC63F3D1451E8A6B66EF9 /* CompoundBezierPath.swift */; };
 		497DCB445D8FE8B3288C59E740D05988 /* GroupInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78066254839A0324C25D32BF42116B /* GroupInterpolator.swift */; };
 		499714DAC71D81C873E26D6EDC6AFCAC /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BF1F834612D8E6229E3B95104FE72 /* ScrollAnimation.swift */; };
-<<<<<<< HEAD
-=======
 		4A16B1E1980DCC61EABCAD13FB2840E7 /* TabChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB377E7133F7DDABAA0E42A88164A4E /* TabChipCell.xib */; };
->>>>>>> development
 		4A1A92DB101F59D26F3E3B4982079974 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD5AC3D3AC46712C06C30AD76B5F50 /* AnimationContext.swift */; };
 		4B5084A91FCC27F42815CF640EEBF37B /* CardSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532026385428DFF6E9B36E898E4671AF /* CardSelectionCell.xib */; };
 		4C4842CD5BE1E33D5A9802F677185242 /* RootAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0585E2C76F9F0AFC3ADBC29A27FB308 /* RootAnimationLayer.swift */; };
@@ -237,11 +204,8 @@
 		58A088D0927E733FC6E10DB92327FF06 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F66EEDF6229791484CAB3DDEF4D3 /* LoginViewController.storyboard */; };
 		58A10CBA1235A1B4266035B0A104C3DC /* CachedImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23537DB3879635C051CBA4FFB96B9942 /* CachedImageProvider.swift */; };
 		59B90AC74AB14D2770F4A209AB3B828A /* DidSelectProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11107D61D24063BD930497C783EA8A9 /* DidSelectProviding.swift */; };
-<<<<<<< HEAD
 		5AD8E3D5F31E3E12A92DFDBFBEC71436 /* ButtonStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E47D206A39A851CA25871196963F27F /* ButtonStepper.xib */; };
-=======
 		5A2E8FFC1577C695142665AB85AA82AB /* CardProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9795B32E7DB81E2F7BEEA764056B63 /* CardProductCell.swift */; };
->>>>>>> development
 		5BDE499255C9C0314DEC887E36335017 /* ImageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E333EA6BE35D7F84463C70D715FFDF /* ImageLayer.swift */; };
 		5BEABA70D57BE637C6788DA1FD98F3E2 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF71D00E9792309B18695E0B9ED5258 /* GroupNode.swift */; };
 		5C44F1700E0C90BD31810C8069141028 /* IndexChangeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907784586542B97665EE6CD6C1AC430 /* IndexChangeset.swift */; };
@@ -270,10 +234,7 @@
 		661FE5968DD346E740B68A73FAD60307 /* DotLottieFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EDC9FC4C87F445F5CD467B6D69C65 /* DotLottieFile.swift */; };
 		677179A286589E30289208F274826C62 /* CardCouponOffered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB0D17EFB033007F8F42A629E1F4D4 /* CardCouponOffered.swift */; };
 		68083837C9F1300967DCC9B9FBACEED9 /* LottiePlaybackMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49EDECAB14A518947531D7FB5A9818 /* LottiePlaybackMode.swift */; };
-<<<<<<< HEAD
-=======
 		68682540332611687FBD7E4D746C67ED /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9113F510633381C65C2F86DF9BA3 /* Font.swift */; };
->>>>>>> development
 		6982E8CC00184B22EDEDBD04FE004DC5 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3F36C124782AD0904E46CB95749A1 /* AnimationImageProvider.swift */; };
 		69A2C082AC58B2A62F782D2931CA745B /* StepPageNav.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B95FF033CCD5858476C96C557C14BA /* StepPageNav.xib */; };
 		69DA90251A70C19B2106943DD2F5A050 /* EllipseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD17E4EC0AC722EA92C2EDAFAD4B5A /* EllipseAnimation.swift */; };
@@ -281,18 +242,15 @@
 		6A01E047924953F35815C0BF6DE697F0 /* PathNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BAD1DDE78B7388D9802216C4BF46AA /* PathNode.swift */; };
 		6A4131174A19A630A72FC521DBC78381 /* TransformAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976BFA43519DFB4D0B9055262B04DA3F /* TransformAnimations.swift */; };
 		6A6D40A4F3C81585B60CB5AF9A63AFD1 /* EpoxyModelProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FAAE2F44AA343302AEC3FC8E84FE5A /* EpoxyModelProperty.swift */; };
-		6C59ABCBD6E4BBFEF55EFF81302FF9FA /* DotLottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C21F7A3C08A557911D0ECD34936CB14 /* DotLottieAnimation.swift */; };
-<<<<<<< HEAD
+		6C59ABCBD6E4BBFEF55EFF81302FF9FA /* DotLottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef =
 		6C648E8D18010B57453070A4B176A46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488F68B169B20F6DED1B2807C669B21 /* Main.storyboard */; };
 		6C9EE1820EA49AF41909D5A74959288B /* EpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ED99A154DB8FCD84FFD2B81C80803 /* EpoxyModeled.swift */; };
 		6CDBE5FBE96034839181E2B60346AC1C /* TabsSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF9A15569B3F22DBD205680149441E8 /* TabsSquareRoundCell.xib */; };
 		6F2AC7E4CA9541E10A6D76EA5852FBD9 /* CardCouponOfferedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D81343631841A02FC23A7E71CB33A9 /* CardCouponOfferedCell.swift */; };
-=======
 		6C9267C1850BB0A123F317B008AA9B2A /* PromoContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF89F2AA7882177C9B15E8BF17E6547 /* PromoContentCell.swift */; };
 		6C9EE1820EA49AF41909D5A74959288B /* EpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ED99A154DB8FCD84FFD2B81C80803 /* EpoxyModeled.swift */; };
 		6CDBE5FBE96034839181E2B60346AC1C /* TabsSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF9A15569B3F22DBD205680149441E8 /* TabsSquareRoundCell.xib */; };
 		6ED2553383EC03977989A85AC6206A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
->>>>>>> development
 		6F404948E1DC38CD436E38F4AE3B6822 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5382A087F44D0799ED692729CCE40F /* TextLayerModel.swift */; };
 		6F8645289D6193D42DA2D12B37AE0A96 /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723225F40772A218B127BACB3991641 /* Textfield.swift */; };
 		705C3C90A9AD7DABF13D23C1E8A4DEB0 /* PromoGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C563CD0D69B4B312508A8296DE0CE35 /* PromoGiftViewController.swift */; };
@@ -301,11 +259,8 @@
 		719109F5610CC32B08FBC39BFC73475E /* CardMyCouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED91330E360AD0870B830071EE70788 /* CardMyCouponCell.swift */; };
 		71B20384A88E29BB8359E27E1C8F2EA9 /* OnBoarding2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF8B3D79E599D2C01AF1C41C2C1F510 /* OnBoarding2Cell.xib */; };
 		722CED81E7409225A4E66E4E5AF3A880 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C0E1A70E17BD693B171E07969E980E /* LottieView.swift */; };
-<<<<<<< HEAD
 		73D9293995C2AE821A9DD913E40BF4F0 /* CartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3866BC61D871E391A66926984B91A11 /* CartViewController.storyboard */; };
-=======
 		73EB8E9E201234C3D08F1FB56C745AFB /* CardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17884DD9D6D19B4F0E3AF8ADBAA879 /* CardSelection.swift */; };
->>>>>>> development
 		73F50DC7041E5356150C397BE8583AC6 /* HomeSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64195FACD0FD794F065D603CD6C8667 /* HomeSwitcher.swift */; };
 		743345B4986A3CC7C34DC2FC3785DA9E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC3867AA151B227394C8BCE6469CBC7 /* Font.swift */; };
 		7458CD7F594DC6201248837A8E807D87 /* PreCompLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B8C98D30EA8F4C9B0A82F37A9D3 /* PreCompLayer.swift */; };
@@ -351,10 +306,7 @@
 		85068573E7B52422913E83AD87226EEF /* TabDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3410C1C763C0F3574B74660973A125 /* TabDefault.swift */; };
 		85A152FCF08FE3AC37D9C9BC843CD787 /* DecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB615EEDA7C227E8E61C095B02BD6A /* DecodingStrategy.swift */; };
 		86253DCD5945EFEC8517641E09B7552A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0DF9A1D766672B665DFA287D4CE1F6 /* Button.swift */; };
-<<<<<<< HEAD
 		86373D96C17095831D96E5CA31B5B51A /* TabQuadRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122941E2747B783E42D72278D3102852 /* TabQuadRound.swift */; };
-=======
->>>>>>> development
 		874E74A850510399079878904C9C715C /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78BC1F94FE3FF787714038790A3BB2A /* LRUCache.swift */; };
 		882BAF8C878FEB36B5B6084E4FE601E9 /* TabsDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46296EC08ECD077682761E28BF7DB6 /* TabsDefaultCell.swift */; };
 		88AE7D5F8452F37A34BD46FFD77369F6 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020EE660BDC8A27DC27A0E5F2ADC39D /* ImageAsset.swift */; };
@@ -366,10 +318,7 @@
 		8C5D7446B0C9F9D1D3E3B130405EA1A6 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05392443BAB163F68081B0D92BE0BA2C /* Skeleton.swift */; };
 		8C7B4F04060C4B5AD031BFD4F343D22D /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7682A2141ACA20CE8DF8CC4DFFDDFBF5 /* DashedLineView.swift */; };
 		8CEBB0FEE7FA5BE042EBF86CEB5E2A39 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AA6C063466EDAF99321B07CA3419 /* AnimatedSwitch.swift */; };
-<<<<<<< HEAD
 		8D6B815D1473A8E7D2211155E382E71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9743E9B189F1883ED5B137D1DF7F7 /* Assets.xcassets */; };
-=======
->>>>>>> development
 		8EBFD5A1CEF5DAF5196F45042CD78BA0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC67B941BD45B75FE50B8CC4B43F86 /* UIColorExtension.swift */; };
 		8EC7F29CC4116EEA544D93A042D52B97 /* BaseCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9FD71D06DAA44BA977B9D0604900C /* BaseCompositionLayer.swift */; };
 		8F16F7658E9FC73DBB5E9129E40A7D80 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70CA64FD4DC6F68335CA591BB5CC61D /* AnimationTime.swift */; };
@@ -378,10 +327,7 @@
 		8FB564FE126775DA3B41210C9002BBC5 /* Entry+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617A7EFEF3B2FFC14A5D7C91C7ADAFE /* Entry+Serialization.swift */; };
 		8FB9ED2B6C8FBFCB3CAA0CDFF10E0B64 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2571F6AB1060266760C03C31DAEBDB /* CartViewController.swift */; };
 		900DFEC8003306B21B7D1F2DB3CEB8CF /* RibbonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52040883571B4CB0EE9557887CB16C3 /* RibbonViewController.storyboard */; };
-<<<<<<< HEAD
 		9017393D4EA4C7DAF3F8C9A09480E1C7 /* KlikIDM_DSChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285409B4838D7ECD9B896FE4D19E2549 /* KlikIDM_DSChip.swift */; };
-=======
->>>>>>> development
 		90C142F06FFFBE3D92587095CCC0AC74 /* ColorEffectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068C4352B437160D53328D71FD9E9B7 /* ColorEffectValue.swift */; };
 		91B841EB48F3F98C8D02FD87A231EFFB /* EffectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A297FFDD460C11EA18E36A77E0CCA6D /* EffectValue.swift */; };
 		91C8B692C9010EB7CD427E4D4A27CB7B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA774C316889D07CACEF95E906B3E222 /* HomeViewController.swift */; };
@@ -426,12 +372,9 @@
 		A3BFAA184F1FAF4B1E386326E95CD069 /* CardProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9795B32E7DB81E2F7BEEA764056B63 /* CardProductCell.swift */; };
 		A4088AAE093B75C6628C915A36F8E894 /* ButtonStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED915AD19103A7EEFFA58B09998E1E /* ButtonStepper.swift */; };
 		A4296B43869C8A135F03F2D31B2BB23F /* Data+CompressionDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA8ACD42EC6547521E050737357BEE /* Data+CompressionDeprecated.swift */; };
-<<<<<<< HEAD
 		A64407E2F74A5DC4EC2EFC530F7CD906 /* KlikIDM_DS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E65B9D64CD0A2C068D51354EAB853513 /* KlikIDM_DS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-=======
 		A540BE5DF90E1B638AC4DB2290E84CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488F68B169B20F6DED1B2807C669B21 /* Main.storyboard */; };
 		A632D57B310F0DC8F7A0250371A9AC6C /* CardMyCouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D751540CD3A48B635C3E5190F5B8BA2 /* CardMyCouponCell.xib */; };
->>>>>>> development
 		A6442A5A5A9B0FC22CA144F481DF54CF /* Coachmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FF177334F952650F2D85719D62E96 /* Coachmark.swift */; };
 		A6BA53506CE72BF9917FDE48D8F51925 /* Poinku_DS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09942FEF713BD8E8FCA267154210C325 /* Poinku_DS-dummy.m */; };
 		A6CF588E66FE47ECF4B9F9CF2B802667 /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A045F267B99259E66B8D5AD55CC39EE /* CurveVertex.swift */; };
@@ -440,19 +383,13 @@
 		A761916B6881749B756FE96F7A731330 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C177692636B8FA9A8DA2F167D74CB /* Archive+MemoryFile.swift */; };
 		A878F84BA9E24725FD0213858CF06F2B /* ExtensionCGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ACC9A1BFB3ADDFBA39577872F1DC81 /* ExtensionCGContext.swift */; };
 		A89BCCA9FA1EC61381A2E1CAB35F66FF /* OnBoardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1312F1F1560D080B888255C2500E75AD /* OnBoardingCell.xib */; };
-<<<<<<< HEAD
 		A99CA4F974F9BFDE999DF2670EFBFB69 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA3D91C2509BE8293478D881552929 /* ExtensionUIView.swift */; };
-=======
->>>>>>> development
 		AA44E81FE4E08C32F4806EFE9AAB70B0 /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8537938F6B74F7874A8F386CA2E458 /* LayerImageProvider.swift */; };
 		AAD41DE67BA30AC0C2BA7CA485643514 /* AnyNodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84617F66F138D57AAC5F6D5CA38265B /* AnyNodeProperty.swift */; };
 		AC2628C4B86A0E978D9992AF38D9E23F /* UIView+SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEECCD004A2BC1364E297026A74CAE /* UIView+SwiftUIView.swift */; };
 		ACDBFF24C5305FDBDDFFF047C997646F /* View+ValueChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E449C27F329B93CDCF4FF914988755 /* View+ValueChanged.swift */; };
-<<<<<<< HEAD
 		AD29720935892E7BA3A956D31172F71D /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375796B917CAAE38679C55BF3C87CE8 /* ExtensionUIColor.swift */; };
-=======
 		AD091F8EE4E7B996433886C8D0F474CD /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05392443BAB163F68081B0D92BE0BA2C /* Skeleton.swift */; };
->>>>>>> development
 		AD3898946874CE4895E22124792010D4 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14DE3F7220C068B708FFB7CB7C2B90D /* VerificationViewController.storyboard */; };
 		AD49517FB3A63F0C63BD2E31472E7AE1 /* CGColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED20D8FE88B9D957C0E196B70F48CD /* CGColor+RGB.swift */; };
 		AD6C683143033ABB1C855D062B99887E /* RenderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBD60C4898CCDD51A0F22DCCEDBF32B /* RenderNode.swift */; };
@@ -477,21 +414,15 @@
 		B76C68B8857885EDBC27A11BC89B066E /* KlikIDM_DSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A95D659A27585C161CCEA131B9AD9C /* KlikIDM_DSButton.swift */; };
 		B88E6C146AD5C3E1D43BA246A5DBF5DE /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084B58CAE5AA50640A3E57F5705618E /* Register1ViewController.swift */; };
 		B8D6A6FAAD952CFB60EE625E660FB1BB /* DotLottieImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8246E74938D9437C5CB2B3C70E18F7 /* DotLottieImageProvider.swift */; };
-<<<<<<< HEAD
 		BA0BB088C06D88165C98FC180EB1A915 /* TabSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C233AB9E3C9DE103A3C50BB1C200627 /* TabSkeleton.swift */; };
-=======
->>>>>>> development
 		BA4432FBD7DFF99CF01ACCD037290BCA /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC797A277AA7548C8F340A954E0DD87D /* FileManager+ZIP.swift */; };
 		BA7093ACCA15A5E55D8828C4E00F938E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2547B59C38E3E411825BED77A6D0837 /* LaunchScreen.storyboard */; };
 		BA8EEA8D07702C4E3338D9950361F524 /* Archive+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD9C419B7667A1540F1B42B1693AD9 /* Archive+Helpers.swift */; };
 		BAE428B00ED17360D968F397608C99B9 /* Register1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FA67CF5A1F9C58406CE811D9AF8F98 /* Register1ViewController.storyboard */; };
 		BB4955FBE0B90ADE126939C6E70FAF65 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556F3C65FED0E5DA071743C9C001427 /* TextAnimator.swift */; };
 		BBA32AF904FAD9545AB2B746EF36953A /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA34B760A21A63497306AB63DB0AE9 /* Register2ViewController.swift */; };
-<<<<<<< HEAD
 		BCC3CA9A1130131386C57F7A372F6F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
-=======
 		BC347F3B0AE65BB80FE6C4FF50DB0174 /* ButtonStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E47D206A39A851CA25871196963F27F /* ButtonStepper.xib */; };
->>>>>>> development
 		BE20AE8FE9FD2460F60BD9DCA4728F4A /* MeasuringViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940501D05668BF13C9F65FE3850FA689 /* MeasuringViewRepresentable.swift */; };
 		BE508A0A19E9E1C821904F187BE0EEFB /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4D8361503FA9B160B8BC5B923DF4B /* SolidLayerModel.swift */; };
 		BFE8194DC38A5BFFB56190CD81615820 /* RenderingEngineOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BA7BA2EC0DDC0E54B523B5D0C496 /* RenderingEngineOption.swift */; };
@@ -499,14 +430,11 @@
 		C024BCA5F77C14BCED72B31413391EAC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14795E164561F8FAA5A7CCECC91F2E /* RegisterViewController.swift */; };
 		C0A9C2D6A39AD415944130E703B6017B /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940C5C5522ECDC1F4BAFD308F2F1AA3 /* CGPointExtension.swift */; };
 		C138D53D4F507AEBAFD1984E85F8DF4D /* OnBoarding2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A47C7E41864C16FF712AED349D640 /* OnBoarding2Cell.swift */; };
-<<<<<<< HEAD
 		C262489476E49D0CB33C9C5E49F7E35E /* TabDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6C9C13D17E3129CE605D26ADADA0F /* TabDefault.swift */; };
 		C31D2948C8835704D95C7C8E62F2B844 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1ABD0C704C46E4993FE6C2208E32C /* ExtensionString.swift */; };
-=======
 		C14677276D44594021EEE30C48C991E4 /* CardCouponOffered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB0D17EFB033007F8F42A629E1F4D4 /* CardCouponOffered.swift */; };
 		C245F186CDC8167CFFBCE47A53536C24 /* KlikIDM_DSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A95D659A27585C161CCEA131B9AD9C /* KlikIDM_DSButton.swift */; };
 		C41FEA90BB2A621BC9C5BDCF05BCA426 /* TabDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87765C9E56725046D795D9A66612FB5A /* TabDefaultCell.xib */; };
->>>>>>> development
 		C4423C2FC4E6175D6DD1549FDF874852 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B55232621D2AE942E858A10231CB71A /* Rectangle.swift */; };
 		C60FDF1D89E87F64B54A0CB37B208443 /* InfiniteOpaqueAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340D368BC11BC5908301C444721F62F /* InfiniteOpaqueAnimationLayer.swift */; };
 		C6EAEF378825E2BBA5DC6A6A7B87DF52 /* MGMViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D717812250080CC5A1975D8FF457AE /* MGMViewController.storyboard */; };
@@ -530,17 +458,14 @@
 		CF2A625EAA12C441085AAD2CD2615C4F /* CAAnimation+TimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003F07CE6AEF9498207672720927745 /* CAAnimation+TimingConfiguration.swift */; };
 		CFA535475247D2891EA19ABF3574C25F /* ScrollingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BD540A3CED1B128D2590CE86028F38 /* ScrollingViewController.storyboard */; };
 		D02C4D7EFCD7BB94CCCB3962787CFD4B /* Button.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605AE38BA7D23A9533DEFEAB7F5CAAD3 /* Button.xib */; };
-		D07B8D8976AC3E1CD9E92265A561629E /* ReducedMotionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182975819CF3CCA4AA8F6126F63BAF4 /* ReducedMotionOption.swift */; };
-<<<<<<< HEAD
+		D07B8D8976AC3E1CD9E92265A561629E /* ReducedMotionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef =
 		D099861834C9885625F0EF34FE03D5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09916E67B1FCA664E5EB50AC7E6064C /* LaunchScreen.storyboard */; };
 		D0F4C4E15F593344200AC3E65E091170 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C3F8EA4BFF8542BFC79690255F058 /* PassThroughOutputNode.swift */; };
 		D17F0BE3CF2700C9AB46870160222748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED545BA7498176A93CBC3ED53C7404A /* ViewController.swift */; };
-=======
 		D0D3B594D0CD47DF33F52B25332B851C /* CardProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5967F54D1743494DB2850B987FDC0A0F /* CardProductCell.xib */; };
 		D0F4C4E15F593344200AC3E65E091170 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C3F8EA4BFF8542BFC79690255F058 /* PassThroughOutputNode.swift */; };
 		D31A8657CF53CA9B50742389FC6FDDED /* LiquidGlassBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBC7C418EC2E163FBC74B731308212 /* LiquidGlassBackgroundView.swift */; };
 		D341DF0D2DD8C0939E673B9A649D267E /* CardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8006B0EC8EA5CB989159ECDC0862944 /* CardSelectionCell.swift */; };
->>>>>>> development
 		D34DF1BC8A39D18B20EA062C621AFA65 /* AnimationFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEF857B33E7B1F73514E833BE6620A /* AnimationFontProvider.swift */; };
 		D35F464D52211777712B0C641E4C25ED /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820AD3C8F0607D4CC3E395B6E5B6C2B /* AnimationSubview.swift */; };
 		D3935C3C8977E92036EB35085E04443B /* LottieAnimationViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FD47BB0B2C4383C8DC71F72707A /* LottieAnimationViewBase.swift */; };
@@ -563,12 +488,9 @@
 		DA90A96B5F1B3B1FC05706F351B1341F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857368743CD1332B8536F328258BCD /* Tabs.swift */; };
 		DAD2130F38B46DB9CB84713B400AA297 /* StampCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150AC090D483E3C1C847067482CEF1EF /* StampCardCell.swift */; };
 		DB0DAA3F878B666721A9FC96B5AB03FF /* SetContentProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62D3EAB31D960135073F8C8E5FD9D4D /* SetContentProviding.swift */; };
-<<<<<<< HEAD
 		DBD416105DF53528B7BE9B99E7132B72 /* CardSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA234D0174603AFEED62CB7998A088F2 /* CardSelection.xib */; };
 		DC2094D3D3B7DDEFA98DC66797EA901A /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE187E6CBC00A6C1ED4EE8C86F757B3C /* SearchBar.xib */; };
 		DC7327F799A8BD9664B08C25BDBAEF93 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A641741FCF287A282863D64E616AF /* AnimationHelper.swift */; };
-=======
->>>>>>> development
 		DCAE176354A27C204E5DC062EC2D1A09 /* LottieLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691BD124719D30186E332EF3DCAB2B28 /* LottieLogger.swift */; };
 		DD3129CDD0DAA88FC335AD2C6DBC8F7C /* WillDisplayProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B761E2ADA6242ED7FEFF0A580569 /* WillDisplayProviding.swift */; };
 		DDC63B62308B18D7A90EC984E6B7D02E /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E84FB649C6A48F4B13DBFB7622288C /* ExtensionUIColor.swift */; };
@@ -578,15 +500,12 @@
 		E06371D2FCBE93688D11CD5A0C2A73DC /* TabsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B508679D43F4F79C90D7A1817394FE /* TabsModel.swift */; };
 		E0B898CD018D45D476B6892CC4B713EB /* BaseAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD87E42AAA51F7E999C28AC02A749B57 /* BaseAnimationLayer.swift */; };
 		E0D42607F43FB454287C1AC694501ECE /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247B837582CE8F435EE24A81C5CA92A0 /* AnimatorNodeDebugging.swift */; };
-<<<<<<< HEAD
 		E2414B764B0853A80CCBE8262B2301C3 /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE38CA9F9341A748C0BF7454DEBC5A /* ScrollController.swift */; };
 		E33683B63AF0DC8285301E86604E8B27 /* PDPViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95C63B0A94CCAFA7E5FEF4FE95DBA92D /* PDPViewController.storyboard */; };
-=======
 		E166D5AA8BC180990AE0088FC10C1FE5 /* KlikIDM_DS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E65B9D64CD0A2C068D51354EAB853513 /* KlikIDM_DS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1EC3972BAE0F0AD3F3D54C6323FFB74 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375796B917CAAE38679C55BF3C87CE8 /* ExtensionUIColor.swift */; };
 		E2414B764B0853A80CCBE8262B2301C3 /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE38CA9F9341A748C0BF7454DEBC5A /* ScrollController.swift */; };
 		E38B0E7991103158B8102728D976AF7D /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A641741FCF287A282863D64E616AF /* AnimationHelper.swift */; };
->>>>>>> development
 		E3CD844640B9232A211379D59BEC3BB8 /* Textfield.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FF2F01EAFAD0107D7C6909258FF534 /* Textfield.xib */; };
 		E491222DDF1509E4992764EAEEC0D9EF /* GradientValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B54A62F4593E1E030F964677558750 /* GradientValueProvider.swift */; };
 		E4F03C198EE0404692AD811BE34361EE /* PoinCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A06A525251A43D1A5832B77D5FA56 /* PoinCardViewController.storyboard */; };
@@ -598,22 +517,16 @@
 		E67036DE932767EF9DB13A4F3A01190D /* CouponCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE294271D37185D7C533B363334FD5 /* CouponCardCell.swift */; };
 		E6E23A7CDE96DC295AE3D23294663382 /* ChipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6C5F9B60DB49CF2EBDC7A7B1D78A3 /* ChipCollectionViewCell.swift */; };
 		E7DAC0920982B3C254705CFFFCA34461 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200012CB0C3BADBF944194DC474B8A70 /* OnBoardingCell.swift */; };
-<<<<<<< HEAD
 		E99EB0D841A87BEFE2212580922F3E20 /* CardMyCouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D751540CD3A48B635C3E5190F5B8BA2 /* CardMyCouponCell.xib */; };
-=======
 		E92006C042C6E72549276D23F6C09994 /* TabDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B3422C85C701CCA74797E2E69EB2D /* TabDefaultCell.swift */; };
->>>>>>> development
 		E99F3C691549D9BB369A79BC9491B1AF /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CF50FDBDCB9F5BC5E93C76C713A03 /* Keyframe.swift */; };
 		EA2212260F7019012F380B7A30911FFF /* TabDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A826318DAC062FFF271BAA0C40FEB7E /* TabDefault.xib */; };
 		EA69585FDA6057E67501492411AA8616 /* Badge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 121D365836E9C85804A0CF0B6135B769 /* Badge.xib */; };
 		EA99F1A5E6FF8958E1975842F4678B36 /* Collection+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B18414D47AE9307CC417BC07738E1 /* Collection+Diff.swift */; };
 		EB221D2E4EB96AF963BC9D7135F5BA5F /* TabsDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5154D1140127F0A474B1B87BD0DD749 /* TabsDefault.xib */; };
 		ECA0C0B95A03199BE7122233D2DC871A /* TabsDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B82C495557B062E8CDF412C5343704 /* TabsDefaultModel.swift */; };
-<<<<<<< HEAD
 		ED084144E864DF06C4C38C480AA40BEC /* TabChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB377E7133F7DDABAA0E42A88164A4E /* TabChipCell.xib */; };
-=======
 		EDABE27755642F774B2368A8A3C355D1 /* CardMyCoupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756A6F2268D52A5CCFBB77AC900C660 /* CardMyCoupon.swift */; };
->>>>>>> development
 		EDEC1F6575F3BC24D0AF41ABA00B714D /* DoubleArcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB49DAB34A611642A7AEACB4D6C5CD9F /* DoubleArcViewController.swift */; };
 		EE3F2143DC9FEB56B660856AB0B0F198 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DA48D19BF0B83BF40AF4EF0851960 /* Marker.swift */; };
 		EE43011830FF03A56041AAC45C4A14F1 /* PromoGiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2827826BB586A110CC1A6FF89DA256 /* PromoGiftViewController.storyboard */; };
@@ -628,10 +541,7 @@
 		F0C224F9CB7AB0654E8B18181E44C79C /* CardCouponOfferedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591925EBC3568E02FEFDA10766E0850E /* CardCouponOfferedCell.xib */; };
 		F1058661315AC6399303178FA99EB218 /* EpoxySwiftUIIntrinsicContentSizeInvalidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6CA256DA9B2B2E3341C2E98E80A865 /* EpoxySwiftUIIntrinsicContentSizeInvalidator.swift */; };
 		F19C5DFBB03E42F5B187E69EB1CC0A11 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920F2DB84CD9780A83C7AF39DC81C8E /* ColorExtension.swift */; };
-<<<<<<< HEAD
 		F204DB757FB1D43A49D5EF32F50DD640 /* TabSquareRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8F5F8CCC719EB8151A29389335364 /* TabSquareRoundCell.swift */; };
-=======
->>>>>>> development
 		F2A48D00C14CFE0FCE542DC17E0D3CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		F2C4DBB1184DC3EA6CCBA8539E955339 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167F764849606E5C8CBFA9FF213F6FD /* ShapeCompositionLayer.swift */; };
 		F33131FA8DA0BB24124B821F00E37EA4 /* RepeaterLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43FA8B33A47018599EBAA37185EFCAA /* RepeaterLayer.swift */; };
@@ -646,17 +556,11 @@
 		F78DAE936564B274830F11C04E534C15 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F1F770004C5487F8AF384DB33128D /* DrawViewController.swift */; };
 		F84F93F555CC2BEF42B74F1DFAABFDE6 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F27C6F583DA68235B292CF715CEA3D /* TextCompositionLayer.swift */; };
 		F8D97F624F47AD9A3091B8632580B0F8 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38732B7AB15FAE60EE052FA620D88C /* OnBoarding.swift */; };
-<<<<<<< HEAD
 		F94811EC7A56391BE39806C41BBF4BE4 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55E629D7508A8485DAB42CD549F209F /* Badge.swift */; };
-=======
->>>>>>> development
 		FA98510F75B0C19885F77418579027B6 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790256D15D9C7E18AC2ACEA58FCB5484 /* VectorsExtensions.swift */; };
 		FABA2281FEEA1B1B7CA0BE8A19A8B95F /* CartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3866BC61D871E391A66926984B91A11 /* CartViewController.storyboard */; };
 		FB5DCBEDACB929EBAF1806B9EECC1838 /* StampCardSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3083155FA84207F79AB18063165849 /* StampCardSmall.xib */; };
-<<<<<<< HEAD
 		FB7025F0AAD00E7192C5B70B05F031E5 /* TabQuadRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD72F05633FFB90B147CBFED18773200 /* TabQuadRoundCell.xib */; };
-=======
->>>>>>> development
 		FC3EDE1940A4241BBC5FDBA3487E06F7 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A200C3D7D0DD18531818C0BF3355E7A /* ShapeItem.swift */; };
 		FED3C9C0E6F5935168D3D686AD2BA1FB /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339F33121585D3893E406743C3AC621 /* PreCompositionLayer.swift */; };
 		FEDDE9C2DA6010A154DF01D903AC7E4A /* DotLottieConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D610E018FD80226AC27DB01D18BACC3E /* DotLottieConfiguration.swift */; };
@@ -881,10 +785,7 @@
 		57FDEC82F637532907E4731F83E48EFB /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Poinku_DS/ViewController.swift; sourceTree = "<group>"; };
 		580CDE8AD5EBEC5D15EC243B0C0CC8C5 /* OnBoarding2.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OnBoarding2.xib; sourceTree = "<group>"; };
 		591925EBC3568E02FEFDA10766E0850E /* CardCouponOfferedCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CardCouponOfferedCell.xib; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		59541B2797C2F13E1414C3C98E199462 /* TabSquareRoundCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TabSquareRoundCell.xib; sourceTree = "<group>"; };
-=======
->>>>>>> development
 		5967F54D1743494DB2850B987FDC0A0F /* CardProductCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CardProductCell.xib; sourceTree = "<group>"; };
 		59AFB0112F19F38AD0DFE74D631FE614 /* CardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		5A200C3D7D0DD18531818C0BF3355E7A /* ShapeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeItem.swift; path = Sources/Private/Model/ShapeItems/ShapeItem.swift; sourceTree = "<group>"; };
@@ -1991,7 +1892,6 @@
 			path = Skeleton;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		94B7456065B491F309A35BE7586A7345 /* VerificationPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2002,8 +1902,6 @@
 			path = VerificationPage;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> development
 		967BF5E4D7D3E1FD5A3880AA12E9793D /* Switcher */ = {
 			isa = PBXGroup;
 			children = (
@@ -2714,8 +2612,6 @@
 				B8D81343631841A02FC23A7E71CB33A9 /* CardCouponOfferedCell.swift */,
 				591925EBC3568E02FEFDA10766E0850E /* CardCouponOfferedCell.xib */,
 			);
-<<<<<<< HEAD
-=======
 			name = CustomCell;
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -2728,7 +2624,6 @@
 				B8D81343631841A02FC23A7E71CB33A9 /* CardCouponOfferedCell.swift */,
 				591925EBC3568E02FEFDA10766E0850E /* CardCouponOfferedCell.xib */,
 			);
->>>>>>> development
 			name = CouponOffered;
 			path = CouponOffered;
 			sourceTree = "<group>";
@@ -2876,17 +2771,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1F130411BD299B77616FFAE60494F28 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */;
 			buildPhases = (
-<<<<<<< HEAD
 				A917C3641162A2E45D393356E4429A63 /* Headers */,
 				C2DE51E4C55E52C3E24815D9615214CE /* Sources */,
 				B3524CB45290DDAE16D692901C604C72 /* Frameworks */,
 				2A9DC14D83DBCDF404FEDAF002A84157 /* Resources */,
-=======
 				EE07FEDA0E50191824DE91E8F1BBF70B /* Headers */,
 				720F4D797D8834B3327EC556904B7E92 /* Sources */,
 				7DC5F8535C081A0B6EE41952DAF4F092 /* Frameworks */,
 				993E253F693026512D700D88BE29705D /* Resources */,
->>>>>>> development
 			);
 			buildRules = (
 			);
@@ -3041,13 +2933,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
 		5CB053B59619B8895D8112A75C97A7BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				50ED50FDF2509EB1D70BFC3F5D5FC291 /* PrivacyInfo.xcprivacy in Resources */,
-=======
 		940C17E7DDA0763B01EFC86325EE8E63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3085,7 +2975,6 @@
 				06EADA82815527F7FB7DF8CEBE840175 /* TabQuadRound.xib in Resources */,
 				0111399B29738664F32FC958F487ED3A /* TabQuadRoundCell.xib in Resources */,
 				401CD7F64985DF896D8212281459489F /* TabSquareRoundCell.xib in Resources */,
->>>>>>> development
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3115,9 +3004,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
 		6D0D15F8683AB3805123FBC743FEF17C /* Sources */ = {
-=======
 		451B882EF064EE6A9F17CA4E1625359B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3126,7 +3013,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		720F4D797D8834B3327EC556904B7E92 /* Sources */ = {
->>>>>>> development
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3253,7 +3139,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-<<<<<<< HEAD
 		C2DE51E4C55E52C3E24815D9615214CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3303,8 +3188,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-=======
->>>>>>> development
 		C6B5E8BD068792C312C7BA44308FD784 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3700,7 +3583,6 @@
 			};
 			name = Release;
 		};
-<<<<<<< HEAD
 		116FAF4362BB3FD6E9DC2EDB89928854 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4DF5655BF8113F587A90FC7CD05B4E2 /* KlikIDM_DS.release.xcconfig */;
@@ -3741,8 +3623,6 @@
 			};
 			name = Release;
 		};
-=======
->>>>>>> development
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4002,13 +3882,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-<<<<<<< HEAD
 				WRAPPER_EXTENSION = bundle;
-=======
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
->>>>>>> development
 			};
 			name = Release;
 		};
@@ -4167,19 +4044,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
 		51DB54181896070BFACBC3A54AD0ECE2 /* Build configuration list for PBXNativeTarget "Poinku_DS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8C332E892E8D8053FB5F997AC68107B /* Debug */,
 				047D8EB58CD450A80EB08512B4EB7748 /* Release */,
-=======
 		6887676BB2B2A81D0926ABAE6DD23A42 /* Build configuration list for PBXNativeTarget "Pods-rghinnaa-experimental" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7675E0055F312865560ED6351D615C9B /* Debug */,
 				EA4741483C91D5891AE684522BA9A67F /* Release */,
->>>>>>> development
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4202,19 +4076,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
 		B1F130411BD299B77616FFAE60494F28 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FDEA3CECB6D2B3CF1F742A08ACC6F8CA /* Debug */,
 				116FAF4362BB3FD6E9DC2EDB89928854 /* Release */,
-=======
 		E7C90AE1C26B0B16E5799759B4397B21 /* Build configuration list for PBXNativeTarget "lottie-ios-LottiePrivacyInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF1C3F9859F9FF3110B6F9000A482252 /* Debug */,
 				E72DFE12487846ACCF7E1F6E5E05FD2E /* Release */,
->>>>>>> development
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
