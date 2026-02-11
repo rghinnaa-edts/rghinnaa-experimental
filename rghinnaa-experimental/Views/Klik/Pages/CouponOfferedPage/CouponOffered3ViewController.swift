@@ -10,6 +10,9 @@ import KlikIDM_DS
 
 class CouponOffered3ViewController: UIViewController {
     
+    
+    //MARK: - Outlets
+    
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var ivCouponOfferedBackground: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -21,6 +24,9 @@ class CouponOffered3ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
+    
+    
+    //MARK: - Private Variables
     
     private var couponTypeData: [TabDefaultModel] = []
     private var couponFilterData: [TabDefaultModel] = []
@@ -46,6 +52,8 @@ class CouponOffered3ViewController: UIViewController {
     
     private var currentStatusBarStyle: UIStatusBarStyle = .lightContent
         
+    //MARK: - Initializers
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return currentStatusBarStyle
     }
@@ -61,9 +69,14 @@ class CouponOffered3ViewController: UIViewController {
         setupRefreshControl()
     }
     
+    
+    //MARK: - Private Functions
+    
     private func setupUI() {
         scrollView.delegate = self
         vMyCouponCard.delegate = self
+        
+        vMyCouponCard.isBadgeSkeleton = true
         
         setupCollectionView()
         setupViewBackground()
@@ -71,7 +84,9 @@ class CouponOffered3ViewController: UIViewController {
     
     private func setupMyCouponCard() {
         let totalExchanged = couponOfferedData[tabCurrentIndex].data.filter(\.isExchanged).count
-        self.vMyCouponCard.cardBadgeText = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        vMyCouponCard.title = "Kupon Saya"
+        vMyCouponCard.desc = "Kumpulan kupon yang kamu punya"
+        vMyCouponCard.badgeLabel = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
     }
     
     private func setupViewBackground() {
@@ -79,6 +94,8 @@ class CouponOffered3ViewController: UIViewController {
         vBackgroundCoupon.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         vBackgroundCoupon.layer.masksToBounds = true
     }
+    
+    //MARK: - Collection View Setup
     
     private func setupCollectionView() {
         setupCouponData()
@@ -112,6 +129,7 @@ class CouponOffered3ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             guard let self = self else { return }
             self.isLoadingData = false
+            self.vMyCouponCard.isBadgeSkeleton = false
             self.filterCouponData(by: "all")
             collectionView.reloadData()
             
@@ -138,6 +156,8 @@ class CouponOffered3ViewController: UIViewController {
     private func calculateCollectionViewContentHeight() -> CGFloat {
         return self.collectionView.contentSize.height
     }
+    
+    //MARK: - Refresh Control
     
     private func setupRefreshControl() {
         refreshControl.tintColor = .clear
@@ -171,6 +191,7 @@ class CouponOffered3ViewController: UIViewController {
     private func startRefreshAnimation() {
         isRefreshAnimating = true
         isLoadingData = true
+        vMyCouponCard.isBadgeSkeleton = true
         collectionView.reloadData()
         
         let rotation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -183,17 +204,13 @@ class CouponOffered3ViewController: UIViewController {
     }
     
     private func stopRefreshAnimation() {
+        setupCouponData()
         isRefreshAnimating = false
         refreshIconImageView.layer.removeAllAnimations()
         
         UIView.animate(withDuration: 0.2) {
             self.isLoadingData = false
-            if let headerView = self.collectionView.supplementaryView(
-                forElementKind: UICollectionView.elementKindSectionHeader,
-                at: IndexPath(item: 0, section: 0)
-            ) as? CouponOffered3HeaderView {
-                headerView.vTabFilter.selectDefaultTab()
-            }
+            self.vMyCouponCard.isBadgeSkeleton = false
             
             self.filterCouponData(by: "all")
             self.collectionView.reloadData()
@@ -214,6 +231,8 @@ class CouponOffered3ViewController: UIViewController {
         refreshIconImageView.transform = rotation.concatenating(scaleTransform)
         refreshIconImageView.alpha = 0.5 + (0.5 * progress)
     }
+    
+    //MARK: - Block Screen Loading
     
     private func showLoadingBlockScreen() {
         hideLoadingBlockScreen()
@@ -266,6 +285,8 @@ class CouponOffered3ViewController: UIViewController {
         }
     }
     
+    //MARK: - Toast
+    
     private func showToast(message: String, font: UIFont = .systemFont(ofSize: 12.0)) {
         let toastContainer = UIView(frame: CGRect(x: self.view.frame.minX + 16,
                                                   y: self.view.frame.maxY - 96,
@@ -297,6 +318,8 @@ class CouponOffered3ViewController: UIViewController {
             toastContainer.removeFromSuperview()
         }
     }
+    
+    //MARK: - Data Models Static
     
     private func setupCouponData() {
         couponOfferedData = [
@@ -397,7 +420,7 @@ class CouponOffered3ViewController: UIViewController {
                      service: "Xpress, Xtra",
                      periode: "7 hari lagi",
                      couponCode: "BARUINSTAN10RB***",
-                     disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
+                     disableInfo: "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!",
                      isEnabled: true,
                      isNewUser: false,
                      isExchanged: false,
@@ -431,7 +454,7 @@ class CouponOffered3ViewController: UIViewController {
                      service: "Xpress, Xtra",
                      periode: "7 hari lagi",
                      couponCode: "BARUINSTAN10RB***",
-                     disableInfo: "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!",
+                     disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
                      isEnabled: false,
                      isNewUser: false,
                      isExchanged: false,
@@ -468,114 +491,7 @@ class CouponOffered3ViewController: UIViewController {
         }
     }
     
-    @objc private func handleRefresh() {
-        startRefreshAnimation()
-                
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-            self?.setupCouponData()
-            
-            self?.stopRefreshAnimation()
-            self?.refreshControl.endRefreshing()
-        }
-    }
-    
-    @IBAction func buttonBack(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-}
-
-extension CouponOffered3ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return isLoadingData ? 8 : filteredCouponData.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCouponOfferedCell", for: indexPath) as! CardCouponOfferedCell
-        
-        if isLoadingData {
-            cell.isSkeleton = true
-        } else {
-            cell.isSkeleton = false
-            cell.loadData(data: filteredCouponData[indexPath.row])
-        }
-        
-        cell.delegate = self
-        cell.cornerRadius = 12
-        cell.shadowColor = .lightGray
-        cell.shadowOpacity = 0.4
-        cell.shadowOffset = CGSize(width: 0, height: 1)
-        cell.shadowRadius = 3
-        cell.bgColor = .white
-        cell.index = indexPath.row
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-    
-        let headerView = collectionView.dequeueReusableSupplementaryView(
-                ofKind: UICollectionView.elementKindSectionHeader,
-                withReuseIdentifier: "CouponOffered3HeaderView",
-                for: indexPath) as! CouponOffered3HeaderView
-        
-        headerView.vTabTop.delegate = self
-        headerView.vTabFilter.delegate = self
-//        headerView.loadData(data: couponOfferedData)
-
-        return headerView
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width - 32
-        
-        return CGSize(width: width, height: 200)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        let header = CouponOffered3HeaderView()
-        
-        return CGSize(width: view.frame.width, height: header.calculateHeight())
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if collectionView.backgroundView == nil {
-            let backgroundView = UIView(frame: collectionView.bounds)
-            backgroundView.backgroundColor = .clear
-            collectionView.backgroundView = backgroundView
-        }
-    }
-}
-
-extension CouponOffered3ViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateRefresh()
-        updateToolbarColor(scrollView)
-        updateMyCouponCard(scrollView)
-        updateStickyHeader(scrollView)
-    }
-    
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        let offsetY = scrollView.contentOffset.y
-        let stickyPoint = myCouponCardHeight
-        
-        if offsetY >= stickyPoint {
-            hideTabFilterView()
-        }
-    }
-    
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate {
-            showTabFilterView(scrollView)
-        }
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        showTabFilterView(scrollView)
-    }
+    //MARK: - Animations
     
     private func updateRefresh() {
         if !refreshControl.isRefreshing && !isRefreshAnimating {
@@ -626,7 +542,6 @@ extension CouponOffered3ViewController: UIScrollViewDelegate {
     
     private func updateStickyHeader(_ scrollView: UIScrollView) {
         let offsetY = scrollView.contentOffset.y
-        
         guard let headerView = collectionView.supplementaryView(
             forElementKind: UICollectionView.elementKindSectionHeader,
             at: IndexPath(item: 0, section: 0)
@@ -651,20 +566,16 @@ extension CouponOffered3ViewController: UIScrollViewDelegate {
             headerView.vTabFilter.layer.shadowRadius = 4
             headerView.vTabFilter.bgColor = .white
         } else {
-            headerView.vTab.transform = .identity
+            isTabFilterHidden = false
             
+            headerView.vTab.transform = .identity
             headerView.vTabFilter.bgColor = .clear
             headerView.vTabFilter.layer.shadowOpacity = 0
-            
-            UIView.animate(withDuration: 0.2) {
-                headerView.vTabFilter.transform = .identity
-            }
+            headerView.vTabFilter.transform = .identity
         }
     }
     
     private func hideTabFilterView() {
-        isTabFilterHidden = true
-        
         guard let headerView = collectionView.supplementaryView(
             forElementKind: UICollectionView.elementKindSectionHeader,
             at: IndexPath(item: 0, section: 0)
@@ -674,18 +585,20 @@ extension CouponOffered3ViewController: UIScrollViewDelegate {
         let stickyPoint = myCouponCardHeight
         let stickyOffset = max(0, offsetY - stickyPoint)
         
-        UIView.animate(withDuration: 0.2) {
+        isTabFilterHidden = true
+        
+        UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut, .beginFromCurrentState]) {
             headerView.vTabFilter.transform = CGAffineTransform(translationX: 0, y: stickyOffset - headerView.vTabFilter.frame.height)
         }
     }
     
-    private func showTabFilterView(_ scrollView: UIScrollView) {
+    private func showTabFilterView() {
         let offsetY = scrollView.contentOffset.y
         let stickyPoint = myCouponCardHeight
         
+        isTabFilterHidden = false
+        
         if offsetY >= stickyPoint {
-            isTabFilterHidden = false
-            
             guard let headerView = collectionView.supplementaryView(
                 forElementKind: UICollectionView.elementKindSectionHeader,
                 at: IndexPath(item: 0, section: 0)
@@ -693,14 +606,164 @@ extension CouponOffered3ViewController: UIScrollViewDelegate {
             
             let stickyOffset = max(0, offsetY - stickyPoint)
             
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.3, delay: 0, options: [.curveEaseOut, .beginFromCurrentState]) {
                 headerView.vTabFilter.transform = CGAffineTransform(translationX: 0, y: stickyOffset)
             }
+        }
+    }
+    
+    //MARK: - Actions
+    
+    @objc private func handleRefresh() {
+        startRefreshAnimation()
+                
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+            self?.stopRefreshAnimation()
+            self?.refreshControl.endRefreshing()
+        }
+    }
+    
+    @IBAction func buttonBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+}
+
+
+//MARK: - Collection View
+
+extension CouponOffered3ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return isLoadingData ? 8 : filteredCouponData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCouponOfferedCell", for: indexPath) as! CardCouponOfferedCell
+        
+        if isLoadingData {
+            cell.isSkeleton = true
         } else {
-            isTabFilterHidden = false
+            cell.isSkeleton = false
+            cell.loadData(data: filteredCouponData[indexPath.row])
+        }
+        
+        cell.delegate = self
+        cell.cornerRadius = 12
+        cell.shadowColor = .lightGray
+        cell.shadowOpacity = 0.4
+        cell.shadowOffset = CGSize(width: 0, height: 1)
+        cell.shadowRadius = 3
+        cell.bgColor = .white
+        cell.index = indexPath.row
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    
+        let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier: "CouponOffered3HeaderView",
+                for: indexPath) as! CouponOffered3HeaderView
+        
+        let couponTypeData = couponOfferedData.map { couponType in
+            TabDefaultModel(
+                id: couponType.id,
+                title: couponType.title
+            )
+        }
+        let couponFilterData = couponOfferedData[tabCurrentIndex].tab
+        
+        headerView.couponTypeData = couponTypeData
+        headerView.couponFilterData = couponFilterData
+        
+        if isLoadingData {
+            headerView.vTabTop.skeletonItemTotal = 2
+            headerView.vTabTop.isSkeleton = true
+            
+            headerView.vTabFilter.skeletonItemTotal = 3
+            headerView.vTabFilter.isSkeleton = true
+            
+            headerView.removeTabTypeData()
+            headerView.removeTabFilterData()
+        } else {
+            headerView.vTabTop.isSkeleton = false
+            headerView.vTabFilter.isSkeleton = false
+            
+            headerView.couponTypeData = couponTypeData
+            headerView.couponFilterData = couponFilterData
+        }
+        
+        headerView.vTabTop.delegate = self
+        headerView.vTabFilter.delegate = self
+
+        return headerView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width - 32
+        let height = CardCouponOfferedCell().calculateHeight(for: width)
+        
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let header = CouponOffered3HeaderView()
+        
+        return CGSize(width: view.frame.width, height: header.calculateHeight())
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if collectionView.backgroundView == nil {
+            let backgroundView = UIView(frame: collectionView.bounds)
+            backgroundView.backgroundColor = .clear
+            collectionView.backgroundView = backgroundView
         }
     }
 }
+
+//MARK: - ScrollView
+
+extension CouponOffered3ViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        updateRefresh()
+        updateToolbarColor(scrollView)
+        updateMyCouponCard(scrollView)
+        updateStickyHeader(scrollView)
+        
+        let offsetY = scrollView.contentOffset.y
+        let stickyPoint = myCouponCardHeight
+        
+        if scrollView.isDragging && offsetY >= stickyPoint && !isTabFilterHidden {
+            hideTabFilterView()
+        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let stickyPoint = myCouponCardHeight
+        
+        if offsetY >= stickyPoint {
+            hideTabFilterView()
+        }
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            showTabFilterView()
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        showTabFilterView()
+    }
+}
+
+
+//MARK: - Delegates
 
 extension CouponOffered3ViewController: CardCouponOfferedCellDelegate {
     func didSelectButtonDetail(at index: Int) {
@@ -708,11 +771,35 @@ extension CouponOffered3ViewController: CardCouponOfferedCellDelegate {
     
     func didSelectButtonExchange(at index: Int, isCanExchange: Bool, isExchanged: Bool) {
         if !isCanExchange {
-            if #available(iOS 10.0, *) {
-                let generator = UIImpactFeedbackGenerator(style: .heavy)
-                generator.impactOccurred()
+            showLoadingBlockScreen()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+                guard let self = self else { return }
+                
+                self.hideLoadingBlockScreen {
+                    self.scrollView.setContentOffset(.zero, animated: true)
+                    
+                    if #available(iOS 10.0, *) {
+                        let generator = UIImpactFeedbackGenerator(style: .heavy)
+                        generator.impactOccurred()
+                    }
+                    self.showToast(message: "Kupon tidak bisa ditukar")
+                    
+                    self.isLoadingData = true
+                    self.vMyCouponCard.isBadgeSkeleton = true
+                    self.collectionView.reloadData()
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+                        guard let self = self else { return }
+                        self.isLoadingData = false
+                        self.vMyCouponCard.isBadgeSkeleton = false
+                        self.filterCouponData(by: "all")
+                        collectionView.reloadData()
+                        
+                        setupMyCouponCard()
+                    }
+                }
             }
-            showToast(message: "Kupon tidak bisa ditukar")
         } else {
             if !isExchanged {
                 showLoadingBlockScreen()
@@ -750,21 +837,27 @@ extension CouponOffered3ViewController: TabDefaultDelegate {
             at: IndexPath(item: 0, section: 0)
         ) as? CouponOffered3HeaderView else { return }
         
+        if cellIdentifier == headerView.tabTopCell {
+            scrollView.setContentOffset(.zero, animated: true)
+            
+            tabCurrentIndex = index
+            headerView.removeTabFilterData()
+            
+            filteredCouponData.removeAll()
+            filterCouponData(by: "all")
+            
+            collectionView.reloadData()
+            updateCollectionViewHeight()
+        }
+        
         if cellIdentifier == headerView.tabFilterCell {
             scrollView.setContentOffset(.zero, animated: true)
             
-            isLoadingData = true
             filteredCouponData.removeAll()
-            collectionView.reloadData()
+            filterCouponData(by: couponOfferedData[tabCurrentIndex].tab[index].title.lowercased())
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-                guard let self = self else { return }
-                self.isLoadingData = false
-                self.filterCouponData(by: headerView.couponFilterData[index].title.lowercased())
-                collectionView.reloadData()
-                
-                updateCollectionViewHeight()
-            }
+            collectionView.reloadData()
+            updateCollectionViewHeight()
         }
     }
 }
@@ -774,5 +867,4 @@ extension CouponOffered3ViewController: CardMyCouponDelegate {
         let vc = UIStoryboard(name: "MyCouponViewController", bundle: nil).instantiateViewController(withIdentifier: "MyCouponPage")
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

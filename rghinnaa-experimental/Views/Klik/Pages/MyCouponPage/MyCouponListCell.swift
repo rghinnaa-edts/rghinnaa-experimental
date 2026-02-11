@@ -13,6 +13,7 @@ class MyCouponListCell: UICollectionViewCell {
     public var onVerticalScroll: ((UIScrollView) -> Void)?
     public var onHideTabFilter: ((UIScrollView) -> Void)?
     public var onShowTabFilter: ((UIScrollView) -> Void)?
+    public var onVerticalScrollEnd: ((UIScrollView) -> Void)?
     public var isSkeleton: Bool = false {
         didSet {
             resetScrollPosition()
@@ -112,12 +113,13 @@ class MyCouponListCell: UICollectionViewCell {
         if !decelerate {
             onShowTabFilter?(scrollView)
         }
+        
+        onVerticalScrollEnd?(scrollView)
     }
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         onShowTabFilter?(scrollView)
     }
-    
 }
 
 extension MyCouponListCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

@@ -15,15 +15,26 @@ class CouponOffered3HeaderView: UICollectionReusableView {
     @IBOutlet weak var vTabTop: TabDefault!
     @IBOutlet weak var vTabFilter: TabDefault!
     
-    private var couponTypeData: [TabDefaultModel] = []
-    var couponFilterData: [TabDefaultModel] = []
-    private var tabCurrentIndex = 0
-    
     @IBOutlet weak var tabHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tabFilterHeightConstraint: NSLayoutConstraint!
     
-    var tabTopCell = "TabDefaultCell"
-    var tabFilterCell = "TabChipCell"
+    public var couponTypeData: [TabDefaultModel] = [] {
+        didSet {
+            setTabTypeData(data: couponTypeData)
+        }
+    }
+    public var couponFilterData: [TabDefaultModel] = [] {
+        didSet {
+            setTabFilterData(data: couponFilterData)
+        }
+    }
+    
+    public var tabTopCell = "TabDefaultCell"
+    public var tabFilterCell = "TabChipCell"
+    
+    private var storedCouponTypeData: [TabDefaultModel] = []
+    private var storedCouponFilterData: [TabDefaultModel] = []
+    private var tabCurrentIndex = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -53,18 +64,13 @@ class CouponOffered3HeaderView: UICollectionReusableView {
         return hitView
     }
     
-//    func loadTabData(_ data: [TabDefaultModel]) {
-//        couponTypeData = data
-//        vTabTop.data = data
-//        vTabTop.selectDefaultTab()
-//    }
-//    
-//    // Update existing method or add if not present
-//    func loadTabFilterData(_ data: [TabDefaultModel]) {
-//        couponFilterData = data
-//        vTabFilter.data = data
-//        vTabFilter.selectDefaultTab()
-//    }
+    public func removeTabTypeData() {
+        storedCouponTypeData = []
+    }
+    
+    public func removeTabFilterData() {
+        storedCouponFilterData = []
+    }
     
     public func calculateHeight() -> CGFloat {
         let height = tabHeightConstraint.constant + tabFilterHeightConstraint.constant
@@ -104,12 +110,10 @@ class CouponOffered3HeaderView: UICollectionReusableView {
     }
     
     private func setupTabTopUI() {
-        setupTabTopData()
-        
         vTabTop.registerCellType(TabDefaultCell.self, withIdentifier: tabTopCell)
         vTabTop.delegate = self
         
-        vTabTop.data = couponTypeData
+        vTabTop.data = storedCouponTypeData
         vTabTop.cellConfiguration = { cell, data, isSelected, index in
             guard let cell = cell as? TabDefaultCell else { return }
                 
@@ -123,19 +127,16 @@ class CouponOffered3HeaderView: UICollectionReusableView {
         vTabTop.bgColor = .clear
         vTabTop.isScrollable = false
         vTabTop.setDynamicWidth(enabled: true)
-        vTabTop.selectDefaultTab()
     }
     
     private func setupTabFilterUI() {
-        setupTabFilterData()
-        
         vTabFilter.registerCellType(TabChipCell.self, withIdentifier: tabFilterCell)
         vTabFilter.delegate = self
         
         vTabFilter.isUserInteractionEnabled = true
         vTabFilter.layer.masksToBounds = false
         
-        vTabFilter.data = couponFilterData
+        vTabFilter.data = storedCouponFilterData
         vTabFilter.cellConfiguration = { cell, data, isSelected, index in
             guard let cell = cell as? TabChipCell else { return }
                 
@@ -160,29 +161,20 @@ class CouponOffered3HeaderView: UICollectionReusableView {
             trailingPadding :16,
             itemSpacing : 8
         )
-        vTabFilter.selectDefaultTab()
     }
     
-    private func setupTabTopData() {
-        couponTypeData = [
-            TabDefaultModel(
-            id: "1",
-            title: "Diskon Ongkir")
-        ]
+    private func setTabTypeData(data: [TabDefaultModel]) {
+        if storedCouponTypeData.isEmpty {
+            storedCouponTypeData = data
+            setupTabTopUI()
+        }
     }
     
-    private func setupTabFilterData() {
-        couponFilterData = [
-            TabDefaultModel(
-            id: "1",
-            title: "Semua"),
-            TabDefaultModel(
-            id: "2",
-            title: "Xtra"),
-            TabDefaultModel(
-            id: "3",
-            title: "Xpress")
-        ]
+    private func setTabFilterData(data: [TabDefaultModel]) {
+        if storedCouponFilterData.isEmpty {
+            storedCouponFilterData = data
+            setupTabFilterUI()
+        }
     }
 }
 
