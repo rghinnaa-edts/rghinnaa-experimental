@@ -10,17 +10,37 @@ import KlikIDM_DS
 
 class MyCouponViewController: UIViewController {
     
+    //MARK: - Outlets
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    //MARK: - Private Variables
     
     private var isHeaderSticky = false
     private var isTabFilterHidden = false
     private var isLoadingData = true
+    private var tabCurrentIndex: Int = 0
+    
+    private var couponOfferedData: [CouponOfferedModel] = []
+    
+    private lazy var refreshControl: UIRefreshControl = {
+        let refresh = UIRefreshControl()
+        refresh.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        return refresh
+    }()
+    
+    //MARK: - Initializers
     
     override func viewDidLoad() {
         setupCollectionView()
+        setupRefreshControl()
     }
     
+    //MARK: - Private Functions
+    
     private func setupCollectionView() {
+        setupCouponData()
+        
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, environment) -> NSCollectionLayoutSection? in
             let itemSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
@@ -79,6 +99,70 @@ class MyCouponViewController: UIViewController {
         }
     }
     
+    private func setupCouponData() {
+        couponOfferedData = [
+            CouponOfferedModel(
+                id: "1",
+                title: "Potongan Total",
+                tab: [
+                    TabDefaultModel(
+                        id: "1",
+                        title: "Semua"
+                    ),
+                    TabDefaultModel(
+                        id: "2",
+                        title: "Xtra"
+                    ),
+                    TabDefaultModel(
+                        id: "3",
+                        title: "Xpress"
+                    )
+                ],
+                data: []
+            ),
+            CouponOfferedModel(
+                id: "2",
+                title: "Diskon Alat Bayar",
+                tab: [
+                    TabDefaultModel(
+                        id: "1",
+                        title: "Semua"
+                    ),
+                    TabDefaultModel(
+                        id: "2",
+                        title: "Xtra"
+                    ),
+                    TabDefaultModel(
+                        id: "3",
+                        title: "Xpress"
+                    ),
+                    TabDefaultModel(
+                        id: "4",
+                        title: "Ongkir"
+                    )
+                ],
+                data: []
+            ),
+            CouponOfferedModel(
+                id: "3",
+                title: "Diskon Ongkir",
+                tab: [
+                    TabDefaultModel(
+                        id: "1",
+                        title: "Semua"
+                    ),
+                    TabDefaultModel(
+                        id: "2",
+                        title: "Xtra"
+                    )
+                ],
+                data: []
+            )
+        ]
+    }
+    
+    //MARK: - Animations
+    
     private func verticalScrollView(_ scrollView: UIScrollView) {
         guard let headerView = self.collectionView.supplementaryView(
             forElementKind: UICollectionView.elementKindSectionHeader,
@@ -127,10 +211,35 @@ class MyCouponViewController: UIViewController {
         }
     }
     
+    //MARK: - Refresh Control
+    
+    private func setupRefreshControl() {
+        collectionView.refreshControl = refreshControl
+        refreshControl.tintColor = UIColor.blue30
+    }
+    
+    @objc private func handleRefresh() {
+        isLoadingData = true
+        collectionView.reloadData()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+            guard let self = self else { return }
+            
+            self.isLoadingData = false
+            self.collectionView.reloadData()
+            
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
+    //MARK: - Actions
+    
     @IBAction func btnBack(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
 }
+
+//MARK: - Collection View
 
 extension MyCouponViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -145,16 +254,32 @@ extension MyCouponViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.onVerticalScroll = { [weak self] scrollView in
             guard let self = self else { return }
             self.verticalScrollView(scrollView)
+            
+            if scrollView.contentOffset.y < -10 {
+                self.collectionView.contentOffset.y = scrollView.contentOffset.y
+            }
+        }
+
+        cell.onVerticalScrollEnd = { [weak self] scrollView in
+            guard let self = self else { return }
+            
+            if scrollView.contentOffset.y <= -100 && !self.refreshControl.isRefreshing {
+                self.refreshControl.beginRefreshing()
+                UIView.animate(withDuration: 0.25) {
+                    self.collectionView.contentOffset.y = -self.refreshControl.frame.height - self.collectionView.contentInset.top
+                }
+                self.handleRefresh()
+            }
         }
         
         cell.onHideTabFilter = { [weak self] scrollview in
             guard let self = self else { return }
-            self.hideTabFilterView()
+            hideTabFilterView()
         }
         
         cell.onShowTabFilter = { [weak self] scrollview in
             guard let self = self else { return }
-            self.showTabFilterView(scrollview)
+            showTabFilterView(scrollview)
         }
         
         return cell
@@ -166,6 +291,34 @@ extension MyCouponViewController: UICollectionViewDataSource, UICollectionViewDe
                 ofKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier: "MyCouponHeaderView",
                 for: indexPath) as! MyCouponHeaderView
+        
+        let couponTypeData = couponOfferedData.map { couponType in
+            TabDefaultModel(
+                id: couponType.id,
+                title: couponType.title
+            )
+        }
+        let couponFilterData = couponOfferedData[tabCurrentIndex].tab
+        
+        headerView.couponTypeData = couponTypeData
+        headerView.couponFilterData = couponFilterData
+        
+        if isLoadingData {
+            headerView.vTabTop.skeletonItemTotal = 2
+            headerView.vTabTop.isSkeleton = true
+            
+            headerView.vTabFilter.skeletonItemTotal = 3
+            headerView.vTabFilter.isSkeleton = true
+            
+            headerView.removeTabTypeData()
+            headerView.removeTabFilterData()
+        } else {
+            headerView.vTabTop.isSkeleton = false
+            headerView.vTabFilter.isSkeleton = false
+            
+            headerView.couponTypeData = couponTypeData
+            headerView.couponFilterData = couponFilterData
+        }
         
         headerView.vTabTop.delegate = self
         headerView.vTabFilter.delegate = self
@@ -182,6 +335,8 @@ extension MyCouponViewController: UICollectionViewDataSource, UICollectionViewDe
     }
 }
 
+//MARK: - Delegate
+
 extension MyCouponViewController: TabDefaultDelegate {
     func didSelectTabDefault(at index: Int, withId id: String, cellIdentifier: String) {
         guard let headerView = collectionView.supplementaryView(
@@ -190,36 +345,15 @@ extension MyCouponViewController: TabDefaultDelegate {
         ) as? MyCouponHeaderView else { return }
         
         if cellIdentifier == headerView.tabFilterCell {
-            isLoadingData = true
+            collectionView.reloadData()
+        } else if cellIdentifier == headerView.tabTopCell {
             collectionView.reloadData()
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-                guard let self = self else { return }
-                
-                isLoadingData = false
-                collectionView.reloadData()
-            }
-             
-        } else if cellIdentifier == headerView.tabTopCell {
-            if let headerView = self.collectionView.supplementaryView(
-                forElementKind: UICollectionView.elementKindSectionHeader,
-                at: IndexPath(item: 0, section: 0)
-            ) as? MyCouponHeaderView {
-                headerView.vTabFilter.selectDefaultTab()
-            }
+            tabCurrentIndex = index
+            headerView.removeTabFilterData()
             
             let indexPath = IndexPath(item: index, section: 0)
             collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            
-            isLoadingData = true
-            collectionView.reloadData()
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
-                guard let self = self else { return }
-                
-                isLoadingData = false
-                collectionView.reloadData()
-            }
         }
     }
 }

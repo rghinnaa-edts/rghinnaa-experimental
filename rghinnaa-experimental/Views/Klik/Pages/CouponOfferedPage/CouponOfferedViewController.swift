@@ -69,7 +69,7 @@ class CouponOfferedViewController: UIViewController {
     
     private func setupMyCouponCard() {
         let totalExchanged = couponData.filter(\.isExchanged).count
-        self.vMyCouponCard.cardBadgeText = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        self.vMyCouponCard.badgeLabel = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
     }
     
     private func setupViewBackground() {
@@ -169,6 +169,8 @@ class CouponOfferedViewController: UIViewController {
     private func startRefreshAnimation() {
         isRefreshAnimating = true
         isLoadingData = true
+        vMyCouponCard.isBadgeSkeleton = true
+        
         collectionView.reloadData()
         
         let rotation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -186,6 +188,7 @@ class CouponOfferedViewController: UIViewController {
         
         UIView.animate(withDuration: 0.2) {
             self.isLoadingData = false
+            self.vMyCouponCard.isBadgeSkeleton = false
             if let headerView = self.collectionView.supplementaryView(
                 forElementKind: UICollectionView.elementKindSectionHeader,
                 at: IndexPath(item: 0, section: 0)
@@ -399,14 +402,13 @@ class CouponOfferedViewController: UIViewController {
             service: "Xpress, Xtra",
             periode: "7 hari lagi",
             couponCode: "BARUINSTAN10RB***",
-            disableInfo: "Promo tidak tersedia, Cek promo lainnya yuk!",
+            disableInfo: "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!",
             isEnabled: false,
             isNewUser: false,
             isExchanged: false,
             isCanExchange: true
             ),
-           
-//           "Limit promo sudah habis. Cek promo lainnya yang tersedia yuk!"
+
            CardCouponOfferedModel(
             id: "8",
             image: UIImage(named: "discount-shipment"),
@@ -547,7 +549,7 @@ extension CouponOfferedViewController: UIScrollViewDelegate {
         if !refreshControl.isRefreshing && !isRefreshAnimating {
             let offsetY = scrollView.contentOffset.y
             let progress = min(abs(offsetY) / 60.0, 1.0)
-            updateRefreshProgress(progress)
+//            updateRefreshProgress(progress)
         }
     }
     
