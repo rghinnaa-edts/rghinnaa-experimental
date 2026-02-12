@@ -15,14 +15,26 @@ class MyCouponHeaderView: UICollectionReusableView {
     @IBOutlet weak var vTabTop: TabDefault!
     @IBOutlet weak var vTabFilter: TabDefault!
     
-    private var couponTypeData: [TabDefaultModel] = []
-    var couponFilterData: [TabDefaultModel] = []
-    
     @IBOutlet weak var tabHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var tabFilterHeightConstraint: NSLayoutConstraint!
     
-    var tabTopCell = "TabDefaultCell"
-    var tabFilterCell = "TabChipCell"
+    public var couponTypeData: [TabDefaultModel] = [] {
+        didSet {
+            setTabTypeData(data: couponTypeData)
+        }
+    }
+    public var couponFilterData: [TabDefaultModel] = [] {
+        didSet {
+            setTabFilterData(data: couponFilterData)
+        }
+    }
+    
+    public var tabTopCell = "TabDefaultCell"
+    public var tabFilterCell = "TabChipCell"
+    
+    private var storedCouponTypeData: [TabDefaultModel] = []
+    private var storedCouponFilterData: [TabDefaultModel] = []
+    private var tabCurrentIndex = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,6 +62,14 @@ class MyCouponHeaderView: UICollectionReusableView {
         }
         
         return hitView
+    }
+    
+    public func removeTabTypeData() {
+        storedCouponTypeData = []
+    }
+    
+    public func removeTabFilterData() {
+        storedCouponFilterData = []
     }
     
     public func calculateHeight() -> CGFloat {
@@ -87,8 +107,6 @@ class MyCouponHeaderView: UICollectionReusableView {
     }
     
     private func setupTabTopUI() {
-        setupTabTopData()
-        
         vTabTop.registerCellType(TabDefaultCell.self, withIdentifier: tabTopCell)
         
         vTabTop.data = couponTypeData
@@ -105,12 +123,9 @@ class MyCouponHeaderView: UICollectionReusableView {
         vTabTop.bgColor = .clear
         vTabTop.isScrollable = false
         vTabTop.setDynamicWidth(enabled: true)
-        vTabTop.selectDefaultTab()
     }
     
     private func setupTabFilterUI() {
-        setupTabFilterData()
-        
         vTabFilter.registerCellType(TabChipCell.self, withIdentifier: tabFilterCell)
         
         vTabFilter.isUserInteractionEnabled = true
@@ -141,7 +156,6 @@ class MyCouponHeaderView: UICollectionReusableView {
             trailingPadding :16,
             itemSpacing : 8
         )
-        vTabFilter.selectDefaultTab()
         
         vTabFilter.layer.shadowColor = UIColor.black?.cgColor
         vTabFilter.layer.shadowOpacity = 0.1
@@ -149,31 +163,17 @@ class MyCouponHeaderView: UICollectionReusableView {
         vTabFilter.layer.shadowRadius = 3
     }
     
-    private func setupTabTopData() {
-        couponTypeData = [
-            TabDefaultModel(
-            id: "1",
-            title: "Potongan Total"),
-            TabDefaultModel(
-            id: "2",
-            title: "Diskon Alat Bayar"),
-            TabDefaultModel(
-            id: "3",
-            title: "Diskon Ongkir")
-        ]
+    private func setTabTypeData(data: [TabDefaultModel]) {
+        if storedCouponTypeData.isEmpty {
+            storedCouponTypeData = data
+            setupTabTopUI()
+        }
     }
     
-    private func setupTabFilterData() {
-        couponFilterData = [
-            TabDefaultModel(
-            id: "1",
-            title: "Semua"),
-            TabDefaultModel(
-            id: "2",
-            title: "Xtra"),
-            TabDefaultModel(
-            id: "3",
-            title: "Xpress")
-        ]
+    private func setTabFilterData(data: [TabDefaultModel]) {
+        if storedCouponFilterData.isEmpty {
+            storedCouponFilterData = data
+            setupTabFilterUI()
+        }
     }
 }

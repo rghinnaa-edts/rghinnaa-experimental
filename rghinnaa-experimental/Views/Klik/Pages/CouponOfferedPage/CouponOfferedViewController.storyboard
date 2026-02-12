@@ -179,6 +179,16 @@
                         <outlet property="vBackgroundCoupon" destination="wjc-uc-iSk" id="h0Z-Md-kaT"/>
                         <outlet property="vMyCouponCard" destination="k2d-3O-knn" id="75B-np-prK"/>
                         <outlet property="vToolbar" destination="qdq-UI-8X9" id="qLB-Tj-Vn4"/>
+                        <outlet property="btnBackToolbar" destination="W4b-89-UD7" id="58G-N9-zmb"/>
+                        <outlet property="couponCollectionView" destination="fUm-iG-SmD" id="wPh-QG-S1I"/>
+                        <outlet property="couponCollectionViewHeightConstraint" destination="wrb-ES-zGA" id="lkM-vo-FIo"/>
+                        <outlet property="lblToolbar" destination="692-77-c9G" id="LNU-0u-266"/>
+                        <outlet property="myCouponCard" destination="ZtU-8D-xY6" id="Axs-1y-0Iq"/>
+                        <outlet property="scrollView" destination="ToX-85-Nbz" id="3DP-9m-126"/>
+                        <outlet property="vContainerContent" destination="BCJ-Ar-4a9" id="z9d-zg-DSa"/>
+                        <outlet property="vTabFilter" destination="Yu8-g9-rEq" id="UdZ-2l-b9a"/>
+                        <outlet property="vTabTop" destination="aUn-iK-vwy" id="Rv3-jn-qbT"/>
+                        <outlet property="vToolbar" destination="NvO-Hd-Cua" id="HBT-Jl-0RY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

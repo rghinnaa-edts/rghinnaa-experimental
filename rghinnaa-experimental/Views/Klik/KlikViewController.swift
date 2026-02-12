@@ -111,7 +111,7 @@ class KlikViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         break
         case "Coupon Offered Page":
-            let vc = UIStoryboard(name: "CouponOfferedViewController", bundle: nil).instantiateViewController(withIdentifier: "CouponOfferedPage")
+            let vc = UIStoryboard(name: "CouponOffered3ViewController", bundle: nil).instantiateViewController(withIdentifier: "CouponOffered3Page")
             navigationController?.pushViewController(vc, animated: true)
         break
         case "Product Detail Page":
