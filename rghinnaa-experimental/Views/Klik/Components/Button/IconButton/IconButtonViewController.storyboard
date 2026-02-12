@@ -21,16 +21,126 @@
                                 <rect key="frame" x="16" y="134" width="361" height="634"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TR9-k8-m2S">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="92.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="431"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8A-AX-SGP" customClass="IconButton" customModule="KlikIDM_DS">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cce-ea-Gyq" customClass="IconButton" customModule="KlikIDM_DS">
                                                 <rect key="frame" x="143" y="0.0" width="75" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Primary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Rest"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShowBadge" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ek-Hi-SjP" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="42.333333333333343" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Primary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Rest"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYN-aJ-GbI" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="84.666666666666657" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Primary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUj-vt-sBY" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="126.99999999999999" width="75" height="34.333333333333329"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Secondary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Rest"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va5-SA-oMD" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="169.33333333333331" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Secondary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Medium"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sy-cd-dg5" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="211.66666666666669" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Tertiary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Small"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Rest"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnl-tW-Zgm" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="254.00000000000003" width="75" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Tertiary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Small"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kx-GY-dEt" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="296.33333333333331" width="75" height="34.333333333333314"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnType" value="Primary"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnSize" value="Large"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Rest"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeading">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTrailing">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="iconTint">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="icon" value="placeholder"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8A-AX-SGP" customClass="IconButton" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="143" y="338.66666666666669" width="75" height="34.333333333333314"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShowBadge" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd4-G7-XP8">
-                                                <rect key="frame" x="60.666666666666686" y="42.333333333333343" width="240" height="50"/>
+                                                <rect key="frame" x="60.666666666666686" y="381" width="240" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                         </subviews>
@@ -48,7 +158,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iX3-Nf-JKf" secondAttribute="bottom" constant="16" id="VLB-4g-6jQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iX3-Nf-JKf" secondAttribute="trailing" constant="16" id="dHm-WJ-Daw"/>
@@ -66,11 +176,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="placeholder" width="118.66666412353516" height="118.66666412353516"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
