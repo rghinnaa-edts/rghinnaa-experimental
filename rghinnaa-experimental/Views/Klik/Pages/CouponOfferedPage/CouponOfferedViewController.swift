@@ -69,7 +69,9 @@ class CouponOfferedViewController: UIViewController {
     
     private func setupMyCouponCard() {
         let totalExchanged = couponData.filter(\.isExchanged).count
-        self.vMyCouponCard.badgeLabel = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        vMyCouponCard.configureBadge({ badge in
+            badge.title = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        })
     }
     
     private func setupViewBackground() {
@@ -169,7 +171,9 @@ class CouponOfferedViewController: UIViewController {
     private func startRefreshAnimation() {
         isRefreshAnimating = true
         isLoadingData = true
-        vMyCouponCard.isBadgeSkeleton = true
+        vMyCouponCard.configureBadge({ badge in
+            badge.isSkeleton = true
+        })
         
         collectionView.reloadData()
         
@@ -187,8 +191,10 @@ class CouponOfferedViewController: UIViewController {
         refreshIconImageView.layer.removeAllAnimations()
         
         UIView.animate(withDuration: 0.2) {
+            self.vMyCouponCard.configureBadge({ badge in
+                badge.isSkeleton = false
+            })
             self.isLoadingData = false
-            self.vMyCouponCard.isBadgeSkeleton = false
             if let headerView = self.collectionView.supplementaryView(
                 forElementKind: UICollectionView.elementKindSectionHeader,
                 at: IndexPath(item: 0, section: 0)
