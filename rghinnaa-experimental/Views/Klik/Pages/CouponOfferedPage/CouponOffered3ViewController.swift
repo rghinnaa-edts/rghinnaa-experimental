@@ -76,7 +76,9 @@ class CouponOffered3ViewController: UIViewController {
         scrollView.delegate = self
         vMyCouponCard.delegate = self
         
-        vMyCouponCard.isBadgeSkeleton = true
+        vMyCouponCard.configureBadge({ badge in
+            badge.isSkeleton = true
+        })
         
         setupCollectionView()
         setupViewBackground()
@@ -84,9 +86,12 @@ class CouponOffered3ViewController: UIViewController {
     
     private func setupMyCouponCard() {
         let totalExchanged = couponOfferedData[tabCurrentIndex].data.filter(\.isExchanged).count
+        
         vMyCouponCard.title = "Kupon Saya"
         vMyCouponCard.desc = "Kumpulan kupon yang kamu punya"
-        vMyCouponCard.badgeLabel = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        vMyCouponCard.configureBadge({ badge in
+            badge.title = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+        })
     }
     
     private func setupViewBackground() {
@@ -129,7 +134,9 @@ class CouponOffered3ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
             guard let self = self else { return }
             self.isLoadingData = false
-            self.vMyCouponCard.isBadgeSkeleton = false
+            self.vMyCouponCard.configureBadge({ badge in
+                badge.isSkeleton = false
+            })
             self.filterCouponData(by: "all")
             collectionView.reloadData()
             
@@ -191,7 +198,9 @@ class CouponOffered3ViewController: UIViewController {
     private func startRefreshAnimation() {
         isRefreshAnimating = true
         isLoadingData = true
-        vMyCouponCard.isBadgeSkeleton = true
+        vMyCouponCard.configureBadge({ badge in
+            badge.isSkeleton = true
+        })
         collectionView.reloadData()
         
         let rotation = CABasicAnimation(keyPath: "transform.rotation.z")
@@ -210,7 +219,9 @@ class CouponOffered3ViewController: UIViewController {
         
         UIView.animate(withDuration: 0.2) {
             self.isLoadingData = false
-            self.vMyCouponCard.isBadgeSkeleton = false
+            self.vMyCouponCard.configureBadge({ badge in
+                badge.isSkeleton = false
+            })
             
             self.filterCouponData(by: "all")
             self.collectionView.reloadData()
@@ -786,13 +797,17 @@ extension CouponOffered3ViewController: CardCouponOfferedCellDelegate {
                     self.showToast(message: "Kupon tidak bisa ditukar")
                     
                     self.isLoadingData = true
-                    self.vMyCouponCard.isBadgeSkeleton = true
+                    self.vMyCouponCard.configureBadge({ badge in
+                        badge.isSkeleton = true
+                    })
                     self.collectionView.reloadData()
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
                         guard let self = self else { return }
                         self.isLoadingData = false
-                        self.vMyCouponCard.isBadgeSkeleton = false
+                        self.vMyCouponCard.configureBadge({ badge in
+                            badge.isSkeleton = false
+                        })
                         self.filterCouponData(by: "all")
                         collectionView.reloadData()
                         
