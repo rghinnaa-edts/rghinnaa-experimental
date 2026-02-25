@@ -17,15 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5DI-lh-cIP">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5DI-lh-cIP">
+                                <rect key="frame" x="16" y="118" width="361" height="666"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pZZ-sU-z0S" customClass="Toast" customModule="KlikIDM_DS">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="538"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="53.666666666666664"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="toastState" value="info"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2cU-LH-7hX" customClass="Toast" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="65.666666666666657" width="361" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="toastState" value="danger"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="iconLeading" value="placeholder"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKq-Zw-mBV">
+                                        <rect key="frame" x="0.0" y="77.666666666666657" width="361" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Toast"/>
+                                        <connections>
+                                            <action selector="testButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XHe-Qg-aqL"/>
+                                        </connections>
+                                    </button>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XOf-1X-VjU">
-                                        <rect key="frame" x="0.0" y="538" width="393" height="128"/>
+                                        <rect key="frame" x="0.0" y="124" width="361" height="542"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
@@ -34,8 +54,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5DI-lh-cIP" secondAttribute="trailing" id="0N9-QI-Dct"/>
-                            <constraint firstItem="5DI-lh-cIP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Mxj-4X-D2K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5DI-lh-cIP" secondAttribute="trailing" constant="16" id="0N9-QI-Dct"/>
+                            <constraint firstItem="5DI-lh-cIP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Mxj-4X-D2K"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5DI-lh-cIP" secondAttribute="bottom" id="Po6-YG-sgW"/>
                             <constraint firstItem="5DI-lh-cIP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="x3m-2N-d79"/>
                         </constraints>
@@ -43,10 +63,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
         </scene>
     </scenes>
     <resources>
+        <image name="placeholder" width="118.66666412353516" height="118.66666412353516"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

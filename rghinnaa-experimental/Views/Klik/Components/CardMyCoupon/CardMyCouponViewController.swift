@@ -42,15 +42,28 @@ class CardMyCouponViewController: UIViewController, CardMyCouponDelegate {
         cmcTest1.cornerRadius = 12
         
         // MARK: - Badge
-        cmcTest1.isShowBadge = true
-        cmcTest1.badgeLabel = "1"
-        cmcTest1.badgeBgColor = .blue
-        cmcTest1.badgeBorderWidth = 1
-        cmcTest1.badgeBorderColor = .white
-        cmcTest1.isBadgeSkeleton = true
+//        cmcTest1.isShowBadge = true
+//        cmcTest1.badgeLabel = "1"
+//        cmcTest1.badgeBgColor = .blue
+//        cmcTest1.badgeBorderWidth = 1
+//        cmcTest1.badgeBorderColor = .white
+//        cmcTest1.isBadgeSkeleton = true
+//        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//            self.cmcTest1.isBadgeSkeleton = false
+//        }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.cmcTest1.isBadgeSkeleton = false
+        cmcTest1.configureBadge{ t in
+            t.isHidden = false
+            t.title = "1"
+            t.bgColor = .blue
+            t.borderWidth = 1
+            t.borderColor = .white
+            t.isSkeleton = true
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                t.isSkeleton = false
+            }
         }
                 
         // MARK: - Delegate (optional test)

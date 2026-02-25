@@ -51,5 +51,9 @@ class IconButtonViewController: UIViewController{
         btnTest1.shadowOpacity = 0.3
         btnTest1.shadowRadius = 6
         btnTest1.shadowOffset = CGSize(width: 0, height: 3)
+        
+        btnTest1.configureBadge{ t in
+            t.title = "1"
+        }
     }
 }
