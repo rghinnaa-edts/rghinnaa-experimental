@@ -90,7 +90,7 @@ class CouponOffered3ViewController: UIViewController {
         vMyCouponCard.title = "Kupon Saya"
         vMyCouponCard.desc = "Kumpulan kupon yang kamu punya"
         vMyCouponCard.configureBadge({ badge in
-            badge.title = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+            badge.label = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
         })
     }
     
