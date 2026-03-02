@@ -53,7 +53,7 @@ class IconButtonViewController: UIViewController{
         btnTest1.shadowOffset = CGSize(width: 0, height: 3)
         
         btnTest1.configureBadge{ t in
-            t.title = "1"
+            t.label = "1"
         }
     }
 }

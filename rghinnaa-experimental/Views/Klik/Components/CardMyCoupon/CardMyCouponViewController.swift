@@ -55,7 +55,7 @@ class CardMyCouponViewController: UIViewController, CardMyCouponDelegate {
         
         cmcTest1.configureBadge{ t in
             t.isHidden = false
-            t.title = "1"
+            t.label = "1"
             t.bgColor = .blue
             t.borderWidth = 1
             t.borderColor = .white
