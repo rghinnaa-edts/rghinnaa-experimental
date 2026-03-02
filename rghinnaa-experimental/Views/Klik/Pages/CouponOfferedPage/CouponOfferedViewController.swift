@@ -70,7 +70,7 @@ class CouponOfferedViewController: UIViewController {
     private func setupMyCouponCard() {
         let totalExchanged = couponData.filter(\.isExchanged).count
         vMyCouponCard.configureBadge({ badge in
-            badge.title = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
+            badge.label = totalExchanged > 10 ? "10+" : "\(totalExchanged)"
         })
     }
     
