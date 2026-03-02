@@ -9,8 +9,8 @@ import UIKit
 import KlikIDM_DS
 
 class CardMyCouponViewController: UIViewController, CardMyCouponDelegate {
-    
-    @IBOutlet weak var cmcTest1: CardMyCoupon!
+    @IBOutlet weak var myCoupon: CardMyCoupon!
+    private var a = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,59 +18,35 @@ class CardMyCouponViewController: UIViewController, CardMyCouponDelegate {
     }
     
     private func setupTestCardMyCoupon() {
-        // MARK: - Text
-        cmcTest1.title = "My Coupon"
-        cmcTest1.titleColor = .blue
-        
-        cmcTest1.desc = "Valid until 31 Dec 2026"
-        cmcTest1.descColor = .blue
-        
-        // MARK: - Background
-        cmcTest1.isLiquidGlassBg = false
-        cmcTest1.bgColor = UIColor.systemIndigo.withAlphaComponent(0.9)
-        
-        // MARK: - Leading Icon
-        cmcTest1.iconLeading = UIImage(systemName: "ticket.fill")
-        cmcTest1.iconTintLeading = .white
-        cmcTest1.iconBgTintLeading = .blue
-        
-        // MARK: - Trailing Icon
-        cmcTest1.iconTrailing = UIImage(systemName: "chevron.right")
-        cmcTest1.iconTintTrailing = .blue
-        
-        // MARK: - Corner Radius
-        cmcTest1.cornerRadius = 12
-        
-        // MARK: - Badge
-//        cmcTest1.isShowBadge = true
-//        cmcTest1.badgeLabel = "1"
-//        cmcTest1.badgeBgColor = .blue
-//        cmcTest1.badgeBorderWidth = 1
-//        cmcTest1.badgeBorderColor = .white
-//        cmcTest1.isBadgeSkeleton = true
-//        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//            self.cmcTest1.isBadgeSkeleton = false
-//        }
-        
-        cmcTest1.configureBadge{ t in
-            t.isHidden = false
-            t.label = "1"
-            t.bgColor = .blue
-            t.borderWidth = 1
-            t.borderColor = .white
-            t.isSkeleton = true
+        myCoupon.title = "My Coupon"
+        myCoupon.desc = "Valid until 31 Dec 2026"
+        myCoupon.isLiquidGlassBg = false
+        myCoupon.bgColor = UIColor.yellow40
+        myCoupon.iconLeading = UIImage(systemName: "ticket.fill")
+        myCoupon.iconTintLeading = .white
+        myCoupon.iconBgTintLeading = .blue
+        myCoupon.iconTrailing = UIImage(systemName: "chevron.right")
+        myCoupon.cornerRadius = 12
+        myCoupon.configureBadge{ badge in
+            badge.isHidden = false
+            badge.label = "1"
+            badge.bgColor = .brown
+            badge.borderWidth = 1
+            badge.borderColor = .white
+            badge.isSkeleton = true
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                t.isSkeleton = false
+                badge.isSkeleton = false
             }
         }
-                
-        // MARK: - Delegate (optional test)
-        cmcTest1.delegate = self
+        myCoupon.delegate = self
     }
     
     func didSelectCard(_ card: CardMyCoupon) {
         print("CardMyCoupon tapped")
+        myCoupon.configureBadge{ badge in
+            a+=1
+            badge.label = "\(a)"
+        }
     }
 }

@@ -9,51 +9,35 @@ import UIKit
 import KlikIDM_DS
 
 class IconButtonViewController: UIViewController{
-    
-    @IBOutlet weak var btnTest1: IconButton!
+    @IBOutlet weak var iconButton: IconButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTestButton()
     }
     
     private func setupTestButton() {
-        // MARK: - Button Identity
-        btnTest1.btnType = "secondary"        // primary | secondary | tertiary
-        btnTest1.btnSize = "small"          // small | medium | large
-        btnTest1.btnState = "rest"          // rest | pressed | focused | danger | disabled
-        
-//        // MARK: - Background (Solid)
-//        btnTest1.bgColor = .clear
-//        
-//        // MARK: - Background (Gradient)
-        btnTest1.bgColorStart = .systemPurple
-        btnTest1.bgColorEnd = .systemPink
-        btnTest1.bgColorOrientation = "vertical" // vertical | horizontal
-
-        // MARK: - Corner & Border
-        btnTest1.cornerRadius = 4
-        btnTest1.borderWidth = 2
-        btnTest1.borderColor = .white
-        
-        // MARK: - Icons
-        btnTest1.icon = UIImage(named: "ic-cart")
-        btnTest1.iconTint = .yellow
-        btnTest1.iconSize = 24
-        
-        // MARK: - Padding
-        btnTest1.paddingTop = 8
-        btnTest1.paddingBottom = 8
-        btnTest1.paddingLeading = 8
-        btnTest1.paddingTrailing = 8
-        
-        // MARK: - Shadow
-        btnTest1.shadowColor = .black
-        btnTest1.shadowOpacity = 0.3
-        btnTest1.shadowRadius = 6
-        btnTest1.shadowOffset = CGSize(width: 0, height: 3)
-        
-        btnTest1.configureBadge{ t in
-            t.label = "1"
+        iconButton.btnType = "secondary"
+        iconButton.btnSize = "small"
+        iconButton.btnState = "rest"
+        iconButton.bgColorStart = .systemPurple
+        iconButton.bgColorEnd = .systemPink
+        iconButton.bgColorOrientation = "vertical"
+        iconButton.cornerRadius = 4
+        iconButton.borderWidth = 2
+        iconButton.borderColor = .white
+        iconButton.icon = UIImage(named: "ic-cart")
+        iconButton.iconTint = .yellow
+        iconButton.iconSize = 24
+        iconButton.paddingTop = 8
+        iconButton.paddingBottom = 8
+        iconButton.paddingLeading = 8
+        iconButton.paddingTrailing = 8
+        iconButton.shadowColor = .black
+        iconButton.shadowOpacity = 0.3
+        iconButton.shadowRadius = 6
+        iconButton.shadowOffset = CGSize(width: 0, height: 3)
+        iconButton.configureBadge{ badge in
+            badge.label = "1"
         }
     }
 }
