@@ -68,8 +68,8 @@ class PDPViewController: UIViewController {
     }
     
     private func setupBadgeTotalImage() {
-        badgeTotalImage.title = "1/10"
-        badgeTotalImage.titleColor = UIColor.grey60
+        badgeTotalImage.label = "1/10"
+        badgeTotalImage.labelColor = UIColor.grey60
         badgeTotalImage.bgColor = UIColor.white
         badgeTotalImage.cornerRadius = 4
         badgeTotalImage.borderWidth = 1
@@ -77,8 +77,8 @@ class PDPViewController: UIViewController {
     }
     
     private func setupBadgeDiscount() {
-        badgeDiscount.title = "15%"
-        badgeDiscount.titleColor = UIColor.red30
+        badgeDiscount.label = "15%"
+        badgeDiscount.labelColor = UIColor.red30
         badgeDiscount.bgColor = UIColor.red10
         badgeDiscount.cornerRadius = 4
     }

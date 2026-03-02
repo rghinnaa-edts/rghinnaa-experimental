@@ -17,8 +17,8 @@ class BadgeViewController: UIViewController {
     }
     
     private func setupUI() {
-        badgeTest.title = "1/10000000"
-        badgeTest.titleColor = UIColor.white
+        badgeTest.label = "1/10000000"
+        badgeTest.labelColor = UIColor.white
         badgeTest.bgColor = UIColor.systemPink
         badgeTest.cornerRadius = 4
         badgeTest.borderWidth = 1
