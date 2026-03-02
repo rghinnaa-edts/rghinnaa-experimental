@@ -14,6 +14,7 @@ class KlikViewController: UITableViewController {
     private var componentList: [String] = [
         "Badge",
         "Button",
+        "Button Stepper",
         "Chip",
         "Card My Coupon"
     ]
@@ -91,6 +92,9 @@ class KlikViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         case "Button":
             let vc = UIStoryboard(name: "ButtonViewController", bundle: nil).instantiateViewController(withIdentifier: "ButtonPage")
+            navigationController?.pushViewController(vc, animated: true)
+        case "Button Stepper":
+            let vc = UIStoryboard(name: "ButtonStepperViewController", bundle: nil).instantiateViewController(withIdentifier: "ButtonStepperPage")
             navigationController?.pushViewController(vc, animated: true)
         case "Chip":
             let vc = UIStoryboard(name: "ChipViewController", bundle: nil).instantiateViewController(withIdentifier: "ChipPage")
