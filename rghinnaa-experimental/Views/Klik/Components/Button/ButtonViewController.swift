@@ -10,5 +10,6 @@ import KlikIDM_DS
 
 class ButtonViewController: UIViewController{
     override func viewDidLoad() {
+        super.viewDidLoad()
     }
 }
