@@ -83,21 +83,6 @@ class SearchViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-//        let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .vertical
-//        layout.minimumInteritemSpacing = 12
-//        layout.minimumLineSpacing = 12
-//        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-//        
-//        let totalSpacing = layout.sectionInset.left + layout.sectionInset.right + layout.minimumInteritemSpacing
-//        let itemWidth = (UIScreen.main.bounds.width - totalSpacing) / 2
-//        
-//        layout.itemSize = CGSize(width: itemWidth, height: 300)
-//        
-//        collectionView.collectionViewLayout = layout
-//        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
         staggeredLayout.delegate = self
         staggeredLayout.configure(numberOfColumns: 2, cellPadding: 6)
         
