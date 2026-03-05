@@ -18,6 +18,7 @@ class KlikViewController: UITableViewController {
         "Button Stepper",
         "Card My Coupon",
         "Chip",
+        "Radio Button",
         "Toast"
     ]
     
@@ -104,11 +105,14 @@ class KlikViewController: UITableViewController {
         case "Card My Coupon":
             let vc = UIStoryboard(name: "CardMyCouponViewController", bundle: nil).instantiateViewController(withIdentifier: "CardMyCouponPage")
             navigationController?.pushViewController(vc, animated: true)
-        case "Toast":
-            let vc = UIStoryboard(name: "ToastViewController", bundle: nil).instantiateViewController(withIdentifier: "ToastPage")
-            navigationController?.pushViewController(vc, animated: true)
         case "Chip":
             let vc = UIStoryboard(name: "ChipViewController", bundle: nil).instantiateViewController(withIdentifier: "ChipPage")
+            navigationController?.pushViewController(vc, animated: true)
+        case "Radio Button":
+            let vc = UIStoryboard(name: "RadioButtonViewController", bundle: nil).instantiateViewController(withIdentifier: "RadioButtonPage")
+            navigationController?.pushViewController(vc, animated: true)
+        case "Toast":
+            let vc = UIStoryboard(name: "ToastViewController", bundle: nil).instantiateViewController(withIdentifier: "ToastPage")
             navigationController?.pushViewController(vc, animated: true)
         case "Cart Page":
             let vc = UIStoryboard(name: "CartViewController", bundle: nil).instantiateViewController(withIdentifier: "CartPage")
