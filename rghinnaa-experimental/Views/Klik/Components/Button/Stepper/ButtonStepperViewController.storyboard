@@ -31,40 +31,8 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="yNS-9G-5eh" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="250" width="80" height="32"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="blue"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="icon"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-nq-Rnd" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="306" width="80" height="32"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="icon"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="3mq-yD-IEz" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="362" width="80" height="32"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="blue"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="number"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-hc-67n" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="418" width="80" height="32"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="number"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="D9v-8x-XSS" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="474" width="80" height="32"/>
+                                <rect key="frame" x="156.66666666666666" y="250" width="80" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="blue"/>
@@ -72,11 +40,43 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="TXR-oA-IfH" customClass="ButtonStepper" customModule="KlikIDM_DS">
-                                <rect key="frame" x="156.66666666666666" y="530" width="80" height="32"/>
+                                <rect key="frame" x="156.66666666666666" y="306" width="80" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="collapsible"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="yNS-9G-5eh" customClass="ButtonStepper" customModule="KlikIDM_DS">
+                                <rect key="frame" x="156.66666666666666" y="362" width="80" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="blue"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-nq-Rnd" customClass="ButtonStepper" customModule="KlikIDM_DS">
+                                <rect key="frame" x="156.66666666666666" y="418" width="80" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="3mq-yD-IEz" customClass="ButtonStepper" customModule="KlikIDM_DS">
+                                <rect key="frame" x="156.66666666666666" y="474" width="80" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="blue"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="number"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="80" placeholderIntrinsicHeight="32" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-hc-67n" customClass="ButtonStepper" customModule="KlikIDM_DS">
+                                <rect key="frame" x="156.66666666666666" y="530" width="80" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperVariant" value="white"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stepperType" value="number"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -84,21 +84,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7hs-6r-Yqu" firstAttribute="top" secondItem="oqy-mu-7xs" secondAttribute="bottom" constant="24" id="2KM-T8-8N8"/>
-                            <constraint firstItem="yNS-9G-5eh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="I8s-y4-Bl3"/>
-                            <constraint firstItem="yNS-9G-5eh" firstAttribute="top" secondItem="7hs-6r-Yqu" secondAttribute="bottom" constant="24" id="TLZ-MZ-Cfc"/>
-                            <constraint firstItem="kv7-nq-Rnd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="X3f-4A-aBj"/>
+                            <constraint firstItem="yNS-9G-5eh" firstAttribute="top" secondItem="TXR-oA-IfH" secondAttribute="bottom" constant="24" id="5cQ-y0-5Yu"/>
+                            <constraint firstItem="kv7-nq-Rnd" firstAttribute="top" secondItem="yNS-9G-5eh" secondAttribute="bottom" constant="24" id="Dnk-ux-8en"/>
+                            <constraint firstItem="D9v-8x-XSS" firstAttribute="top" secondItem="7hs-6r-Yqu" secondAttribute="bottom" constant="24" id="JmZ-O8-rHV"/>
+                            <constraint firstItem="3mq-yD-IEz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Ld9-99-R79"/>
+                            <constraint firstItem="kv7-nq-Rnd" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="OdN-CI-VdN"/>
+                            <constraint firstItem="yNS-9G-5eh" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="SRu-hr-ljO"/>
+                            <constraint firstItem="D9v-8x-XSS" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XpI-Wu-6tS"/>
                             <constraint firstItem="7hs-6r-Yqu" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="XyJ-2g-JjK"/>
                             <constraint firstItem="oqy-mu-7xs" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="a69-gE-PhV"/>
-                            <constraint firstItem="TXR-oA-IfH" firstAttribute="top" secondItem="D9v-8x-XSS" secondAttribute="bottom" constant="24" id="bB9-Dr-sQc"/>
-                            <constraint firstItem="dfR-hc-67n" firstAttribute="top" secondItem="3mq-yD-IEz" secondAttribute="bottom" constant="24" id="c02-Qt-2Al"/>
-                            <constraint firstItem="3mq-yD-IEz" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="cmi-p1-so9"/>
-                            <constraint firstItem="D9v-8x-XSS" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="dY6-jl-xFX"/>
+                            <constraint firstItem="dfR-hc-67n" firstAttribute="top" secondItem="3mq-yD-IEz" secondAttribute="bottom" constant="24" id="aLh-0l-2g9"/>
                             <constraint firstItem="oqy-mu-7xs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="dm3-Ub-eem"/>
-                            <constraint firstItem="3mq-yD-IEz" firstAttribute="top" secondItem="kv7-nq-Rnd" secondAttribute="bottom" constant="24" id="gTl-wI-apD"/>
-                            <constraint firstItem="kv7-nq-Rnd" firstAttribute="top" secondItem="yNS-9G-5eh" secondAttribute="bottom" constant="24" id="oIh-Gi-ftq"/>
-                            <constraint firstItem="dfR-hc-67n" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="vwJ-pP-XRB"/>
-                            <constraint firstItem="D9v-8x-XSS" firstAttribute="top" secondItem="dfR-hc-67n" secondAttribute="bottom" constant="24" id="wGZ-SK-etG"/>
-                            <constraint firstItem="TXR-oA-IfH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="zFh-Gr-Weg"/>
+                            <constraint firstItem="3mq-yD-IEz" firstAttribute="top" secondItem="kv7-nq-Rnd" secondAttribute="bottom" constant="24" id="hX5-RH-7fL"/>
+                            <constraint firstItem="TXR-oA-IfH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="l93-Fb-I6r"/>
+                            <constraint firstItem="TXR-oA-IfH" firstAttribute="top" secondItem="D9v-8x-XSS" secondAttribute="bottom" constant="24" id="lie-Iz-hLN"/>
+                            <constraint firstItem="dfR-hc-67n" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="pHq-dC-Sfy"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -4,9 +4,9 @@ PODS:
   - Poinku_DS (0.1.3)
 
 DEPENDENCIES:
-  - KlikIDM_DS (from `/Users/yovitahandayiani/Documents/GitHub/KlikIDM_DS`)
+  - KlikIDM_DS (from `/Users/rizkaghinna/Documents/Work/Main Projects/KlikIDM_DS`)
   - lottie-ios
-  - Poinku_DS (from `/Users/yovitahandayiani/Documents/GitHub/Poinku_DS`)
+  - Poinku_DS (from `/Users/rizkaghinna/Documents/Work/Main Projects/Poinku_DS`)
 
 SPEC REPOS:
   trunk:
@@ -14,15 +14,15 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   KlikIDM_DS:
-    :path: "/Users/yovitahandayiani/Documents/GitHub/KlikIDM_DS"
+    :path: "/Users/rizkaghinna/Documents/Work/Main Projects/KlikIDM_DS"
   Poinku_DS:
-    :path: "/Users/yovitahandayiani/Documents/GitHub/Poinku_DS"
+    :path: "/Users/rizkaghinna/Documents/Work/Main Projects/Poinku_DS"
 
 SPEC CHECKSUMS:
   KlikIDM_DS: ac9f0ef79de0f4c17d3d5cf9427686033169edf6
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
   Poinku_DS: 23b49d22338352652755014d70cce78b04a296ec
 
-PODFILE CHECKSUM: 5264caa74e0e07d3076e7d683fc894351fc779e7
+PODFILE CHECKSUM: a5d5e38d5bd600dc864fb6c6bd3cd0b922b4e72a
 
 COCOAPODS: 1.16.2
