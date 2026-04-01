@@ -89,7 +89,9 @@ class PDPViewController: UIViewController {
                 title: "Tambah Produk Lebih Cepat",
                 descriptionAttributted: attributed,
                 targetView: cardTotalType,
-                isListTarget: true
+                contentMargin: 24,
+                spotlightPadding: 8,
+                isListTarget: true,
             )
         ])
 
