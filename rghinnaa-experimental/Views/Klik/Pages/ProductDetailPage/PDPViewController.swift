@@ -73,7 +73,7 @@ class PDPViewController: UIViewController {
     }
     
     private func showCoachmark() {
-        let coachmark = CoachmarkKlik(frame: .zero)
+        let coachmark = KlikIDM_DSCoachmark(frame: .zero)
         
         let html = "Pilih <b>{Karton}</b> untuk tambah banyak sekaligus, atau pilih <b>Satuan</b> untuk tambah satu per satu."
         let data = html.data(using: .utf8)!
@@ -91,7 +91,7 @@ class PDPViewController: UIViewController {
                 targetView: cardTotalType,
                 contentMargin: 24,
                 spotlightPadding: 8,
-                isListTarget: true,
+                isTargetAList: true,
             )
         ])
 

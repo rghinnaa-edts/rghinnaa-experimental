@@ -23,16 +23,14 @@ class CoachmarkKlikViewController: UIViewController {
     }
     
     func showCoachmark() {
-        let coachmark = CoachmarkKlik(frame: .zero)
+        let coachmark = KlikIDM_DSCoachmark(frame: .zero)
 
         coachmark.stepConjunction = "dari"
-        coachmark.btnFirstTint = UIColor.red
-        coachmark.btnSecondTint = UIColor.purple
         
         coachmark.configureSteps(steps: [
             CoachmarkStepConfig(
                 title: "Step 1",
-                description: "The quick brown fox jumps over the lazy dog",
+                description: "This step shows both start and end targets with dual spotlights",
                 targetView: vCard1
             ),
             

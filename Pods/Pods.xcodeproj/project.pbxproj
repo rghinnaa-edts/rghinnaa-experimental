@@ -13,13 +13,9 @@
 		0171880D47497C093AA748A516091002 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B394924CB5475417DC26F4728A216938 /* ProfileViewController.storyboard */; };
 		0226C283BC510B79673B1B348A9C4B80 /* NodePropertyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563CF044DAAE54C77AFC630909E4A34A /* NodePropertyMap.swift */; };
 		02368D4911D41BDC036F6CE975A915B6 /* ContentConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B101EDF08BB1E59AD7BEC8B61DFB4 /* ContentConfigurableView.swift */; };
-		027F2BC44C3E556821634165E0C10C01 /* TabQuadRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC3D26C5E38F7ED2D403D461C689D87 /* TabQuadRoundCell.xib */; };
 		02F32C94CC6F935EB71E8587FD6BE1BC /* Interpolatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967D8EF97316F92FA7DD171536C4DE1 /* Interpolatable.swift */; };
 		0305D9DF2BBF2943B4C71A309C4F60FC /* ColorValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2E703C7B2F7456FA4A7122ADCAF171 /* ColorValueProvider.swift */; };
-		031EE9E23FEF3A7681494BA250AF2ED8 /* CardSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4109FC575CE847DBD8C146E5AE318 /* CardSelectionList.swift */; };
 		033369373522D232D5419BB5E256D047 /* ShapeContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D68FDE6DFF9E267F77B325782F6B9 /* ShapeContainerLayer.swift */; };
-		040E44C777EEE383C76B12CCA5160800 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCDAB3C972053D03DE1BD41379B77F2 /* IconButton.swift */; };
-		0422C37366277781FBCBDE8370D41C56 /* TabQuadRound.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B57764B2FD638F47AD11F0FBCC5097 /* TabQuadRound.xib */; };
 		046EBB24611E15FDBA5BF0BA162F4E29 /* LayerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C9286032B53A637A6CE92B9C2CEE56 /* LayerEffect.swift */; };
 		04AF4E996B1D82E76B3426A5EDE1A0D7 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11D377D41E42AD3D527A83592CCD4B /* StarNode.swift */; };
 		05667820C887EA2AB161F204F11F7E4E /* BundleImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418B6D74A448A8B70DE1BFEA04576A88 /* BundleImageProvider.swift */; };
@@ -34,70 +30,77 @@
 		0A4D558207C2C5EA1BBFE9A4CD5B03E5 /* FillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B66F41628DDFDCADEBB60FDBF3D81 /* FillRenderer.swift */; };
 		0B6D71C40E1148A8E055FF6E87E67E8F /* CustomPathAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A312891DBC9A8B1B0C6808A0EA5AC5 /* CustomPathAnimation.swift */; };
 		0DD9589F78EB151D8B91E2DBD3FB6DAB /* ValueProviderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8867B1F4BF5C657D368B27E779EFEC2 /* ValueProviderStore.swift */; };
-		0E2A97835CA8D3D38DEA79E96500EDB7 /* PromoGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68FDC2FF0B401EF62B07BE357BFF46B /* PromoGiftViewController.swift */; };
-		0E5FEB302A9AEB621530C982D8580851 /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F4D88628F76781F4EED4034BDD5107 /* DashedLineView.swift */; };
-		109265DF70396D3D238C27B026D1EDEF /* ButtonStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638B61C6C0A484C4C7E7A4142B7C2AEB /* ButtonStepper.xib */; };
 		11334BEE00F452EA0D9FBCC0C32C4E79 /* PreCompLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14927DDB163FE1C03BBEC680597B9474 /* PreCompLayerModel.swift */; };
 		1257FDCE5A91D0EB10A1A984C06E8806 /* KeyframeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E67651B420B837A9BE5F223AD63C7 /* KeyframeData.swift */; };
 		137B9B52FA45AD0212A915237518FBA6 /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A12C189E635464211C320BE272F5576 /* Register3ViewController.swift */; };
+		1398A2888CD04B8E884CD911CA6A5528 /* ExtensionInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054D4BDF17860924DD0AB03F219F85D /* ExtensionInteger.swift */; };
 		13E749919E54D399250D381F4B3EE859 /* PointValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F60F42A7500D6D4F1F20A4D2CB02A /* PointValueProvider.swift */; };
 		141F2955FEA2C19F323B68CAAB7200A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F174CAB8515D674816D1392268C3762E /* TableViewController.swift */; };
 		14ACF058343D66D01757BE395D987EB6 /* ProfileSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984FA77494C021DF0670BADEC6138645 /* ProfileSetting.swift */; };
+		16461AB405A83A4DC19179A1A05EFF57 /* TabSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36609C4D317295C15127263DC3690 /* TabSkeleton.swift */; };
 		165E31DED016B1B494A24659792E2800 /* DoubleArc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13CEE86D97AD2EA823C568BA9F364EC4 /* DoubleArc.xib */; };
 		1688335ED79D6EFB6E701FFC82E666CA /* ShapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FABE247B3A084B734D1CA45CF8D873 /* ShapeNode.swift */; };
 		16B9FD7A808AC1642A6AF67AE1C9ACD5 /* MaskCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBB0D3D6BCA25A00AE8E2D99836E99 /* MaskCompositionLayer.swift */; };
 		19221A03DCC5B46B586C9005B464423B /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A53B75E06F36CDA8D4756A48F2585 /* RoundedCorners.swift */; };
+		1931D8DE34B5AC6F084B57355F803F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09916E67B1FCA664E5EB50AC7E6064C /* LaunchScreen.storyboard */; };
 		195B6B24B8849335329434C03DAAD4C5 /* Register3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA67E00E90CEAF88C268BE34BD196C7D /* Register3ViewController.storyboard */; };
+		19D1E7E26C9ACBD53F7B9C44A649B02C /* KlikIDM_DS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C6EF30AA23C0434E06E6A50CA0E04 /* KlikIDM_DS-dummy.m */; };
 		1A377403148DA44C0706DFBD53DA2C11 /* DataIDProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0845AB4927EF71972E4933628917EE6 /* DataIDProviding.swift */; };
 		1A6C4D40B67D4A9DD7BE94B8202961A3 /* EpoxyableView+SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D915F19BAE4BB1F2DC0B68826854075 /* EpoxyableView+SwiftUIView.swift */; };
 		1A786D3C7DB8386B3E997BAAD0694AD5 /* DidEndDisplayingProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1EC36FAD57E6DFA7834D8BE63A83DB /* DidEndDisplayingProviding.swift */; };
+		1AC9EAD0C3663140AE35DDE0D1D86B0E /* KlikIDM_DSChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162F56C833DBF7FA901E2A76064A929B /* KlikIDM_DSChip.swift */; };
 		1C5D06CCC4F6AF622B650724CFA2A2E5 /* EpoxyModelArrayBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402A0F2CCDBBCABD72B682E83A86CA88 /* EpoxyModelArrayBuilder.swift */; };
 		1D2C8586B02A7E3971C937FA09EB04A8 /* CallbackContextEpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB159EA0B0506A215761A822267E4A /* CallbackContextEpoxyModeled.swift */; };
 		1E921DF1B8AD4B7A235BE347439ACDCA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9EC6119196FA3CFC859E62905C499 /* StringExtensions.swift */; };
 		1ED32C7D9118BA288EA9357E27729EA8 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F71412E8A289B7A15EBE79DCCED2C /* Asset.swift */; };
 		1F6B2B920EEAC73E4D1E67957CD790BF /* LottieAnimationSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0F08FB2DDCDAAF4FE5DE6A52D55398 /* LottieAnimationSource.swift */; };
 		1F95AF6FD4805A530C4CB37A33318F27 /* LayerProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320504DCF9F46867CC6D2CA452F2B2E2 /* LayerProperty.swift */; };
+		1FE00026BC99DCD00719444E9D54F12E /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFDC078DB4E487D3A6A87B0F3417CA0 /* SearchBar.swift */; };
+		201F89268F3D35EEDD4A728F84CABD7C /* KlikIDM_DSChip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8FB5440E3D3B1B5188481DD34FC47 /* KlikIDM_DSChip.xib */; };
 		2127CB24DB21D548889FAC36191A301D /* CompatibleAnimationKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39E22360BA91025E8F4335B1563744B /* CompatibleAnimationKeypath.swift */; };
 		214D389CCC0AAB76123616104783E616 /* CouponCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1A14888B927082A437A18D80A08A23 /* CouponCardViewController.storyboard */; };
 		2168E69B2A6E38B7EF1CB80DCC8383AF /* Vectors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE13C2CC38E537DC07A4A58D8533B7 /* Vectors.swift */; };
 		21D2A7EE2C3E866004E2C7A087438803 /* ShapeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A5BD281742892907EE9FCA96A279D1 /* ShapeTransform.swift */; };
-		21DD2B642F3D2DDCF8C94FE087CC1A8D /* CardMyCoupon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372B0B8F76EC1B08CFFAEE7D59EE3806 /* CardMyCoupon.xib */; };
 		223B4CC6BA0ABB92109CA959B9F3E2ED /* TabsDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E99B77BA58A045BD87CA3C4EE0D053C /* TabsDefaultCell.xib */; };
 		2352E70ABA9D3A3FE8D46662E8A2E129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F448DEFC42D84E3E9062954751BA6D59 /* Main.storyboard */; };
 		23673B1BB01781826DD49A61E602B634 /* EpoxySwiftUILayoutMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAD8353BC9B5FA13DE40B2FB894BBD /* EpoxySwiftUILayoutMargins.swift */; };
 		2383612C8C1A0EB6A219E0F21A3AADDD /* DotLottieCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B301BF28ADE1E24EE79052F8DF354 /* DotLottieCache.swift */; };
 		2422B27DCA476CA438B965A9C8DEEB99 /* SectionedChangeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716D9CC4BEC269A9767CA06AD7B2CE42 /* SectionedChangeset.swift */; };
 		243B73156C69EE9962A786344E9693AC /* ScrollingFadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162E24225E832118B96159F54469D62 /* ScrollingFadeViewController.swift */; };
+		243FC5F76EDB8FB2C3EE482DAF6D7C6A /* CardMyCouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4149FEB3D0285902E32E96E16F99456A /* CardMyCouponCell.xib */; };
 		2480B781038CCAD75D204796CA7433F7 /* FloatValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C72D97518E52C7F22C364F53555899 /* FloatValueProvider.swift */; };
 		25632436960A90E12F7367624C35B50C /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4321698F6B5171A7CAF83115DD787EE1 /* HomeViewController.storyboard */; };
 		25F64E2B0EAA20A886C4EE86C9E97102 /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0263A2966882245855036BD4C934C12 /* OpacityAnimation.swift */; };
 		2670000ED67E81FE901CF1DAE9314147 /* ValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C4A7E7DC35F2D6CA5DC1ABF7DEDF1 /* ValueContainer.swift */; };
 		26D8C868CC5E3E23A64206BCD099210F /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C70F1610EA1E0F5FC05C61F06C013B /* Data+Compression.swift */; };
-		27F338AE6A4B9E2613AB70F91FD22E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9743E9B189F1883ED5B137D1DF7F7 /* Assets.xcassets */; };
+		26F62306630E3D68069A079F6AC97241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED545BA7498176A93CBC3ED53C7404A /* ViewController.swift */; };
+		27C496C5689545565AD594B8EAA749B5 /* CardCouponOffered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC2D031CD3AA13B1C2F14D22627C8B /* CardCouponOffered.swift */; };
 		28ED2DD70B3BC93D5EDCF8AE66693D3B /* MaskContainerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232C13B45B626A1A93D1E7C416FE106A /* MaskContainerLayer.swift */; };
 		292B437E13623D6D3E3AE14F1C9E34A3 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85529218DF95406318247EB66303D974 /* Bundle.swift */; };
 		29E858085A9E55D58B1CF85328F97A9C /* TabsSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943AC2866A7E0A0334B005B25A488964 /* TabsSquareRoundModel.swift */; };
 		2A1E79B678E51A2AD90767076FEED110 /* CouponCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B321B4E264624BBC5312A9BA3C8DA947 /* CouponCard.xib */; };
 		2A564B5A1A9D38475694632F29B9F69E /* DropShadowAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9C20447AB0E3F04BCAA7B6DB53C7D7 /* DropShadowAnimation.swift */; };
 		2AD15B8E197AA0CB091165C20159E554 /* BezierPathRoundExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7BAA0D28B4C773631D37DB34FD8E5B /* BezierPathRoundExtension.swift */; };
+		2AE5CB0ADEC073B2A5607CB5CA70D39E /* TabDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA09394F4D9CF0CF3CD08F6D338E3358 /* TabDefault.xib */; };
+		2B6A3EFDC206C0177EFD202FE98C87C5 /* TabSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D22CAAE646F6D55A69EBF68C053BDE /* TabSquareRoundCell.xib */; };
 		2B6A8A5FB276B365BE0EC4878CCCFE0D /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA42F97B0BC83C7CECD0C9190751E6CE /* KeyframeExtensions.swift */; };
+		2BF316466F9126C3B1C03460A7F0F88D /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA3D91C2509BE8293478D881552929 /* ExtensionUIView.swift */; };
 		2CABA191729E0C08CD283480895745A2 /* DotLottieFileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA57345A09213DA97B008B527A5B499 /* DotLottieFileHelpers.swift */; };
 		2CC40658495A9AF089F04E7B251F57F1 /* GradientFillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA775BAEC74F0B5C6C258BF4DFA1F932 /* GradientFillNode.swift */; };
 		2D5AC6BF69C54B0D1BE8999927C35F7E /* RoundedCornersNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C2AF32C1BC00FB5FF394C96139B019 /* RoundedCornersNode.swift */; };
+		2DA75C8130B1F76DA50A3477300D325D /* KlikIDM_DSCoachmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E3D8BE01D528B39FC9432CA8BF3FE1 /* KlikIDM_DSCoachmark.xib */; };
 		2E063906EA8D20BE4F826E9ED555D299 /* DropShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF42E98B140C773DC12A3B182985146 /* DropShadowStyle.swift */; };
 		2E6F7141E95F8F9579DA763C57296C96 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329214785286D1E2E2E600448B8646DF /* Diffable.swift */; };
+		2E952DFA263E866C2AD10AD3C1368839 /* TabDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07333CD73C5775C761E43378A7D51C4 /* TabDefault.swift */; };
 		2EBD479964F4FEA3BEE697FEB7BD2E58 /* UIViewConfiguringSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B9A72C793268C2725E79C1BA9E096 /* UIViewConfiguringSwiftUIView.swift */; };
 		2EFB0E6938C6781997896BA5A514433F /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352F18FC76AB34D6217C5DA08A6B2794 /* RibbonViewController.swift */; };
-		2F0D4DB11DE6A043A02FA21CF3D2E1CC /* TabSquareRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F43CDF709DD492C85423B3A92CB3D /* TabSquareRoundCell.swift */; };
 		2F7D89E3241C0056FDF07C5AFAF48B7F /* PrecompAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F54F58B27F36995D750A97677E2B74 /* PrecompAsset.swift */; };
 		2FAF322E74DD3F54CBEE6E5357CEABBC /* SwiftUIMeasurementContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E67760DFE9F2DDCAC16D498A1976C04 /* SwiftUIMeasurementContainer.swift */; };
 		2FB2651F9A88595B13171B3B099A0CD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69301F4E598400CA4CB88505EAF858B1 /* UIKit.framework */; };
 		3015D422120E1CEA9957682CD1CC1AC9 /* ShapeLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F1F45B9D1DA12E0529E5E24ACCAB5 /* ShapeLayerModel.swift */; };
-		303140F143319AC825B90B7C07DE44EE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFDC078DB4E487D3A6A87B0F3417CA0 /* SearchBar.swift */; };
-		303D4959C5FC36946A37F15AA2740193 /* PromoGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B6E693EF8CF102D2C1FE6854F499 /* PromoGiftModel.swift */; };
 		305A4653C4D8B95F0266D3A790EC5FF3 /* DrawViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCB9E922054522494FA4D0D1F0826C3 /* DrawViewController.storyboard */; };
 		30A65CEAA1EB39E650B4DDE6879AEED6 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E0634B82F40021C85A5D0AD7403EB /* Mask.swift */; };
-		30BA561888673067EF4FD9511BCA8752 /* CoachmarkKlik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B014AE3D4297074677E8349583734E3 /* CoachmarkKlik.swift */; };
+		31D00AF7B0847433FD898997CE1FFB3F /* PromoContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E004D8E979621357033B4E612E005 /* PromoContentModel.swift */; };
 		31D4AD0C447398A6B202C6FF8FD94B81 /* FilepathImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D69CA8990A0F03F1F90C3BF1A09A8E9 /* FilepathImageProvider.swift */; };
 		3222BF10C1459EB5108ECCAEBB693F8A /* LottieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79340E77CCCD825819B89EA029F403E1 /* LottieButton.swift */; };
 		33FAC0386CFFA1407DBD28D03435E5E0 /* HomeSwitcher.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6930DB7360BC2C335C2ED96280841729 /* HomeSwitcher.xib */; };
@@ -105,39 +108,44 @@
 		344BF7B945A9A6B3DE3280430199D852 /* SetBehaviorsProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B760E82D3E494F8C3A3B1BD1691EEF /* SetBehaviorsProviding.swift */; };
 		348CF7E9E430619B38079E406E139F3C /* StampPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB7EAA1DDD69EE6D951D42629D7C492 /* StampPageViewController.storyboard */; };
 		348D4935020800500E73742790CA28A8 /* CompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085BEC4D48874C7769893437DF9EE770 /* CompositionLayer.swift */; };
+		34DB9FC2470E4CFF1446129F66BE0CDB /* LiquidGlassBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1828A314B25A1EA6F843D37E077F8 /* LiquidGlassBackgroundView.swift */; };
 		35481786D52EBFEDBFDB793974620C09 /* ProfileSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9172834C314FCC9BC208993C5DF8681E /* ProfileSettingModel.swift */; };
 		35EAE5573344244433426053C6C3F694 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98B16FFADD582C34E7D773F6017D6F /* Skeleton.swift */; };
 		372BA609D44388DC2F5747974B3A5D02 /* CombinedShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADF9BA15FB6309391CCA0509909828 /* CombinedShapeAnimation.swift */; };
 		3753CD102A602DD30ECB4E63589C4D6D /* NodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE6EA1327FE014CEE9E9DCB73B16A33 /* NodeProperty.swift */; };
-		3805EDCEDD1236FF2C77EBBF5AB052D6 /* TabChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E5C2CF0D6FF07494539AE06C8EDC91 /* TabChipCell.xib */; };
 		38C7C9678F288829595A2ADAEB8AB899 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A912741BDA04F14F5D091E6DD6B95F90 /* QuartzCore.framework */; };
+		38D22DD47FEBA500B5FF687DB46296C3 /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F4D88628F76781F4EED4034BDD5107 /* DashedLineView.swift */; };
 		394B427A8F3F6D98520838F714952BCD /* LayerTransformNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931FE6A5BAF2F96D532983DE2EC0FF8 /* LayerTransformNode.swift */; };
 		39D41DD085531A867EFCD054F92ABD41 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA37F474EE3BAC2CF57602818648AA7 /* Shape.swift */; };
 		39D9DEA16953EA4EEEA28104D9BAC2D1 /* EpoxySwiftUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D4CD487FA5448734801929A4287DC1 /* EpoxySwiftUIHostingController.swift */; };
 		39DED8EC971D0C6D19313BF9F304A59E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69301F4E598400CA4CB88505EAF858B1 /* UIKit.framework */; };
 		3A199C8ACCD5AA029482F1A9B1984E67 /* ViewProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04300B15D603AFD152ADB59E2D1C5D /* ViewProviding.swift */; };
+		3AD9860D237E92A31F6AD37D2ADE5A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C9743E9B189F1883ED5B137D1DF7F7 /* Assets.xcassets */; };
 		3AF46FB34073151CC4829CC74D565837 /* DotLottieCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826710680F18F1CB9C53E5196A7972CD /* DotLottieCacheProvider.swift */; };
 		3AFDAD471DDF9B5AED05F2CBCAFBFE82 /* LayerDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F349B4DB3E646794A7F226E9BB91C3 /* LayerDebugging.swift */; };
 		3BF76500F85217127065EECB2F71F0B8 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16093FF43ADF0AE67B30886E1B3D4C /* LottieAnimation.swift */; };
+		3C8F67E196FC482753124E108C97B516 /* TabQuadRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890AD5A746FB0202B9DD51C88CD48E1 /* TabQuadRound.swift */; };
 		3DD03EC26FB7B02ACC47F51A0FD12411 /* TransformLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FA2FEDF60BEB0F8D1185DF96F09766 /* TransformLayer.swift */; };
 		3DF723096D90E793289E15723FB0B11D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DD3EA0609EF766AA8A15734525A29 /* ProfileViewController.swift */; };
 		3E95AFF90D5F60E38B76957B527138D1 /* BasicAnimationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BECE474ED72ED912F9C854AC63191DC /* BasicAnimationViewController.storyboard */; };
 		3E9F147359680792675C6FE216FB2AC7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C33B5EF8F470D007AAF18557C8DBF /* Group.swift */; };
 		3FC449A3945EC79D2702E692A4AE5E2D /* GradientAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50C425160DB196EF3AC17377589033 /* GradientAnimations.swift */; };
-		3FE941C304B83032F6454AF0E9E7BC39 /* CardProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE60585CCB177A65072C92F6F24B8F38 /* CardProductCell.xib */; };
 		3FE99CC2E43712287765C4A3F8ABFC01 /* ShapeItemLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BEFB3F53E3AEA15B74647A386EA6E4 /* ShapeItemLayer.swift */; };
 		40619F7110DC7C8C767C1EF44EBD909E /* ScrollingScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99FD13C18E4F427F52AF9BC6E0AF6C /* ScrollingScaleViewController.swift */; };
 		40A5D1582ACBB7083B5A38B367C9C8A7 /* ViewEpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7365600E47CE0D37F0BC4831796684B /* ViewEpoxyModeled.swift */; };
 		40EC9EB281538F516244724F942E190A /* ErasedContentProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFAF5A81D6AC1A898AEB72D23F15C6E /* ErasedContentProviding.swift */; };
-		41130F8694EAD446777B9DF08B685826 /* TabDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A9468FDD9801D4099F0E365CB533D9 /* TabDefaultCell.xib */; };
+		421CEB9B5C73EF720BA722F23647466F /* PDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AD1CE941A9B5AD1CC6568C0904EF5 /* PDPViewController.swift */; };
 		429457B6570AA0E4DFDF04598BA275AF /* PoinCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5939F245493262E2B97701CF94C952 /* PoinCardViewController.swift */; };
 		42D1DBFA1C6EDCD889995418B2B90524 /* Pods-rghinnaa-experimental-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C81244AA293C32C64C7DC677E8719 /* Pods-rghinnaa-experimental-dummy.m */; };
 		434114A43F7814344E32B3921EF832B4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA8EA73EF08386614A4E39789738B7 /* OnBoardingViewController.swift */; };
 		44587B8A4F0DF73E2A9823E7CF573CE1 /* EpoxyableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE14B21998DE435E39A972E753F42E90 /* EpoxyableView.swift */; };
 		446BD0CCADA0DC73F6C7CAC1D8C7D7C1 /* KeyframeInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F378CD60FAB13AD98BD29049C25E2CD /* KeyframeInterpolator.swift */; };
+		44D835B9B3AC4CC8DB45F05D403FBF3C /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0924AF9F923369779872AD8C5F421 /* Badge.swift */; };
+		44D8849E08AF73C9378B05FD43700BE3 /* CardSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6667A15A7BF405A1B6458E86D2F8DE /* CardSelection.xib */; };
 		455837E1B157927AF00A623938974DB7 /* CoreTextRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0616C0045E4977714161DA65FE1686CE /* CoreTextRenderLayer.swift */; };
 		4593EF59D4092B7A7CE9D9CADFEFAF6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		45ECE917F6989B1E5FBE99D077242C79 /* LottieAnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F87CC352EC00A74DCA8421DDAF5EFB /* LottieAnimationViewInitializers.swift */; };
+		4647E794983ED824698777CFB9E009BE /* TabDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A9468FDD9801D4099F0E365CB533D9 /* TabDefaultCell.xib */; };
 		4648802272786DE936342ABB60313207 /* AnyEpoxyModelProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DBD90699E63C61F18CB3125F677DA0 /* AnyEpoxyModelProperty.swift */; };
 		46CC56CC0833EB24E1E067D9BC560F6F /* DidDisplayProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5147A3990285107B724685A9E894F /* DidDisplayProviding.swift */; };
 		475494DDE426293FB9122CBB7875336A /* EllipseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DA9ED642490D5A4F6E16EBF1C3C06 /* EllipseNode.swift */; };
@@ -145,23 +153,29 @@
 		489844734000402FCAB2D8C1DC2E5D6C /* CompoundBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EE44390B9AC63F3D1451E8A6B66EF9 /* CompoundBezierPath.swift */; };
 		497DCB445D8FE8B3288C59E740D05988 /* GroupInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF78066254839A0324C25D32BF42116B /* GroupInterpolator.swift */; };
 		499714DAC71D81C873E26D6EDC6AFCAC /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698BF1F834612D8E6229E3B95104FE72 /* ScrollAnimation.swift */; };
+		49FA09B18E9616D4206C048EE0D893F7 /* CardProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE60585CCB177A65072C92F6F24B8F38 /* CardProductCell.xib */; };
 		4A1A92DB101F59D26F3E3B4982079974 /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CD5AC3D3AC46712C06C30AD76B5F50 /* AnimationContext.swift */; };
-		4ADEFDF58A159B67DD13E444F06A8A00 /* CardMyCouponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4149FEB3D0285902E32E96E16F99456A /* CardMyCouponCell.xib */; };
 		4C4842CD5BE1E33D5A9802F677185242 /* RootAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0585E2C76F9F0AFC3ADBC29A27FB308 /* RootAnimationLayer.swift */; };
 		4C7C83EF775BA11AF6DD129DC48C37E8 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77427BBF6190879FD76C88E9B85790A /* Archive.swift */; };
+		4D20E170535B3FBB2F66B6B8F8C82E83 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A641741FCF287A282863D64E616AF /* AnimationHelper.swift */; };
 		4D23D44B88BDFA3AFF7C72525DCF8E18 /* DotLottieUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1721F7FAF5C870938EC31326C29F7 /* DotLottieUtils.swift */; };
+		4DF0914263976B1B2E4582830161A6CB /* TabQuadRound.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B57764B2FD638F47AD11F0FBCC5097 /* TabQuadRound.xib */; };
 		4DFF3F8D6FCBE504EFC6CC4ADAC1B902 /* CompatibleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F067373F6EA43F357747632587EA379 /* CompatibleAnimationView.swift */; };
 		4E09819C8CE533467293B737686B9ADD /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AABE4FB89B4E7B8D405FE6DD3A9480 /* VerificationViewController.swift */; };
 		4E0FAAC2BEB3CA50EBB7BCB8E071B9C2 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47718D85EA49F2F9714E9416F766EF99 /* Star.swift */; };
+		4E5EA43BC3A11084778DA68199816BF5 /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343113B80727AFAA49F186B3624DA87B /* Skeleton.swift */; };
 		4EBB4793882E0D5A2793C81B99488D89 /* DropShadowEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A52EFBDFC73F528A4B9F3E8DD71F05 /* DropShadowEffect.swift */; };
 		4F31E8FCCFB6750083F7BD45A34BFCEB /* OnBoarding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99FE03F0CEA3A6A1C6AE3EF35E338A5F /* OnBoarding.xib */; };
 		4FA91D483D8BAFABEC63DFB8D6144FCB /* PoinCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27D22D68FB27FACF8385F662C6BD5B1 /* PoinCard.xib */; };
+		507D6035C365B0558EC24B3002325CC2 /* TabDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9451B4C145C4D9D3640733DB46AC7CF /* TabDefaultCell.swift */; };
+		50804F7714217DED16EEE7319FCD4D5E /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1ABD0C704C46E4993FE6C2208E32C /* ExtensionString.swift */; };
+		50D86C5E026223BA8E0007006C00AC8F /* CardSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EC2B78D3289B0A1E66B03A9CF8577E /* CardSelectionCell.xib */; };
 		5176C73BE9EB8F01264605E7A19F83D5 /* SizeValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB077C0EB54624A1BDF77C2A2CE6E17 /* SizeValueProvider.swift */; };
 		5199BB49D04CF20F68645BD4527E681E /* AnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC35AF31AF13747EE0D9FA587C66B3 /* AnimationLayer.swift */; };
 		519B89907B53A99AA6CE8A77AA2FFEB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0A555DB1DA81A21CA2D7E3714BDC61 /* LoginViewController.swift */; };
-		52F9D6C34967334D70CB5379CC4CE359 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED545BA7498176A93CBC3ED53C7404A /* ViewController.swift */; };
 		53A4E42FA701C80AB92681B02D6401D9 /* LayerTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282363AD1F045A4E79FF171E9E5DFAD /* LayerTextProvider.swift */; };
 		53E361F33E73A6B03883EB95284C30EC /* EpoxySwiftUIHostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056DCAF3737A3EF6FC8C7C0292E1484A /* EpoxySwiftUIHostingView.swift */; };
+		54424E9B7C186EB13152F5DAB39B23D9 /* StraggeredCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6F1B610FBAF09A5AE7721394C92BA /* StraggeredCollectionLayout.swift */; };
 		545D93C6C64444DF650EB5321F614E79 /* GradientStrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D2D60BADA78812FB5E610D70384A9 /* GradientStrokeNode.swift */; };
 		54B7FD0FF4617EAF66BC1B74FF4DE37A /* BlendMode+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9306337D607AC97173A64568AA2C8073 /* BlendMode+Filter.swift */; };
 		559679178EDF6608385C9E150A491135 /* GradientFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0EFB8973CF55578941834F184F632 /* GradientFill.swift */; };
@@ -172,8 +186,8 @@
 		58A088D0927E733FC6E10DB92327FF06 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F8F66EEDF6229791484CAB3DDEF4D3 /* LoginViewController.storyboard */; };
 		58A10CBA1235A1B4266035B0A104C3DC /* CachedImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23537DB3879635C051CBA4FFB96B9942 /* CachedImageProvider.swift */; };
 		59B90AC74AB14D2770F4A209AB3B828A /* DidSelectProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11107D61D24063BD930497C783EA8A9 /* DidSelectProviding.swift */; };
-		5AF473D541028433B12D6B501792D2F1 /* TabDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA09394F4D9CF0CF3CD08F6D338E3358 /* TabDefault.xib */; };
 		5BDE499255C9C0314DEC887E36335017 /* ImageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E333EA6BE35D7F84463C70D715FFDF /* ImageLayer.swift */; };
+		5BE69E365D5030BCB653E6D8DCEE7D9A /* TabDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE18D81883297D5D5D1A289266E7707 /* TabDefaultModel.swift */; };
 		5BEABA70D57BE637C6788DA1FD98F3E2 /* GroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF71D00E9792309B18695E0B9ED5258 /* GroupNode.swift */; };
 		5C44F1700E0C90BD31810C8069141028 /* IndexChangeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F907784586542B97665EE6CD6C1AC430 /* IndexChangeset.swift */; };
 		5C9C0CB82A5F4FA122EED028482AC878 /* AnimationKeypathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531D9AB4187234F09EE204F3800F840 /* AnimationKeypathExtension.swift */; };
@@ -182,13 +196,12 @@
 		5D7B62FFE014B741A79D9FBB359F3893 /* CoachmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77FCA74DBDF2DE4F9E509435DD3743B /* CoachmarkViewController.swift */; };
 		5DFD0953110DC1B4DEEF77E963CD29FF /* PoinLoyaltyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92977261C04EBA962BC96D11B52E1F2D /* PoinLoyaltyPageViewController.swift */; };
 		5EDC4CAAA245E00410152548DA86BD88 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EE6E8E3AF2524F434412C6A5120BD5 /* CGFloatExtensions.swift */; };
+		5FB7BBEC05171B44641641108DDD62C6 /* CardCouponOffered.xib in Resources */ = {isa = PBXBuildFile; fileRef = 920F9E7611CA602FBD0F905E75D7B757 /* CardCouponOffered.xib */; };
 		5FFC071DFA039BAAB04258C89804AA0B /* GradientStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4FF61C1C4FD27D392C1A8B82222878 /* GradientStrokeRenderer.swift */; };
 		602D337C23F2AF09A34205C83894EA99 /* TextLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A356E6804DA97145DA04A330D848259E /* TextLayer.swift */; };
 		6063DBFB74F71732F0883A610A1A5701 /* CALayer+fillBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881B4B3163EDD5F07D8B7DCB61FC1E02 /* CALayer+fillBounds.swift */; };
 		607CB17CA2599252D42F489AE905D2FD /* StampPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FB73B7379AB34FE24623A60A136BC /* StampPageViewController.swift */; };
-		61B83E02A582065E1CECD6C5324ECE56 /* PDPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AD1CE941A9B5AD1CC6568C0904EF5 /* PDPViewController.swift */; };
 		61D40B77D46DF0465F5976F835B1B23F /* PathElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D78CAEAA89A26ABBF2E656C59E6D25 /* PathElement.swift */; };
-		620980F22FAA5724678655C9F2D45EC7 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9113F510633381C65C2F86DF9BA3 /* Font.swift */; };
 		6276A11B22FB6151D97A5F9283BA938A /* TabsSquareRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781B63049D302A59B6F4E31FFA2B476A /* TabsSquareRoundCell.swift */; };
 		636CCB3B538A008EB0C8ED2374BF2A2E /* CardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22FC183AF741FB1D713B3047B5C9043 /* CardViewController.storyboard */; };
 		63E29D2041520F9F8A4FB71ACBF5FBF8 /* NullCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29D8F07000AADD67F1B2D996D5FE9F /* NullCompositionLayer.swift */; };
@@ -197,8 +210,11 @@
 		64980F6110AB09B3FAFB308C6C35BDE8 /* AnyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F522684D92132A8086217E1CF3AA795B /* AnyValueProvider.swift */; };
 		656B4CD368F7351FBC12968690102992 /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B5E2DE08D86B45304D190F30E1934D /* SearchBar.xib */; };
 		661FE5968DD346E740B68A73FAD60307 /* DotLottieFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EDC9FC4C87F445F5CD467B6D69C65 /* DotLottieFile.swift */; };
+		675D019D8D47C88A3F51C620BAB6EDD1 /* CardProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD298AD34C73E69B2F1750FB657CCA8 /* CardProductCell.swift */; };
 		68083837C9F1300967DCC9B9FBACEED9 /* LottiePlaybackMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD49EDECAB14A518947531D7FB5A9818 /* LottiePlaybackMode.swift */; };
+		68D6D28E5DDA83484A58C983AD96BFC3 /* TabSquareRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F43CDF709DD492C85423B3A92CB3D /* TabSquareRoundCell.swift */; };
 		6982E8CC00184B22EDEDBD04FE004DC5 /* AnimationImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3F36C124782AD0904E46CB95749A1 /* AnimationImageProvider.swift */; };
+		6993AAA8F28F0A17E4BAC53B3874B715 /* CardSelectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4109FC575CE847DBD8C146E5AE318 /* CardSelectionList.swift */; };
 		69A2C082AC58B2A62F782D2931CA745B /* StepPageNav.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B95FF033CCD5858476C96C557C14BA /* StepPageNav.xib */; };
 		69DA90251A70C19B2106943DD2F5A050 /* EllipseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD17E4EC0AC722EA92C2EDAFAD4B5A /* EllipseAnimation.swift */; };
 		69FE11B206A980F9E978B7F261902B37 /* EpoxyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5899235C1F8042AA9A2C652E505B545 /* EpoxyLogger.swift */; };
@@ -209,11 +225,8 @@
 		6C9EE1820EA49AF41909D5A74959288B /* EpoxyModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285ED99A154DB8FCD84FFD2B81C80803 /* EpoxyModeled.swift */; };
 		6CDBE5FBE96034839181E2B60346AC1C /* TabsSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF9A15569B3F22DBD205680149441E8 /* TabsSquareRoundCell.xib */; };
 		6D0CBEBCD893CA8281D3A5B160B539BB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0DE7D7008947BAA6A3C6B91C6106E4FC /* PrivacyInfo.xcprivacy */; };
-		6E8393C99335B27FE51B76BDDF442988 /* TabSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36609C4D317295C15127263DC3690 /* TabSkeleton.swift */; };
 		6F404948E1DC38CD436E38F4AE3B6822 /* TextLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5382A087F44D0799ED692729CCE40F /* TextLayerModel.swift */; };
 		6F8645289D6193D42DA2D12B37AE0A96 /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723225F40772A218B127BACB3991641 /* Textfield.swift */; };
-		6FF431190A23DFCCC14A7A6070A481D7 /* CardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E591E5B1E84708868B2D5C2C9352C46 /* CardSelectionCell.swift */; };
-		70BCC6E75AFF1979F20E4C62868CCA49 /* CardSelectionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC761772E66CD723D81B6C6B02B3DD4 /* CardSelectionList.xib */; };
 		70DE7261BBD3457B921E80F4268F3F78 /* ClassReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B052851B928781AA1916F987DCA29 /* ClassReference.swift */; };
 		71696F94815D5FDDEDF95261A325BB39 /* CompositionLayersInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4A5A46EB164FD237A5EDE0CEF786A /* CompositionLayersInitializer.swift */; };
 		71B20384A88E29BB8359E27E1C8F2EA9 /* OnBoarding2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF8B3D79E599D2C01AF1C41C2C1F510 /* OnBoarding2Cell.xib */; };
@@ -222,6 +235,7 @@
 		743345B4986A3CC7C34DC2FC3785DA9E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC3867AA151B227394C8BCE6469CBC7 /* Font.swift */; };
 		7458CD7F594DC6201248837A8E807D87 /* PreCompLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA98B8C98D30EA8F4C9B0A82F37A9D3 /* PreCompLayer.swift */; };
 		74901A8FBF90017A604A744F2A0A8FF4 /* AnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B476684474F4554124F066DCB19596E /* AnimatorNode.swift */; };
+		74F90B89A757CD201D2FE072B386A037 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCDAB3C972053D03DE1BD41379B77F2 /* IconButton.swift */; };
 		7516D63097B5A8AE2FA481993AA97F01 /* AssetLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD1AAD890A7B562F7A5E516D470103 /* AssetLibrary.swift */; };
 		755847E1A8307D2519552DA365B30843 /* lottie-ios-LottiePrivacyInfo in Resources */ = {isa = PBXBuildFile; fileRef = 62060F5D524AE8173817ADD9482A0FEB /* lottie-ios-LottiePrivacyInfo */; };
 		75C09940850D936DCE32AB5970C23F2E /* OnBoardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FFD88E5905FBD12E0453E1CC740E8E /* OnBoardingViewController.storyboard */; };
@@ -235,11 +249,13 @@
 		79273E7C09B6705FD07DBCAF569BFC52 /* DoubleArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8283F9100B86777D40694AD8281FD7 /* DoubleArc.swift */; };
 		79606BC926137A3DA91A4207A55A0AE9 /* LottieSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BE77E62A73AB9083DC5AA408BDFC7 /* LottieSwitch.swift */; };
 		79B91B39D10D6FA83B5CB44EFB4078AC /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEC9AA6AD656BEAE89D502D6FD924C /* AnimatedButton.swift */; };
+		79FAF9FC29E1B27622D6012AB15A8138 /* PromoGiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF7EEF4BB2BE5FBA7E5D3CC5D44CEE1 /* PromoGiftViewController.storyboard */; };
 		7A30245B4004E95B55B8B78B16A01042 /* Archive+WritingDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483526B2DE26B03CFA80AFABD29AA24F /* Archive+WritingDeprecated.swift */; };
 		7A3BDD96DEA7E76A30E8EB0953BD3120 /* TextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B6F52D54A903A3F6F6DF79444EC48 /* TextDocument.swift */; };
 		7B13CB97CEFF2A043CA4EC0E1A6F5082 /* KeyframeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544DE9CC6DF4C89053A5F3238053597E /* KeyframeGroup.swift */; };
+		7B65258D0F6C3C29EA976FE5DD1973F4 /* CardSelectionList.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC761772E66CD723D81B6C6B02B3DD4 /* CardSelectionList.xib */; };
+		7BD4B22DE42C0D64E4AD7E1585729946 /* CardMyCouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E875E954531C57ECAB5632AC0B514 /* CardMyCouponCell.swift */; };
 		7C1123BE62FA8E9848DADDBB0F9D6DF4 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB0112F19F38AD0DFE74D631FE614 /* CardViewController.swift */; };
-		7C38499A6A94D1F017DE9BAB14B131AA /* PDPViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997680D5853A1DB6665D89E72FAF1CAE /* PDPViewController.storyboard */; };
 		7CCC29C41421A538432B208EC3755E55 /* GradientStroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A6F2DEDBCD304B2FD8BC29BB597812 /* GradientStroke.swift */; };
 		7CD883CF91F60381063EA033F29656F7 /* Keyframes+combined.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0015F4C9AFB8DD616443D2F6B71FF /* Keyframes+combined.swift */; };
 		7D30BB45C1316192B47CBA39A7093D24 /* LottieAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F95AE5B801CAAE3B4C67F0AA50E3AC /* LottieAnimationCache.swift */; };
@@ -249,12 +265,12 @@
 		7E56BCDA8E5E289EB2BD57E6DAC29E8C /* Chip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2161DE868C3A2E8B23CA5236B300084B /* Chip.xib */; };
 		7F1282EC68935623A037EA559FA98547 /* Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EF99921196CA0A48DD35A073CD8116 /* Fill.swift */; };
 		7F724DCC0ABF91178C5BD77D05266353 /* ImageLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ACF85F533EADB944DCAA39D5B1314D /* ImageLayerModel.swift */; };
-		7FC9069DCC94210A218C55DBDBD50570 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEF48E11BF6FBD5E5D4FFA6EF1DC15 /* CartViewController.swift */; };
 		8030437B0B73208203FF31C70F466452 /* ImageCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4D3B51BEDCBD20FE1D3E75F4247C27 /* ImageCompositionLayer.swift */; };
-		8065CEC61633AFE878CAC03DF5ED623F /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1ABD0C704C46E4993FE6C2208E32C /* ExtensionString.swift */; };
+		803C156B5EBA3836220A1FCF7C038321 /* TabSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48821A727EB0DB9432EAE95805E9617C /* TabSquareRoundModel.swift */; };
 		81268F94256A1F2AA9FE40FD530D769A /* CALayer+addAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152B74C6C2F1A8B82CD9D712160CD27B /* CALayer+addAnimation.swift */; };
-		81552FE8E11533DB6986FF214E15A571 /* CardMyCoupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FE92365B59771545687BF50D54403A /* CardMyCoupon.swift */; };
+		8178782937F400A7CF0C4AFCA1BD9A65 /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6F892C9DCE3AA9E4B4159AFBE4A5A /* SearchBar.xib */; };
 		82939E4C04A7DFD4B50D0989AFD4B3A3 /* Chip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B70861515DCD219BA98135791AFC7 /* Chip.swift */; };
+		82EEA858D9D57E36FF451A3245F0B07B /* PromoContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411E547B01132BF8C082D2B9B2590C4 /* PromoContentCell.swift */; };
 		83A3617931D007C5C3DD3357409BF182 /* AnimatedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6B011A481C80CE42EA5F1D702ED46 /* AnimatedControl.swift */; };
 		843A88FDD7921558804C9A847185BB73 /* PathOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A0AB1B5E4A6E0AC1F202A29BF7246F /* PathOutputNode.swift */; };
 		8442FDEB0C6468FF83F02068C44FF6DF /* OnBoarding2Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6BA017F7F84474BA371631C1F32BC /* OnBoarding2Slide.swift */; };
@@ -263,17 +279,14 @@
 		86253DCD5945EFEC8517641E09B7552A /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0DF9A1D766672B665DFA287D4CE1F6 /* Button.swift */; };
 		874E74A850510399079878904C9C715C /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78BC1F94FE3FF787714038790A3BB2A /* LRUCache.swift */; };
 		882BAF8C878FEB36B5B6084E4FE601E9 /* TabsDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46296EC08ECD077682761E28BF7DB6 /* TabsDefaultCell.swift */; };
+		8879FB7940EF0AE8A8888B0A3BE0F55C /* CardCouponOfferedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86464039448BF25E012F50980B3DBB2B /* CardCouponOfferedCell.swift */; };
 		88AE7D5F8452F37A34BD46FFD77369F6 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A020EE660BDC8A27DC27A0E5F2ADC39D /* ImageAsset.swift */; };
 		89A5EB503986453A0A0B29B121B4835B /* StampBrandProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240EBC29BA806E75BBD2BEC9C4DD146 /* StampBrandProduct.swift */; };
 		89EEBFFC438958F4EE7C7F077F5410F1 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A8D5327B710A96548A4B4284AC6CD0 /* ExtensionUIView.swift */; };
-		8ABDA4528AB46435FD43B7B103E1CB65 /* TabDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE18D81883297D5D5D1A289266E7707 /* TabDefaultModel.swift */; };
-		8B1CB0BE476E74362D5DCCDA77BFDC4E /* CardCouponOfferedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86464039448BF25E012F50980B3DBB2B /* CardCouponOfferedCell.swift */; };
 		8BA616B33212EB9EC327B970AB01C81F /* LegacyGradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB02DB502795E69FE04541F9A64C7C8 /* LegacyGradientFillRenderer.swift */; };
-		8C6BB6F846230F9E0F3B443C3C3CAD1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9B247FE6C013B6FEF6A21CBB3454D /* AppDelegate.swift */; };
 		8CEBB0FEE7FA5BE042EBF86CEB5E2A39 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AA6C063466EDAF99321B07CA3419 /* AnimatedSwitch.swift */; };
 		8EBFD5A1CEF5DAF5196F45042CD78BA0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC67B941BD45B75FE50B8CC4B43F86 /* UIColorExtension.swift */; };
 		8EC7F29CC4116EEA544D93A042D52B97 /* BaseCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9FD71D06DAA44BA977B9D0604900C /* BaseCompositionLayer.swift */; };
-		8F03BABE62390590E6B57AD8834B16A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488F68B169B20F6DED1B2807C669B21 /* Main.storyboard */; };
 		8F16F7658E9FC73DBB5E9129E40A7D80 /* AnimationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70CA64FD4DC6F68335CA591BB5CC61D /* AnimationTime.swift */; };
 		8F34EB336F6A678E027B9DFDD8E98BFE /* CouponCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D55A778D4B71988AEBBB720CDB4EDCB /* CouponCardViewController.swift */; };
 		8F67FF9638C822E83BE76D0B76ECAD57 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A534BC1E54C42B930DC0EE31F0BC0CC /* DrawView.swift */; };
@@ -287,7 +300,6 @@
 		924C9E92BCA44B604DD2EF7D11207FEF /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37653BEA6AFD3E2AB5D9C23871B1505 /* TestHelpers.swift */; };
 		926C35C4ACEBAD9922F12EE72328AF8E /* Pods-rghinnaa-experimental-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E551BABD24BA6F8C30A93093CF4C15 /* Pods-rghinnaa-experimental-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94D97A38D88140BE952DF3A945327D60 /* ItemsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29C9B8BA16D75601FBBCC976FC55E5 /* ItemsExtension.swift */; };
-		9528AB71D94BC6AF52DD6ECE8F055268 /* TabQuadRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3890AD5A746FB0202B9DD51C88CD48E1 /* TabQuadRound.swift */; };
 		9532178EB1029D6AF18A812BF71378AE /* TraitCollectionProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80C072E6B4B430F4D29203DD6DFC31 /* TraitCollectionProviding.swift */; };
 		955AE0AB40CF29EE22FD9417D897F0B6 /* PoinLoyaltyPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF1AD810F8C7E63E3AA25F39FC19824 /* PoinLoyaltyPageViewController.storyboard */; };
 		95A5BA31555EA57F5328E2A99A436C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25132B16F31BF5E59C3394E85D189F81 /* AppDelegate.swift */; };
@@ -296,6 +308,7 @@
 		98B101FF85FDC57ED6C1084384A9CB64 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2E96955C68589D8F12D3C48BF7353B /* StrokeRenderer.swift */; };
 		9A5D4F70E23B63ABD90391730FC67502 /* BehaviorsConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4B817669AFC9470600283606D2161E /* BehaviorsConfigurableView.swift */; };
 		9AC1B9DEF5B7473528584FE204E6F373 /* Binding+Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A8873DE6185C9C69B62DC2E6F52B8 /* Binding+Map.swift */; };
+		9B167D2637A83B2661F8EC886C7629A4 /* CardMyCoupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FE92365B59771545687BF50D54403A /* CardMyCoupon.swift */; };
 		9B637CC1F6BD03CE3D3AF469E5D5A4DF /* GradientFillRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE93BBC0900536B796BD3FE83CB2130 /* GradientFillRenderer.swift */; };
 		9BEEF83597B0CEB0BD6BE8474CB0132C /* AnyEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE65807CF7631BD7177659FCA5992054 /* AnyEquatable.swift */; };
 		9BFE17886587A985F160BDEB49AEEAF4 /* AnimationTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065F4AC736BDBD7085CE644F92CEEC26 /* AnimationTextProvider.swift */; };
@@ -308,18 +321,17 @@
 		9E50E9BA18259C5F64A696FD852DB32B /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAE516B1D5B3F7E60130C02323BB1E0 /* ShapeLayer.swift */; };
 		9EB286C7FDD87EA3144A7D9CD9B8D7A4 /* StampBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7752AD4577547E7EC7A2E26AA211D62 /* StampBrand.swift */; };
 		9EED3FDE9A73076BF459F5AB7D18329F /* StampCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C3ED2D72ADAA04D498C8080A1E96F42 /* StampCard.xib */; };
-		9EF618A10FB2001C736DBAB5DCA89163 /* TabSquareRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D22CAAE646F6D55A69EBF68C053BDE /* TabSquareRoundCell.xib */; };
 		9F4E29EC9354EABE3F5393BC70DE9871 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23D2D71176FA358B51270B5A3128298 /* Assets.swift */; };
 		9F8C65C791EAB05040F30AB5CF5609F5 /* lottie-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B0671A353429D1991067964BE6006 /* lottie-ios-dummy.m */; };
 		A1B3FC36CB4B615A4C2E4F949E1F0439 /* OnBoarding2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580CDE8AD5EBEC5D15EC243B0C0CC8C5 /* OnBoarding2.xib */; };
 		A20B0394D79F9A6C3EFC0B965A8515BD /* StrokeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F85761474A7C97E4515286DA46129 /* StrokeNode.swift */; };
 		A210386477038C547197D38AC07D9C96 /* ScrollingFadeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F00FCBD52BDF5F6B9DF6E776A8A47 /* ScrollingFadeViewController.storyboard */; };
 		A2855796167D48D573AABAE6D08299A0 /* LRUAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A6EB15CDCE0E710F4A757EB1CBD23F /* LRUAnimationCache.swift */; };
+		A28FAC5B9DCC1C69C9A0B3ADDFB0804E /* PromoContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7292ADA509D2D18989272DE5C9DAEE6D /* PromoContentCell.xib */; };
 		A2AD5BD91A216E0ACE4C6A7BB4EBF0D1 /* LottieViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CCFD46209E88F6C22E8026A1E9CAF /* LottieViewType.swift */; };
 		A32BD87BB753EF4C383E4FB02508E657 /* TextAnimatorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F986195BF279C7481BEC03E9D775A3 /* TextAnimatorNode.swift */; };
 		A3B4EC875FB308BD7C1433D47FA39D5B /* LayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B529F92F3F38667537649B48D094FB /* LayerModel.swift */; };
 		A4296B43869C8A135F03F2D31B2BB23F /* Data+CompressionDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA8ACD42EC6547521E050737357BEE /* Data+CompressionDeprecated.swift */; };
-		A535245810292E7C010AEAC633162AAF /* CardSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1EC2B78D3289B0A1E66B03A9CF8577E /* CardSelectionCell.xib */; };
 		A6442A5A5A9B0FC22CA144F481DF54CF /* Coachmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234FF177334F952650F2D85719D62E96 /* Coachmark.swift */; };
 		A6BA53506CE72BF9917FDE48D8F51925 /* Poinku_DS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09942FEF713BD8E8FCA267154210C325 /* Poinku_DS-dummy.m */; };
 		A6CF588E66FE47ECF4B9F9CF2B802667 /* CurveVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A045F267B99259E66B8D5AD55CC39EE /* CurveVertex.swift */; };
@@ -328,12 +340,8 @@
 		A761916B6881749B756FE96F7A731330 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C177692636B8FA9A8DA2F167D74CB /* Archive+MemoryFile.swift */; };
 		A878F84BA9E24725FD0213858CF06F2B /* ExtensionCGContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ACC9A1BFB3ADDFBA39577872F1DC81 /* ExtensionCGContext.swift */; };
 		A89BCCA9FA1EC61381A2E1CAB35F66FF /* OnBoardingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1312F1F1560D080B888255C2500E75AD /* OnBoardingCell.xib */; };
-		A9ED9337A524533CB389553B0521AA94 /* ExtensionInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3054D4BDF17860924DD0AB03F219F85D /* ExtensionInteger.swift */; };
-		AA198197E95A08CF26061228FDC04C3D /* SearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE6F892C9DCE3AA9E4B4159AFBE4A5A /* SearchBar.xib */; };
 		AA44E81FE4E08C32F4806EFE9AAB70B0 /* LayerImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8537938F6B74F7874A8F386CA2E458 /* LayerImageProvider.swift */; };
 		AAD41DE67BA30AC0C2BA7CA485643514 /* AnyNodeProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84617F66F138D57AAC5F6D5CA38265B /* AnyNodeProperty.swift */; };
-		AAECA72D55CE8531490B7D4D42BEFD9F /* TabQuadRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67C0C9DFFBE31BCDD8097CAD7A0D66 /* TabQuadRoundCell.swift */; };
-		AB358CCEE3EBE6657B39497B4DC3D8DC /* Badge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3201F059B753643C4B2FA5FB752B830B /* Badge.xib */; };
 		AC2628C4B86A0E978D9992AF38D9E23F /* UIView+SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EEECCD004A2BC1364E297026A74CAE /* UIView+SwiftUIView.swift */; };
 		ACDBFF24C5305FDBDDFFF047C997646F /* View+ValueChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E449C27F329B93CDCF4FF914988755 /* View+ValueChanged.swift */; };
 		AD3898946874CE4895E22124792010D4 /* VerificationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14DE3F7220C068B708FFB7CB7C2B90D /* VerificationViewController.storyboard */; };
@@ -342,22 +350,19 @@
 		ADA0E11EEEAD24D92E3DA7C39965F99F /* LottieAnimationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D244739BF6CEA30663199BB8F4B63F37 /* LottieAnimationHelpers.swift */; };
 		ADABA847A2EAD1743AA9E42E8638BC29 /* StepPageNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD614D48FBA1A7926BBCD42C2D61587 /* StepPageNav.swift */; };
 		AE21B180F016C0D61539E0F15D7D8E1C /* RectangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F55216BC6D255A4305D93C265FD6B2 /* RectangleAnimation.swift */; };
-		AE3D1E2F4124B84C8105B927CD31BF19 /* CardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A20D46B1DE74F58D5CAC91D4B1ABE /* CardSelection.swift */; };
 		AF8A9A8D39094EBBB5E0245FF74631BE /* Keyframes+timeRemapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE784B637928885D500EE47F2CC2F642 /* Keyframes+timeRemapping.swift */; };
+		B0729D90F73E03B0B1688032A34376FE /* TabQuadRoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC3D26C5E38F7ED2D403D461C689D87 /* TabQuadRoundCell.xib */; };
 		B117F1624473A1CA381EAA7B4BA2D8C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE1B6592A29ADBBC5FB53143C4D4955 /* CoreGraphics.framework */; };
 		B19BD1DAF6676CD5AAA2C66E2B74AAAE /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC67DB53A4B37933B1B43085A45A0DC7 /* Data+Serialization.swift */; };
 		B1C9E0EA40AA950DA48B0CD3284D94E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
-		B29C49AB3841B62E40E2161000AD2707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09916E67B1FCA664E5EB50AC7E6064C /* LaunchScreen.storyboard */; };
 		B31A1BEC72A753BC6D17DACA403A64FD /* CompatibilityTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6874A27A7DA622043AF1BB7A66D6AF /* CompatibilityTracker.swift */; };
 		B3536A3509403446EF6CA0E40C9A3999 /* SolidCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC98FF8FE1157E1810251D55BD617C4 /* SolidCompositionLayer.swift */; };
-		B39B6FE19FCADABB9809602E67F29C10 /* CardSelection.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6667A15A7BF405A1B6458E86D2F8DE /* CardSelection.xib */; };
 		B44C821345F206C7A3153525F57246AB /* GradientRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23FFAC21FB61B4A81B2E5F6A261D5AB /* GradientRenderLayer.swift */; };
 		B4C217DC76973B944721E24D8CDCA584 /* ShapeRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA46BF2A1189107435FC76458EB3AC4 /* ShapeRenderLayer.swift */; };
 		B4DECC88B44F8F44FDBFB367AFE55E3E /* Poinku_DS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C841D23AA410C281CF7F6D00613113F2 /* Poinku_DS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B55AFF72FC9AB1365ECBC5354EBB8771 /* PromoContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7292ADA509D2D18989272DE5C9DAEE6D /* PromoContentCell.xib */; };
 		B5B147DD58F65BFA17377CAEAFF00B36 /* Vector1DEffectValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69B615C82B13193FA323B1D39A9439F /* Vector1DEffectValue.swift */; };
+		B7145A3E2A2B3D2D7F67E2D305EAAA59 /* PromoGiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9B6E693EF8CF102D2C1FE6854F499 /* PromoGiftModel.swift */; };
 		B75E7EEFB144E1F683E195EFF58C19E3 /* LottieAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A2B33F424BB2F537683186482B04EB /* LottieAnimationView.swift */; };
-		B79BADD60E411067012A4100F8F3E3DD /* KlikIDM_DSChip.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8FB5440E3D3B1B5188481DD34FC47 /* KlikIDM_DSChip.xib */; };
 		B88E6C146AD5C3E1D43BA246A5DBF5DE /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084B58CAE5AA50640A3E57F5705618E /* Register1ViewController.swift */; };
 		B8D6A6FAAD952CFB60EE625E660FB1BB /* DotLottieImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8246E74938D9437C5CB2B3C70E18F7 /* DotLottieImageProvider.swift */; };
 		BA4432FBD7DFF99CF01ACCD037290BCA /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC797A277AA7548C8F340A954E0DD87D /* FileManager+ZIP.swift */; };
@@ -366,19 +371,21 @@
 		BAE428B00ED17360D968F397608C99B9 /* Register1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FA67CF5A1F9C58406CE811D9AF8F98 /* Register1ViewController.storyboard */; };
 		BB4955FBE0B90ADE126939C6E70FAF65 /* TextAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556F3C65FED0E5DA071743C9C001427 /* TextAnimator.swift */; };
 		BBA32AF904FAD9545AB2B746EF36953A /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CA34B760A21A63497306AB63DB0AE9 /* Register2ViewController.swift */; };
-		BBECAC09B85071C1EC05CC1C229ECD44 /* TabChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D312AD5DCF4927910A3216567656698E /* TabChipCell.swift */; };
-		BCDF444BB014533CA62DFF447E4B5A9D /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375796B917CAAE38679C55BF3C87CE8 /* ExtensionUIColor.swift */; };
-		BDE203C103485A27CF2453693A938926 /* PromoContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E004D8E979621357033B4E612E005 /* PromoContentModel.swift */; };
 		BE20AE8FE9FD2460F60BD9DCA4728F4A /* MeasuringViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940501D05668BF13C9F65FE3850FA689 /* MeasuringViewRepresentable.swift */; };
 		BE508A0A19E9E1C821904F187BE0EEFB /* SolidLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4D8361503FA9B160B8BC5B923DF4B /* SolidLayerModel.swift */; };
-		BE607DD56A963B522408DE230F3DE30B /* CoachmarkKlik.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D437C40833A2C7F49CEDFA539EA6C4 /* CoachmarkKlik.xib */; };
+		BE7229BBC14EAFBDF03B69D5506F3BA6 /* Badge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3201F059B753643C4B2FA5FB752B830B /* Badge.xib */; };
+		BE8008DA7D850AA6828B2A351ECCB478 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375796B917CAAE38679C55BF3C87CE8 /* ExtensionUIColor.swift */; };
+		BE909A10361FE00BE9BD7669BFA6774E /* CardCouponOfferedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC269788E66068C53D9BCACD71BB404A /* CardCouponOfferedCell.xib */; };
+		BF447DFDD6D789A7CF356FB28E4D6F8D /* ButtonStepper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638B61C6C0A484C4C7E7A4142B7C2AEB /* ButtonStepper.xib */; };
 		BFE8194DC38A5BFFB56190CD81615820 /* RenderingEngineOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BA7BA2EC0DDC0E54B523B5D0C496 /* RenderingEngineOption.swift */; };
 		BFEA041731D7438EB37A5B78D9120CA6 /* Tabs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED0364DAB39343F58F0064FEDD95D5B /* Tabs.xib */; };
 		C024BCA5F77C14BCED72B31413391EAC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14795E164561F8FAA5A7CCECC91F2E /* RegisterViewController.swift */; };
 		C0A9C2D6A39AD415944130E703B6017B /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940C5C5522ECDC1F4BAFD308F2F1AA3 /* CGPointExtension.swift */; };
+		C0BE66CCB0E65F3833897A378439B871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA9B247FE6C013B6FEF6A21CBB3454D /* AppDelegate.swift */; };
 		C138D53D4F507AEBAFD1984E85F8DF4D /* OnBoarding2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53A47C7E41864C16FF712AED349D640 /* OnBoarding2Cell.swift */; };
-		C1BA6FB5DF2B4911FEED4B64CDCBEE9A /* PromoContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411E547B01132BF8C082D2B9B2590C4 /* PromoContentCell.swift */; };
+		C3DAA64B140C154E131427398FB0BB36 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC9113F510633381C65C2F86DF9BA3 /* Font.swift */; };
 		C4423C2FC4E6175D6DD1549FDF874852 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B55232621D2AE942E858A10231CB71A /* Rectangle.swift */; };
+		C5A073D7A551C04DB9B6FF7FC6174AFB /* RibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD365D00E2B2A8FCB4A3DD9A52E7FA0 /* RibbonView.swift */; };
 		C60FDF1D89E87F64B54A0CB37B208443 /* InfiniteOpaqueAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3340D368BC11BC5908301C444721F62F /* InfiniteOpaqueAnimationLayer.swift */; };
 		C6EAEF378825E2BBA5DC6A6A7B87DF52 /* MGMViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D717812250080CC5A1975D8FF457AE /* MGMViewController.storyboard */; };
 		C7386A96D3BE450BED69EBCA81E94EC2 /* FillNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82E69773CB5129EF0FE5AD87F75DA8 /* FillNode.swift */; };
@@ -388,10 +395,7 @@
 		C93789AB1AF0A5FCD4CCE40C03B2528C /* RibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F185E477C5A28B354B06695869E8A03 /* RibbonView.swift */; };
 		C9E9137AF17943A5BECBC4D13839471E /* Coachmark.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA92328979D35B83BBDEBB31854D47A /* Coachmark.xib */; };
 		CA34FFBDEF68263FF356AA9556BD9843 /* MathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85394621895A0E49E293B111837901E2 /* MathKit.swift */; };
-		CA575CCADFEB19575D0D66690FB2462A /* Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343113B80727AFAA49F186B3624DA87B /* Skeleton.swift */; };
-		CA8598B0155249B8331CD0CF00AE4E72 /* TabDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07333CD73C5775C761E43378A7D51C4 /* TabDefault.swift */; };
 		CB8FD8632F375C446EBAD3D44D9F9539 /* ExtensionUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEB28B4026290A8A114424894C43426 /* ExtensionUIViewController.swift */; };
-		CBA775CD9A76860DA1BAB7C53C47D9DD /* CardCouponOffered.xib in Resources */ = {isa = PBXBuildFile; fileRef = 920F9E7611CA602FBD0F905E75D7B757 /* CardCouponOffered.xib */; };
 		CBBE0C03C66AD0F557920724117301C7 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7234EB0101C07F8EF81210BC70C8C4D4 /* Ellipse.swift */; };
 		CC82F7684C609BC4D27A343A630582AE /* Archive+ReadingDeprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972C158F79B27B0A95262D58E51E1C69 /* Archive+ReadingDeprecated.swift */; };
 		CD4931D931BF78C2B764D8A39D1AAFA1 /* Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE1874A25572585BB11B9920F5FB2C6 /* Merge.swift */; };
@@ -399,37 +403,31 @@
 		CD911BAE39CCFAC4A6E13F1AAE465451 /* DoubleArcViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC7535BFA0379A753D97F85645EF5F5 /* DoubleArcViewController.storyboard */; };
 		CE24EDBEC608173D88C38866B043EBB4 /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A915FD4E9097A9B63F071D081BD2E /* ScrollingViewController.swift */; };
 		CEA38AB06EEC929CE4E128C1EA367717 /* MainThreadAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76578BED7C525576A8240467E9BEDA3 /* MainThreadAnimationLayer.swift */; };
-		CEF056DDA69B6EF2767CD37C3AAAD027 /* KlikIDM_DS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C6EF30AA23C0434E06E6A50CA0E04 /* KlikIDM_DS-dummy.m */; };
 		CF068519C6731C8A3C6D514662D4160C /* ExtensionUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28706D83660FD6C1F3D62DE7A3ECFE12 /* ExtensionUIImage.swift */; };
 		CF2A625EAA12C441085AAD2CD2615C4F /* CAAnimation+TimingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003F07CE6AEF9498207672720927745 /* CAAnimation+TimingConfiguration.swift */; };
 		CFA535475247D2891EA19ABF3574C25F /* ScrollingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00BD540A3CED1B128D2590CE86028F38 /* ScrollingViewController.storyboard */; };
 		D02C4D7EFCD7BB94CCCB3962787CFD4B /* Button.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605AE38BA7D23A9533DEFEAB7F5CAAD3 /* Button.xib */; };
 		D07B8D8976AC3E1CD9E92265A561629E /* ReducedMotionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182975819CF3CCA4AA8F6126F63BAF4 /* ReducedMotionOption.swift */; };
-		D0C9795D84C473D309A66E16632C43AC /* CardCouponOfferedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC269788E66068C53D9BCACD71BB404A /* CardCouponOfferedCell.xib */; };
 		D0F4C4E15F593344200AC3E65E091170 /* PassThroughOutputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1C3F8EA4BFF8542BFC79690255F058 /* PassThroughOutputNode.swift */; };
 		D34DF1BC8A39D18B20EA062C621AFA65 /* AnimationFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CEF857B33E7B1F73514E833BE6620A /* AnimationFontProvider.swift */; };
 		D35F464D52211777712B0C641E4C25ED /* AnimationSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820AD3C8F0607D4CC3E395B6E5B6C2B /* AnimationSubview.swift */; };
 		D3935C3C8977E92036EB35085E04443B /* LottieAnimationViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FD47BB0B2C4383C8DC71F72707A /* LottieAnimationViewBase.swift */; };
 		D4124E38DF14AB10EAF9F08170E17B52 /* DotLottieManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126171712C6679E19F2F94676321505 /* DotLottieManifest.swift */; };
 		D4483B89C26BE13D141A1305C63C5CA3 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E57E6A1D6A518ADE4C44F6F3BFA70A2 /* CustomPageControl.swift */; };
-		D49FD5EA5C5F0B9E641268269E530C2F /* KlikIDM_DSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD515DF6E8C6FA7F3A3430C9185E36 /* KlikIDM_DSButton.swift */; };
 		D4AB3172278D52FD7B0C8AF9FA059023 /* CALayer+setupLayerHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2744691D6E7EE2940C3F654ED866C9 /* CALayer+setupLayerHierarchy.swift */; };
-		D575CF38DC91B05701A99AF51C7F70AC /* CartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA87150446BE6F7A2AAA2576519648C /* CartViewController.storyboard */; };
 		D6BB30A5ECAA4E713D41050D97AB9A43 /* StampCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E47C0530D2EBBF23024D10DA16CCE72 /* StampCardViewController.storyboard */; };
 		D709618A02956702D70C0DD92F276E5B /* DefaultAnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCCD82D509D6E748BA3EFD7756E3504 /* DefaultAnimationCache.swift */; };
 		D78C50BB928499F9A2177AD98CE1191F /* ScrollingScaleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC626075B15EAFC6FE88C43BD9FB41E9 /* ScrollingScaleViewController.storyboard */; };
 		D7BBDA72DB6011E3B1D10883022B3C9E /* LayerFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F69E1A018F094D30321D5B4952DFD5 /* LayerFontProvider.swift */; };
 		D82E9188EE22F1B0C1890526983F020D /* Archive+BackingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17727A15CBBE4AA0B39764C10821AEA1 /* Archive+BackingConfiguration.swift */; };
 		D97EC3CD50284D943DC3C1FB698055AE /* StampCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFD3BC07939D45BD2FC691AEE4EFD8 /* StampCardViewController.swift */; };
-		D9EDCFFC654F6F3FE68CCE1D15A18A65 /* CardCouponOffered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDC2D031CD3AA13B1C2F14D22627C8B /* CardCouponOffered.swift */; };
 		DA317FC3611491241504D16750C099DF /* InvertedMatteLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE907EB2814EDD39B7C7177DCEC4D4 /* InvertedMatteLayer.swift */; };
 		DA90A96B5F1B3B1FC05706F351B1341F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857368743CD1332B8536F328258BCD /* Tabs.swift */; };
 		DAD2130F38B46DB9CB84713B400AA297 /* StampCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150AC090D483E3C1C847067482CEF1EF /* StampCardCell.swift */; };
 		DB0DAA3F878B666721A9FC96B5AB03FF /* SetContentProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62D3EAB31D960135073F8C8E5FD9D4D /* SetContentProviding.swift */; };
-		DBAC813E0A905554ABD680F45E1426E1 /* RibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD365D00E2B2A8FCB4A3DD9A52E7FA0 /* RibbonView.swift */; };
-		DC89D1B4E893E719554C2B6B2A453535 /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A641741FCF287A282863D64E616AF /* AnimationHelper.swift */; };
 		DCAE176354A27C204E5DC062EC2D1A09 /* LottieLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691BD124719D30186E332EF3DCAB2B28 /* LottieLogger.swift */; };
 		DD3129CDD0DAA88FC335AD2C6DBC8F7C /* WillDisplayProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D42B761E2ADA6242ED7FEFF0A580569 /* WillDisplayProviding.swift */; };
+		DD4BA98D713AE2A588B23A6EAB78955D /* CardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E591E5B1E84708868B2D5C2C9352C46 /* CardSelectionCell.swift */; };
 		DDC63B62308B18D7A90EC984E6B7D02E /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E84FB649C6A48F4B13DBFB7622288C /* ExtensionUIColor.swift */; };
 		DEEE020981F99FBA76DF5910BA0AD6DC /* SkeletonViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9C5F6FF838AF54594A5577F79333A /* SkeletonViewController.storyboard */; };
 		DF27088A571F776083BA249E9F49BA4A /* StyledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80EDB8CE16BC8C8871352E1BB5F971A /* StyledView.swift */; };
@@ -439,25 +437,24 @@
 		E0C328FE6A2E597AE72A64143F268C36 /* KlikIDM_DS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E65B9D64CD0A2C068D51354EAB853513 /* KlikIDM_DS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0D42607F43FB454287C1AC694501ECE /* AnimatorNodeDebugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247B837582CE8F435EE24A81C5CA92A0 /* AnimatorNodeDebugging.swift */; };
 		E2414B764B0853A80CCBE8262B2301C3 /* ScrollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE38CA9F9341A748C0BF7454DEBC5A /* ScrollController.swift */; };
-		E25042662A5EE89388F853F55687CADA /* PromoGiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF7EEF4BB2BE5FBA7E5D3CC5D44CEE1 /* PromoGiftViewController.storyboard */; };
-		E31E5C4DCCB3574240462F5D5910940D /* CardMyCouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E875E954531C57ECAB5632AC0B514 /* CardMyCouponCell.swift */; };
-		E35B24F6FD04638D9D3CA5C60500C190 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0924AF9F923369779872AD8C5F421 /* Badge.swift */; };
 		E3CD844640B9232A211379D59BEC3BB8 /* Textfield.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FF2F01EAFAD0107D7C6909258FF534 /* Textfield.xib */; };
-		E3F1B7F233AE98726545A5D40FEDDEF2 /* KlikIDM_DSChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162F56C833DBF7FA901E2A76064A929B /* KlikIDM_DSChip.swift */; };
+		E4541F6C166A65E6AE5D72F56E22B5B8 /* TabChipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D312AD5DCF4927910A3216567656698E /* TabChipCell.swift */; };
+		E45C2924EA8A5C57AC5810E10C4E6D2C /* CardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A20D46B1DE74F58D5CAC91D4B1ABE /* CardSelection.swift */; };
 		E491222DDF1509E4992764EAEEC0D9EF /* GradientValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B54A62F4593E1E030F964677558750 /* GradientValueProvider.swift */; };
 		E4F03C198EE0404692AD811BE34361EE /* PoinCardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC7A06A525251A43D1A5832B77D5FA56 /* PoinCardViewController.storyboard */; };
 		E4F25CD9B08BD393D3D6C47F15106EC7 /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80AFECF5AD7139198AD64DC6BA92970 /* Archive+Reading.swift */; };
+		E565429D9E974559AC57B96350FA88CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0488F68B169B20F6DED1B2807C669B21 /* Main.storyboard */; };
 		E5BCFA49CDE1E9864E8C8C2E466FA4FE /* StampBrandProduct.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90A0DBD2CBB82F18448002CCA76A3AEB /* StampBrandProduct.xib */; };
 		E5E98734B04102407EEB8B26F3A2F175 /* ViewDifferentiatorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0247A6D7F77DA9E6531783D9B1A5CF /* ViewDifferentiatorProviding.swift */; };
 		E6080476FF25A8D1B791C61740A3E785 /* URL+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2A9735224B8FBAEF9D0407B86D173 /* URL+ZIP.swift */; };
 		E64BD4E92A6E7E7D10FEADCDB63CF098 /* MakeViewProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D23C96308813D684C2C6DAA3665D31 /* MakeViewProviding.swift */; };
 		E67036DE932767EF9DB13A4F3A01190D /* CouponCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDE294271D37185D7C533B363334FD5 /* CouponCardCell.swift */; };
 		E6E23A7CDE96DC295AE3D23294663382 /* ChipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C6C5F9B60DB49CF2EBDC7A7B1D78A3 /* ChipCollectionViewCell.swift */; };
+		E731968A1C5489AF96BA4ED074560B4A /* KlikIDM_DSCoachmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C48B2E1EBACCA1272655EE9CAB2B7A /* KlikIDM_DSCoachmark.swift */; };
 		E7DAC0920982B3C254705CFFFCA34461 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200012CB0C3BADBF944194DC474B8A70 /* OnBoardingCell.swift */; };
-		E835979FB0A2F12108F99992BAB8B8EA /* CardProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD298AD34C73E69B2F1750FB657CCA8 /* CardProductCell.swift */; };
 		E8DA7AA71D782CDE1B05B5DAEB7B65F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		E99F3C691549D9BB369A79BC9491B1AF /* Keyframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5CF50FDBDCB9F5BC5E93C76C713A03 /* Keyframe.swift */; };
-		EA4FE309B676AE72BD9B210BEC349966 /* TabSquareRoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48821A727EB0DB9432EAE95805E9617C /* TabSquareRoundModel.swift */; };
+		EA8CD8190DD39E6BDD58E3F54390F32A /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEEF48E11BF6FBD5E5D4FFA6EF1DC15 /* CartViewController.swift */; };
 		EA99F1A5E6FF8958E1975842F4678B36 /* Collection+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B18414D47AE9307CC417BC07738E1 /* Collection+Diff.swift */; };
 		EB221D2E4EB96AF963BC9D7135F5BA5F /* TabsDefault.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5154D1140127F0A474B1B87BD0DD749 /* TabsDefault.xib */; };
 		ECA0C0B95A03199BE7122233D2DC871A /* TabsDefaultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B82C495557B062E8CDF412C5343704 /* TabsDefaultModel.swift */; };
@@ -467,30 +464,33 @@
 		EE7D81F7B66CF735994D64C96F61F297 /* MGMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B650230014BF4988D532D9572D6DDF4 /* MGMViewController.swift */; };
 		EEDC057CB1F0B4CD6700B12A0A1AD9E4 /* LayerModel+makeAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA55A73E36B418DD139A0A61AA7FD99 /* LayerModel+makeAnimationLayer.swift */; };
 		EEF5D535FFC685E63BF279011A7466FA /* InterpolatableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878A897B0F20AB3112C32FB3844B1CF /* InterpolatableExtensions.swift */; };
-		EF0FBEE9BEFC0B237981F7ABAA1EAF0F /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEA3D91C2509BE8293478D881552929 /* ExtensionUIView.swift */; };
-		EF345FCC5AAACC7A293136DA16B56431 /* ButtonStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC0923D2E40E4834633750CEED7ED3 /* ButtonStepper.swift */; };
 		EF3815B5EDCA37699AC602A13A2BFDB3 /* StampCardSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F0C9E0A4FD9B2ED32B23924F8A18D6 /* StampCardSmall.swift */; };
 		EFE300F24991824B272BA583E545EEF6 /* PolygonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA3CBA16F7A5204FD46400BAA405D22 /* PolygonNode.swift */; };
 		F0AF2DB2C4484321D453B9DCA23AF137 /* VisibilityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6395A5CB81142DCBFA7B8362E5D32F6 /* VisibilityAnimation.swift */; };
+		F0D971FEF2E6B193212524D11BB9033D /* CardMyCoupon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 372B0B8F76EC1B08CFFAEE7D59EE3806 /* CardMyCoupon.xib */; };
 		F1058661315AC6399303178FA99EB218 /* EpoxySwiftUIIntrinsicContentSizeInvalidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6CA256DA9B2B2E3341C2E98E80A865 /* EpoxySwiftUIIntrinsicContentSizeInvalidator.swift */; };
-		F182102810E2787EA7A23D121FEA096B /* StraggeredCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A6F1B610FBAF09A5AE7721394C92BA /* StraggeredCollectionLayout.swift */; };
+		F1386E6CCE44D57AE66CED3ECDE073ED /* PromoGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68FDC2FF0B401EF62B07BE357BFF46B /* PromoGiftViewController.swift */; };
 		F19C5DFBB03E42F5B187E69EB1CC0A11 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920F2DB84CD9780A83C7AF39DC81C8E /* ColorExtension.swift */; };
 		F2A48D00C14CFE0FCE542DC17E0D3CBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3234428715ED881C945B13B58F9250 /* Foundation.framework */; };
 		F2C4DBB1184DC3EA6CCBA8539E955339 /* ShapeCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167F764849606E5C8CBFA9FF213F6FD /* ShapeCompositionLayer.swift */; };
 		F33131FA8DA0BB24124B821F00E37EA4 /* RepeaterLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43FA8B33A47018599EBAA37185EFCAA /* RepeaterLayer.swift */; };
+		F3C4985F7C87C694E4B27803B9AE1740 /* ButtonStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC0923D2E40E4834633750CEED7ED3 /* ButtonStepper.swift */; };
 		F4F290A067FBB7874561DE87EE51CB49 /* Archive+ZIP64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8E697EB2BC26ECCAC8FE50B4F46E2 /* Archive+ZIP64.swift */; };
+		F5455451B2BF72C6DACCF8629806ACAF /* KlikIDM_DSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DD515DF6E8C6FA7F3A3430C9185E36 /* KlikIDM_DSButton.swift */; };
 		F598F5BF538A54A8617372D4C68DF52A /* DictionaryInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954418CE1549B2E7C4A8B2331E933297 /* DictionaryInitializable.swift */; };
+		F6105A7219E95F0F3DA2FD6195BAB4B0 /* TabQuadRoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D67C0C9DFFBE31BCDD8097CAD7A0D66 /* TabQuadRoundCell.swift */; };
 		F611447E354BCA1E4A58FF90B134068A /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB20C140024148206D4C71AEB179793 /* Stroke.swift */; };
 		F61C7D5A0A04775B95642173806F178B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FDEC82F637532907E4731F83E48EFB /* ViewController.swift */; };
+		F64F845C215CAB93930FAD79631B5AAB /* CartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA87150446BE6F7A2AAA2576519648C /* CartViewController.storyboard */; };
 		F6DC0EE8199E2561759F00A53D443B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69301F4E598400CA4CB88505EAF858B1 /* UIKit.framework */; };
 		F6EAD0A6ADF25D3048BF58A33AA56A42 /* Archive+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E26036C26E5DBCF7247ED4D8E904E7F /* Archive+Progress.swift */; };
 		F6F6026D0FA43931BBB1A2B3909E120A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E9496715E1C6ABFE4F032307BA0BB /* SearchBar.swift */; };
 		F78DAE936564B274830F11C04E534C15 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F1F770004C5487F8AF384DB33128D /* DrawViewController.swift */; };
+		F836FA1CA2E0D67138885A5F075F24A1 /* TabChipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E5C2CF0D6FF07494539AE06C8EDC91 /* TabChipCell.xib */; };
 		F84F93F555CC2BEF42B74F1DFAABFDE6 /* TextCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F27C6F583DA68235B292CF715CEA3D /* TextCompositionLayer.swift */; };
 		F8D97F624F47AD9A3091B8632580B0F8 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D38732B7AB15FAE60EE052FA620D88C /* OnBoarding.swift */; };
-		FA7BEB79714BDC0910C98CC352D2BFEB /* TabDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9451B4C145C4D9D3640733DB46AC7CF /* TabDefaultCell.swift */; };
+		F984431E40685460F51631D86B79BE10 /* PDPViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997680D5853A1DB6665D89E72FAF1CAE /* PDPViewController.storyboard */; };
 		FA98510F75B0C19885F77418579027B6 /* VectorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790256D15D9C7E18AC2ACEA58FCB5484 /* VectorsExtensions.swift */; };
-		FAF4D873700877E5B8BC1421C64246D8 /* LiquidGlassBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1828A314B25A1EA6F843D37E077F8 /* LiquidGlassBackgroundView.swift */; };
 		FB5DCBEDACB929EBAF1806B9EECC1838 /* StampCardSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3083155FA84207F79AB18063165849 /* StampCardSmall.xib */; };
 		FC3EDE1940A4241BBC5FDBA3487E06F7 /* ShapeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A200C3D7D0DD18531818C0BF3355E7A /* ShapeItem.swift */; };
 		FED3C9C0E6F5935168D3D686AD2BA1FB /* PreCompositionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1339F33121585D3893E406743C3AC621 /* PreCompositionLayer.swift */; };
@@ -732,7 +732,6 @@
 		5A534BC1E54C42B930DC0EE31F0BC0CC /* DrawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		5AB20C140024148206D4C71AEB179793 /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = Sources/Private/Model/ShapeItems/Stroke.swift; sourceTree = "<group>"; };
 		5AF7EEF4BB2BE5FBA7E5D3CC5D44CEE1 /* PromoGiftViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = PromoGiftViewController.storyboard; sourceTree = "<group>"; };
-		5B014AE3D4297074677E8349583734E3 /* CoachmarkKlik.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoachmarkKlik.swift; sourceTree = "<group>"; };
 		5B4A76D1A5BFB1FB86CCCB8413DAC919 /* CoachmarkViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = CoachmarkViewController.storyboard; sourceTree = "<group>"; };
 		5BA55A73E36B418DD139A0A61AA7FD99 /* LayerModel+makeAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayerModel+makeAnimationLayer.swift"; path = "Sources/Private/CoreAnimation/Layers/LayerModel+makeAnimationLayer.swift"; sourceTree = "<group>"; };
 		5CB02DB502795E69FE04541F9A64C7C8 /* LegacyGradientFillRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyGradientFillRenderer.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/OutputNodes/Renderables/LegacyGradientFillRenderer.swift; sourceTree = "<group>"; };
@@ -847,6 +846,7 @@
 		972C158F79B27B0A95262D58E51E1C69 /* Archive+ReadingDeprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+ReadingDeprecated.swift"; path = "Sources/Private/EmbeddedLibraries/ZipFoundation/Archive+ReadingDeprecated.swift"; sourceTree = "<group>"; };
 		976BFA43519DFB4D0B9055262B04DA3F /* TransformAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimations.swift; path = Sources/Private/CoreAnimation/Animations/TransformAnimations.swift; sourceTree = "<group>"; };
 		97C2DB80E68ADEA3ACF0CBAF0128013B /* KeyedDecodingContainerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyedDecodingContainerExtensions.swift; path = Sources/Private/Model/Extensions/KeyedDecodingContainerExtensions.swift; sourceTree = "<group>"; };
+		97C48B2E1EBACCA1272655EE9CAB2B7A /* KlikIDM_DSCoachmark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KlikIDM_DSCoachmark.swift; sourceTree = "<group>"; };
 		97C72D97518E52C7F22C364F53555899 /* FloatValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatValueProvider.swift; path = Sources/Public/DynamicProperties/ValueProviders/FloatValueProvider.swift; sourceTree = "<group>"; };
 		97CEF857B33E7B1F73514E833BE6620A /* AnimationFontProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationFontProvider.swift; path = Sources/Public/FontProvider/AnimationFontProvider.swift; sourceTree = "<group>"; };
 		984FA77494C021DF0670BADEC6138645 /* ProfileSetting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileSetting.swift; sourceTree = "<group>"; };
@@ -991,6 +991,7 @@
 		E1B56CC1A9ABEC16C55D8D0814602DF2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2ABE6C35E0D3473F9EF95D861AC3E6C /* TabsDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabsDefault.swift; sourceTree = "<group>"; };
 		E2CFD3BC07939D45BD2FC691AEE4EFD8 /* StampCardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StampCardViewController.swift; sourceTree = "<group>"; };
+		E2E3D8BE01D528B39FC9432CA8BF3FE1 /* KlikIDM_DSCoachmark.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = KlikIDM_DSCoachmark.xib; sourceTree = "<group>"; };
 		E3A8D5327B710A96548A4B4284AC6CD0 /* ExtensionUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
 		E43FA8B33A47018599EBAA37185EFCAA /* RepeaterLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepeaterLayer.swift; path = Sources/Private/CoreAnimation/Layers/RepeaterLayer.swift; sourceTree = "<group>"; };
 		E4DF5655BF8113F587A90FC7CD05B4E2 /* KlikIDM_DS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KlikIDM_DS.release.xcconfig; sourceTree = "<group>"; };
@@ -999,7 +1000,6 @@
 		E65B9D64CD0A2C068D51354EAB853513 /* KlikIDM_DS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KlikIDM_DS-umbrella.h"; sourceTree = "<group>"; };
 		E68FDC2FF0B401EF62B07BE357BFF46B /* PromoGiftViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PromoGiftViewController.swift; sourceTree = "<group>"; };
 		E6C3B5CDCE123FFD949CE64A11FCAC3E /* LottieAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LottieAnimationLayer.swift; path = Sources/Public/Animation/LottieAnimationLayer.swift; sourceTree = "<group>"; };
-		E6D437C40833A2C7F49CEDFA539EA6C4 /* CoachmarkKlik.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CoachmarkKlik.xib; sourceTree = "<group>"; };
 		E77F85761474A7C97E4515286DA46129 /* StrokeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/RenderNodes/StrokeNode.swift; sourceTree = "<group>"; };
 		E77FCA74DBDF2DE4F9E509435DD3743B /* CoachmarkViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoachmarkViewController.swift; sourceTree = "<group>"; };
 		E861164BCC414824FBA9D5E1107BDE32 /* Pods-rghinnaa-experimental-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-rghinnaa-experimental-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1595,6 +1595,16 @@
 			);
 			name = Font;
 			path = Font;
+			sourceTree = "<group>";
+		};
+		6D9CA3C32B0C233299BFC6E96C93051D /* Coachmark */ = {
+			isa = PBXGroup;
+			children = (
+				97C48B2E1EBACCA1272655EE9CAB2B7A /* KlikIDM_DSCoachmark.swift */,
+				E2E3D8BE01D528B39FC9432CA8BF3FE1 /* KlikIDM_DSCoachmark.xib */,
+			);
+			name = Coachmark;
+			path = Coachmark;
 			sourceTree = "<group>";
 		};
 		6FEC55944A899BBCB5C4264EFCB70290 /* HomePage */ = {
@@ -2409,7 +2419,7 @@
 				C6A13F9E49E68ABFBE6D86E1B600DDAE /* Button */,
 				A324ED802C592C2A415EEA7B1516C67F /* Card */,
 				1402504D4F930E357CCA3DE5665F9621 /* Chip */,
-				D4182BAB178ECE9D18FD1F23A6526D77 /* Coachmark */,
+				6D9CA3C32B0C233299BFC6E96C93051D /* Coachmark */,
 				ABB7CADD2D5CDA914108BB417AA4D3D6 /* Ribbon */,
 				8EBF96E81C0DF7672F5126998C7E8860 /* Search */,
 				FF5B9FBBA2AD49321D84E82302F10ABB /* Skeleton */,
@@ -2460,16 +2470,6 @@
 			name = Poinku_DS;
 			path = "/Users/rizkaghinna/Documents/Work/Main Projects/Poinku_DS";
 			sourceTree = "<absolute>";
-		};
-		D4182BAB178ECE9D18FD1F23A6526D77 /* Coachmark */ = {
-			isa = PBXGroup;
-			children = (
-				5B014AE3D4297074677E8349583734E3 /* CoachmarkKlik.swift */,
-				E6D437C40833A2C7F49CEDFA539EA6C4 /* CoachmarkKlik.xib */,
-			);
-			name = Coachmark;
-			path = Coachmark;
-			sourceTree = "<group>";
 		};
 		D627D0894E99130C17B0220903E84C1A /* Poin */ = {
 			isa = PBXGroup;
@@ -2715,9 +2715,9 @@
 			buildConfigurationList = 0DDE2CEEE7690C87820197FBDFAE8CA5 /* Build configuration list for PBXNativeTarget "KlikIDM_DS" */;
 			buildPhases = (
 				55C6B4C5BACBA3F3FF2F45FFA5F2F30F /* Headers */,
-				9099346BC6AD073C7C9EC32340374C97 /* Sources */,
+				974363809DEDC646F5DD993E87BA64F1 /* Sources */,
 				D7638E932DEC03EFAFDB5ADA1D9362B1 /* Frameworks */,
-				414ED1349377AE9C805A5C6997F5C3E3 /* Resources */,
+				26E63D7893630AB4595B8E4F40605000 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2780,36 +2780,36 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		414ED1349377AE9C805A5C6997F5C3E3 /* Resources */ = {
+		26E63D7893630AB4595B8E4F40605000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F338AE6A4B9E2613AB70F91FD22E32 /* Assets.xcassets in Resources */,
-				AB358CCEE3EBE6657B39497B4DC3D8DC /* Badge.xib in Resources */,
-				109265DF70396D3D238C27B026D1EDEF /* ButtonStepper.xib in Resources */,
-				CBA775CD9A76860DA1BAB7C53C47D9DD /* CardCouponOffered.xib in Resources */,
-				D0C9795D84C473D309A66E16632C43AC /* CardCouponOfferedCell.xib in Resources */,
-				21DD2B642F3D2DDCF8C94FE087CC1A8D /* CardMyCoupon.xib in Resources */,
-				4ADEFDF58A159B67DD13E444F06A8A00 /* CardMyCouponCell.xib in Resources */,
-				3FE941C304B83032F6454AF0E9E7BC39 /* CardProductCell.xib in Resources */,
-				B39B6FE19FCADABB9809602E67F29C10 /* CardSelection.xib in Resources */,
-				A535245810292E7C010AEAC633162AAF /* CardSelectionCell.xib in Resources */,
-				70BCC6E75AFF1979F20E4C62868CCA49 /* CardSelectionList.xib in Resources */,
-				D575CF38DC91B05701A99AF51C7F70AC /* CartViewController.storyboard in Resources */,
-				BE607DD56A963B522408DE230F3DE30B /* CoachmarkKlik.xib in Resources */,
-				B79BADD60E411067012A4100F8F3E3DD /* KlikIDM_DSChip.xib in Resources */,
-				B29C49AB3841B62E40E2161000AD2707 /* LaunchScreen.storyboard in Resources */,
-				8F03BABE62390590E6B57AD8834B16A1 /* Main.storyboard in Resources */,
-				7C38499A6A94D1F017DE9BAB14B131AA /* PDPViewController.storyboard in Resources */,
-				B55AFF72FC9AB1365ECBC5354EBB8771 /* PromoContentCell.xib in Resources */,
-				E25042662A5EE89388F853F55687CADA /* PromoGiftViewController.storyboard in Resources */,
-				AA198197E95A08CF26061228FDC04C3D /* SearchBar.xib in Resources */,
-				3805EDCEDD1236FF2C77EBBF5AB052D6 /* TabChipCell.xib in Resources */,
-				5AF473D541028433B12D6B501792D2F1 /* TabDefault.xib in Resources */,
-				41130F8694EAD446777B9DF08B685826 /* TabDefaultCell.xib in Resources */,
-				0422C37366277781FBCBDE8370D41C56 /* TabQuadRound.xib in Resources */,
-				027F2BC44C3E556821634165E0C10C01 /* TabQuadRoundCell.xib in Resources */,
-				9EF618A10FB2001C736DBAB5DCA89163 /* TabSquareRoundCell.xib in Resources */,
+				3AD9860D237E92A31F6AD37D2ADE5A84 /* Assets.xcassets in Resources */,
+				BE7229BBC14EAFBDF03B69D5506F3BA6 /* Badge.xib in Resources */,
+				BF447DFDD6D789A7CF356FB28E4D6F8D /* ButtonStepper.xib in Resources */,
+				5FB7BBEC05171B44641641108DDD62C6 /* CardCouponOffered.xib in Resources */,
+				BE909A10361FE00BE9BD7669BFA6774E /* CardCouponOfferedCell.xib in Resources */,
+				F0D971FEF2E6B193212524D11BB9033D /* CardMyCoupon.xib in Resources */,
+				243FC5F76EDB8FB2C3EE482DAF6D7C6A /* CardMyCouponCell.xib in Resources */,
+				49FA09B18E9616D4206C048EE0D893F7 /* CardProductCell.xib in Resources */,
+				44D8849E08AF73C9378B05FD43700BE3 /* CardSelection.xib in Resources */,
+				50D86C5E026223BA8E0007006C00AC8F /* CardSelectionCell.xib in Resources */,
+				7B65258D0F6C3C29EA976FE5DD1973F4 /* CardSelectionList.xib in Resources */,
+				F64F845C215CAB93930FAD79631B5AAB /* CartViewController.storyboard in Resources */,
+				201F89268F3D35EEDD4A728F84CABD7C /* KlikIDM_DSChip.xib in Resources */,
+				2DA75C8130B1F76DA50A3477300D325D /* KlikIDM_DSCoachmark.xib in Resources */,
+				1931D8DE34B5AC6F084B57355F803F0D /* LaunchScreen.storyboard in Resources */,
+				E565429D9E974559AC57B96350FA88CD /* Main.storyboard in Resources */,
+				F984431E40685460F51631D86B79BE10 /* PDPViewController.storyboard in Resources */,
+				A28FAC5B9DCC1C69C9A0B3ADDFB0804E /* PromoContentCell.xib in Resources */,
+				79FAF9FC29E1B27622D6012AB15A8138 /* PromoGiftViewController.storyboard in Resources */,
+				8178782937F400A7CF0C4AFCA1BD9A65 /* SearchBar.xib in Resources */,
+				F836FA1CA2E0D67138885A5F075F24A1 /* TabChipCell.xib in Resources */,
+				2AE5CB0ADEC073B2A5607CB5CA70D39E /* TabDefault.xib in Resources */,
+				4647E794983ED824698777CFB9E009BE /* TabDefaultCell.xib in Resources */,
+				4DF0914263976B1B2E4582830161A6CB /* TabQuadRound.xib in Resources */,
+				B0729D90F73E03B0B1688032A34376FE /* TabQuadRoundCell.xib in Resources */,
+				2B6A3EFDC206C0177EFD202FE98C87C5 /* TabSquareRoundCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2914,54 +2914,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9099346BC6AD073C7C9EC32340374C97 /* Sources */ = {
+		974363809DEDC646F5DD993E87BA64F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC89D1B4E893E719554C2B6B2A453535 /* AnimationHelper.swift in Sources */,
-				8C6BB6F846230F9E0F3B443C3C3CAD1A /* AppDelegate.swift in Sources */,
-				E35B24F6FD04638D9D3CA5C60500C190 /* Badge.swift in Sources */,
-				EF345FCC5AAACC7A293136DA16B56431 /* ButtonStepper.swift in Sources */,
-				D9EDCFFC654F6F3FE68CCE1D15A18A65 /* CardCouponOffered.swift in Sources */,
-				8B1CB0BE476E74362D5DCCDA77BFDC4E /* CardCouponOfferedCell.swift in Sources */,
-				81552FE8E11533DB6986FF214E15A571 /* CardMyCoupon.swift in Sources */,
-				E31E5C4DCCB3574240462F5D5910940D /* CardMyCouponCell.swift in Sources */,
-				E835979FB0A2F12108F99992BAB8B8EA /* CardProductCell.swift in Sources */,
-				AE3D1E2F4124B84C8105B927CD31BF19 /* CardSelection.swift in Sources */,
-				6FF431190A23DFCCC14A7A6070A481D7 /* CardSelectionCell.swift in Sources */,
-				031EE9E23FEF3A7681494BA250AF2ED8 /* CardSelectionList.swift in Sources */,
-				7FC9069DCC94210A218C55DBDBD50570 /* CartViewController.swift in Sources */,
-				30BA561888673067EF4FD9511BCA8752 /* CoachmarkKlik.swift in Sources */,
-				0E5FEB302A9AEB621530C982D8580851 /* DashedLineView.swift in Sources */,
-				A9ED9337A524533CB389553B0521AA94 /* ExtensionInteger.swift in Sources */,
-				8065CEC61633AFE878CAC03DF5ED623F /* ExtensionString.swift in Sources */,
-				BCDF444BB014533CA62DFF447E4B5A9D /* ExtensionUIColor.swift in Sources */,
-				EF0FBEE9BEFC0B237981F7ABAA1EAF0F /* ExtensionUIView.swift in Sources */,
-				620980F22FAA5724678655C9F2D45EC7 /* Font.swift in Sources */,
-				040E44C777EEE383C76B12CCA5160800 /* IconButton.swift in Sources */,
-				CEF056DDA69B6EF2767CD37C3AAAD027 /* KlikIDM_DS-dummy.m in Sources */,
-				D49FD5EA5C5F0B9E641268269E530C2F /* KlikIDM_DSButton.swift in Sources */,
-				E3F1B7F233AE98726545A5D40FEDDEF2 /* KlikIDM_DSChip.swift in Sources */,
-				FAF4D873700877E5B8BC1421C64246D8 /* LiquidGlassBackgroundView.swift in Sources */,
-				61B83E02A582065E1CECD6C5324ECE56 /* PDPViewController.swift in Sources */,
-				C1BA6FB5DF2B4911FEED4B64CDCBEE9A /* PromoContentCell.swift in Sources */,
-				BDE203C103485A27CF2453693A938926 /* PromoContentModel.swift in Sources */,
-				303D4959C5FC36946A37F15AA2740193 /* PromoGiftModel.swift in Sources */,
-				0E2A97835CA8D3D38DEA79E96500EDB7 /* PromoGiftViewController.swift in Sources */,
-				DBAC813E0A905554ABD680F45E1426E1 /* RibbonView.swift in Sources */,
-				303140F143319AC825B90B7C07DE44EE /* SearchBar.swift in Sources */,
-				CA575CCADFEB19575D0D66690FB2462A /* Skeleton.swift in Sources */,
-				F182102810E2787EA7A23D121FEA096B /* StraggeredCollectionLayout.swift in Sources */,
-				BBECAC09B85071C1EC05CC1C229ECD44 /* TabChipCell.swift in Sources */,
-				CA8598B0155249B8331CD0CF00AE4E72 /* TabDefault.swift in Sources */,
-				FA7BEB79714BDC0910C98CC352D2BFEB /* TabDefaultCell.swift in Sources */,
-				8ABDA4528AB46435FD43B7B103E1CB65 /* TabDefaultModel.swift in Sources */,
-				9528AB71D94BC6AF52DD6ECE8F055268 /* TabQuadRound.swift in Sources */,
-				AAECA72D55CE8531490B7D4D42BEFD9F /* TabQuadRoundCell.swift in Sources */,
-				6E8393C99335B27FE51B76BDDF442988 /* TabSkeleton.swift in Sources */,
-				2F0D4DB11DE6A043A02FA21CF3D2E1CC /* TabSquareRoundCell.swift in Sources */,
-				EA4FE309B676AE72BD9B210BEC349966 /* TabSquareRoundModel.swift in Sources */,
-				52F9D6C34967334D70CB5379CC4CE359 /* ViewController.swift in Sources */,
+				4D20E170535B3FBB2F66B6B8F8C82E83 /* AnimationHelper.swift in Sources */,
+				C0BE66CCB0E65F3833897A378439B871 /* AppDelegate.swift in Sources */,
+				44D835B9B3AC4CC8DB45F05D403FBF3C /* Badge.swift in Sources */,
+				F3C4985F7C87C694E4B27803B9AE1740 /* ButtonStepper.swift in Sources */,
+				27C496C5689545565AD594B8EAA749B5 /* CardCouponOffered.swift in Sources */,
+				8879FB7940EF0AE8A8888B0A3BE0F55C /* CardCouponOfferedCell.swift in Sources */,
+				9B167D2637A83B2661F8EC886C7629A4 /* CardMyCoupon.swift in Sources */,
+				7BD4B22DE42C0D64E4AD7E1585729946 /* CardMyCouponCell.swift in Sources */,
+				675D019D8D47C88A3F51C620BAB6EDD1 /* CardProductCell.swift in Sources */,
+				E45C2924EA8A5C57AC5810E10C4E6D2C /* CardSelection.swift in Sources */,
+				DD4BA98D713AE2A588B23A6EAB78955D /* CardSelectionCell.swift in Sources */,
+				6993AAA8F28F0A17E4BAC53B3874B715 /* CardSelectionList.swift in Sources */,
+				EA8CD8190DD39E6BDD58E3F54390F32A /* CartViewController.swift in Sources */,
+				38D22DD47FEBA500B5FF687DB46296C3 /* DashedLineView.swift in Sources */,
+				1398A2888CD04B8E884CD911CA6A5528 /* ExtensionInteger.swift in Sources */,
+				50804F7714217DED16EEE7319FCD4D5E /* ExtensionString.swift in Sources */,
+				BE8008DA7D850AA6828B2A351ECCB478 /* ExtensionUIColor.swift in Sources */,
+				2BF316466F9126C3B1C03460A7F0F88D /* ExtensionUIView.swift in Sources */,
+				C3DAA64B140C154E131427398FB0BB36 /* Font.swift in Sources */,
+				74F90B89A757CD201D2FE072B386A037 /* IconButton.swift in Sources */,
+				19D1E7E26C9ACBD53F7B9C44A649B02C /* KlikIDM_DS-dummy.m in Sources */,
+				F5455451B2BF72C6DACCF8629806ACAF /* KlikIDM_DSButton.swift in Sources */,
+				1AC9EAD0C3663140AE35DDE0D1D86B0E /* KlikIDM_DSChip.swift in Sources */,
+				E731968A1C5489AF96BA4ED074560B4A /* KlikIDM_DSCoachmark.swift in Sources */,
+				34DB9FC2470E4CFF1446129F66BE0CDB /* LiquidGlassBackgroundView.swift in Sources */,
+				421CEB9B5C73EF720BA722F23647466F /* PDPViewController.swift in Sources */,
+				82EEA858D9D57E36FF451A3245F0B07B /* PromoContentCell.swift in Sources */,
+				31D00AF7B0847433FD898997CE1FFB3F /* PromoContentModel.swift in Sources */,
+				B7145A3E2A2B3D2D7F67E2D305EAAA59 /* PromoGiftModel.swift in Sources */,
+				F1386E6CCE44D57AE66CED3ECDE073ED /* PromoGiftViewController.swift in Sources */,
+				C5A073D7A551C04DB9B6FF7FC6174AFB /* RibbonView.swift in Sources */,
+				1FE00026BC99DCD00719444E9D54F12E /* SearchBar.swift in Sources */,
+				4E5EA43BC3A11084778DA68199816BF5 /* Skeleton.swift in Sources */,
+				54424E9B7C186EB13152F5DAB39B23D9 /* StraggeredCollectionLayout.swift in Sources */,
+				E4541F6C166A65E6AE5D72F56E22B5B8 /* TabChipCell.swift in Sources */,
+				2E952DFA263E866C2AD10AD3C1368839 /* TabDefault.swift in Sources */,
+				507D6035C365B0558EC24B3002325CC2 /* TabDefaultCell.swift in Sources */,
+				5BE69E365D5030BCB653E6D8DCEE7D9A /* TabDefaultModel.swift in Sources */,
+				3C8F67E196FC482753124E108C97B516 /* TabQuadRound.swift in Sources */,
+				F6105A7219E95F0F3DA2FD6195BAB4B0 /* TabQuadRoundCell.swift in Sources */,
+				16461AB405A83A4DC19179A1A05EFF57 /* TabSkeleton.swift in Sources */,
+				68D6D28E5DDA83484A58C983AD96BFC3 /* TabSquareRoundCell.swift in Sources */,
+				803C156B5EBA3836220A1FCF7C038321 /* TabSquareRoundModel.swift in Sources */,
+				26F62306630E3D68069A079F6AC97241 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
