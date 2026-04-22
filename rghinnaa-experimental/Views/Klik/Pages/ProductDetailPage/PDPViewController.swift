@@ -91,7 +91,7 @@ class PDPViewController: UIViewController {
                 targetView: cardTotalType,
                 contentMargin: 24,
                 spotlightPadding: 8,
-                isTargetAList: true,
+                isTargetAList: true
             )
         ])
 

@@ -37,7 +37,8 @@ class CoachmarkKlikViewController: UIViewController {
             CoachmarkStepConfig(
                 title: "Step 2",
                 description: "This step shows both start and end targets with dual spotlights",
-                targetView: vCard2
+                targetView: vCard2,
+                isHideSpotlight: true
             )
         ])
 
