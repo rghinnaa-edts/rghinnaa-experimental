@@ -17,27 +17,100 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spc-gA-6BH" customClass="RadioButton" customModule="KlikIDM_DS">
-                                <rect key="frame" x="0.0" y="380" width="393" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="mFy-NV-w7u">
+                                <rect key="frame" x="16" y="118" width="377" height="666"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spc-gA-6BH" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="88"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rms-gh-stI" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="112" width="377" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRadioBtnActive" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RNN-EE-6UH" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="186" width="377" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-9Z-oHP" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="260" width="377" height="86"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRadioBtnActive" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTw-i7-Roy" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="370" width="377" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="checkmark" catalog="system"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXg-V7-WXT" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="394" width="377" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="checkmark" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRadioBtnActive" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-2L-uT3" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="418" width="377" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="checkmark" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRadioBtnActive" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-6C-EZu" customClass="RadioButton" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="442" width="377" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="checkmark" catalog="system"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRadioBtnActive" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="btnState" value="Disabled"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-vg-lKl" customClass="RadioGroup" customModule="KlikIDM_DS">
+                                        <rect key="frame" x="0.0" y="466" width="377" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-q7-VXg">
+                                        <rect key="frame" x="0.0" y="490" width="377" height="176"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="spc-gA-6BH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="F1G-re-da6"/>
-                            <constraint firstItem="spc-gA-6BH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Jcs-3Y-AWc"/>
-                            <constraint firstItem="spc-gA-6BH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bzj-Sr-b0i"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="spc-gA-6BH" secondAttribute="trailing" id="znE-B9-Kbz"/>
+                            <constraint firstItem="mFy-NV-w7u" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="1oK-kk-8EO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mFy-NV-w7u" secondAttribute="trailing" id="Oz6-nc-dLH"/>
+                            <constraint firstItem="mFy-NV-w7u" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fWu-Wa-9Ky"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mFy-NV-w7u" secondAttribute="bottom" id="tFy-f2-5qL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="radioBtn" destination="spc-gA-6BH" id="MCf-3e-IrA"/>
+                        <outlet property="radioGroup" destination="UVb-vg-lKl" id="hDK-hX-1nG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="138.1679389312977" y="130.98591549295776"/>
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
