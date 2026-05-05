@@ -55,6 +55,11 @@ class PDPViewController: UIViewController {
         setupButtonATC()
         setupButtonCart()
         
+        DispatchQueue.main.async {
+            self.showCoachmark()
+            self.setupAnimateCardTotalType()
+        }
+        
         ivLocation.image = UIImage(named: "ic-marker-pin")?.withRenderingMode(.alwaysTemplate)
         ivLocation.tintColor = UIColor.blueDefault
         
@@ -65,6 +70,32 @@ class PDPViewController: UIViewController {
         ivTrash.tintColor = UIColor.grey50
         
         lblRealPrice.attributedText = productRealPrice.formatRupiah().strikethrough()
+    }
+    
+    private func showCoachmark() {
+        let coachmark = KlikIDM_DSCoachmark(frame: .zero)
+        
+        let html = "Pilih <b>{Karton}</b> untuk tambah banyak sekaligus, atau pilih <b>Satuan</b> untuk tambah satu per satu."
+        let data = html.data(using: .utf8)!
+        let attributed = try? NSAttributedString(data: data, options: [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ], documentAttributes: nil)
+
+        coachmark.coachmarkType = CoachmarkType.single.rawValue
+        
+        coachmark.configureSteps(steps: [
+            CoachmarkStepConfig(
+                title: "Tambah Produk Lebih Cepat",
+                descriptionAttributted: attributed,
+                targetView: cardTotalType,
+                contentMargin: 24,
+                spotlightPadding: 8,
+                isTargetAList: true
+            )
+        ])
+
+        coachmark.show()
     }
     
     private func setupBadgeTotalImage() {
@@ -105,6 +136,23 @@ class PDPViewController: UIViewController {
         cardTotalType.shadowOpacity = 0.2
         cardTotalType.shadowOffset = CGSize(width: 0, height: 1)
         cardTotalType.shadowRadius = 2
+    }
+    
+    private func setupAnimateCardTotalType() {
+        let delay = 0.5
+        let duration = 1.0
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.cardTotalType.selectItem(at: 0)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay + duration) {
+            self.cardTotalType.selectItem(at: 1)
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay + (duration * 2)) {
+            self.cardTotalType.selectItem(at: 0)
+        }
     }
     
     private func setupButtonStepper() {

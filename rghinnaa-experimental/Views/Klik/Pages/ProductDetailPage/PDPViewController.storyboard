@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -55,7 +56,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ua-BJ-Xch" customClass="Badge" customModule="KlikIDM_DS">
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Ua-BJ-Xch" customClass="Badge" customModule="KlikIDM_DS">
                                                 <rect key="frame" x="16" y="483.33333333333331" width="28" height="14"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -100,8 +101,8 @@
                                                     <constraint firstAttribute="height" constant="101" id="ddP-gt-r4R"/>
                                                 </constraints>
                                             </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4o-wd-g04" customClass="Badge" customModule="KlikIDM_DS">
-                                                <rect key="frame" x="16" y="363" width="361" height="18"/>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="40" placeholderIntrinsicHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="c4o-wd-g04" customClass="Badge" customModule="KlikIDM_DS">
+                                                <rect key="frame" x="16" y="363" width="40" height="18"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="H0t-7H-o8Z"/>
@@ -117,7 +118,6 @@
                                             <constraint firstItem="0Jb-FQ-oBR" firstAttribute="top" secondItem="PsY-7S-fGs" secondAttribute="bottom" constant="16" id="3Ta-J4-dbd"/>
                                             <constraint firstItem="JOV-yO-J5O" firstAttribute="leading" secondItem="bev-L7-7Ne" secondAttribute="leading" constant="16" id="3ux-g9-KA4"/>
                                             <constraint firstItem="1fO-Ru-dag" firstAttribute="leading" secondItem="bev-L7-7Ne" secondAttribute="leading" constant="48" id="5Dm-Yw-iqS"/>
-                                            <constraint firstAttribute="trailing" secondItem="c4o-wd-g04" secondAttribute="trailing" constant="16" id="6E9-yk-I22"/>
                                             <constraint firstItem="P5U-Vn-gur" firstAttribute="top" secondItem="1fO-Ru-dag" secondAttribute="bottom" constant="12" id="6tA-Il-LIV"/>
                                             <constraint firstItem="5Ua-BJ-Xch" firstAttribute="leading" secondItem="bev-L7-7Ne" secondAttribute="leading" constant="16" id="8Fn-hW-zdn"/>
                                             <constraint firstAttribute="trailing" secondItem="9U0-Xt-fcJ" secondAttribute="trailing" id="Dl4-EA-ZMt"/>
@@ -368,7 +368,7 @@
         <image name="ic-arrow-left" width="32" height="32"/>
         <image name="ic-favorite" width="48" height="48"/>
         <image name="ic-marker-pin" width="48" height="48"/>
-        <image name="ic-plus" width="24" height="24"/>
+        <image name="ic-plus" width="32" height="32"/>
         <image name="ic-share" width="48" height="48"/>
         <image name="ic-trash" width="48" height="48"/>
         <image name="promotion" width="804" height="70"/>
@@ -382,7 +382,7 @@
             <color red="0.61176470588235299" green="0.61568627450980395" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="70Grey">
-            <color red="0.082352941176470587" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.2627450980392157" green="0.27843137254901962" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DefaultBlue">
             <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
